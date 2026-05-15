@@ -20,16 +20,16 @@
     "sosa"
   ],
   "shaclShapes": {
-    "ogc.geo.features.feature": [
-      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-    ],
     "ogc.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ]
   },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.sosa.properties.observation"
+    "ogc.sosa.properties.observation",
+    "ogc.geo.features.feature"
   ],
   "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld",
   "schema": {
@@ -41,7 +41,33 @@
   "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/resolvedProperties.json",
   "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/",
   "validationPassed": true,
+  "testOutputs": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/build/tests/tutorial/sensors/airQualitySensor/",
   "description": "# Air Quality Sensor Station\n\nAn OGC Block describing a fixed air quality monitoring station as a GeoJSON Feature.\n\nThe feature's `properties` include basic station metadata and a `hasObservations`\narray of SOSA Observation objects, each capturing a measurement of an atmospheric\nproperty (such as NO\u2082 concentration or PM10 levels) at a specific point in time.\n\nSemantic annotations are provided for all locally defined properties. Properties\ninherited from the base GeoJSON Feature and SOSA Observation blocks carry their\nown annotations and do not need to be re-declared.",
+  "examples": [
+    {
+      "title": "Station Alpha - Madrid Centro",
+      "content": "A fixed air quality monitoring station in central Madrid, with NO\u2082 and PM10 observations.\n",
+      "base-uri": "https://example.com/sensors/",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/sensor.json",
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"stations/alpha\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [-3.70325, 40.41650]\n  },\n  \"properties\": {\n    \"name\": \"Station Alpha - Madrid Centro\",\n    \"serialNumber\": \"AQS-2024-0042\",\n    \"hasObservations\": [\n      {\n        \"observedProperty\": \"https://w3id.org/ad4gd/air-quality/properties/NO2\",\n        \"hasResult\": {\n          \"http://qudt.org/schema/qudt/value\": 42.7,\n          \"http://qudt.org/schema/qudt/hasUnit\": { \"@id\": \"http://qudt.org/vocab/unit/MicroGM-PER-M3\" }\n        },\n        \"resultTime\": \"2024-06-01T12:00:00Z\"\n      },\n      {\n        \"observedProperty\": \"https://w3id.org/ad4gd/air-quality/properties/pm10\",\n        \"hasResult\": {\n          \"http://qudt.org/schema/qudt/value\": 18.3,\n          \"http://qudt.org/schema/qudt/hasUnit\": { \"@id\": \"http://qudt.org/vocab/unit/MicroGM-PER-M3\" }\n        },\n        \"resultTime\": \"2024-06-01T12:00:00Z\"\n      }\n    ]\n  }\n}",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/tutorial/sensors/airQualitySensor/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"stations/alpha\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      -3.70325,\n      40.4165\n    ]\n  },\n  \"properties\": {\n    \"name\": \"Station Alpha - Madrid Centro\",\n    \"serialNumber\": \"AQS-2024-0042\",\n    \"hasObservations\": [\n      {\n        \"observedProperty\": \"https://w3id.org/ad4gd/air-quality/properties/NO2\",\n        \"hasResult\": {\n          \"http://qudt.org/schema/qudt/value\": 42.7,\n          \"http://qudt.org/schema/qudt/hasUnit\": {\n            \"@id\": \"http://qudt.org/vocab/unit/MicroGM-PER-M3\"\n          }\n        },\n        \"resultTime\": \"2024-06-01T12:00:00Z\"\n      },\n      {\n        \"observedProperty\": \"https://w3id.org/ad4gd/air-quality/properties/pm10\",\n        \"hasResult\": {\n          \"http://qudt.org/schema/qudt/value\": 18.3,\n          \"http://qudt.org/schema/qudt/hasUnit\": {\n            \"@id\": \"http://qudt.org/vocab/unit/MicroGM-PER-M3\"\n          }\n        },\n        \"resultTime\": \"2024-06-01T12:00:00Z\"\n      }\n    ]\n  }\n}",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/tutorial/sensors/airQualitySensor/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://qudt.org/schema/qudt/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.com/sensors/stations/alpha> a geojson:Feature ;\n    rdfs:label \"Station Alpha - Madrid Centro\" ;\n    dcterms:identifier \"AQS-2024-0042\" ;\n    sosa:isFeatureOfInterestOf [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;\n                    ns1:value 1.83e+01 ] ;\n            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/pm10> ;\n            sosa:resultTime \"2024-06-01T12:00:00Z\" ],\n        [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;\n                    ns1:value 4.27e+01 ] ;\n            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/NO2> ;\n            sosa:resultTime \"2024-06-01T12:00:00Z\" ] ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( -3.70325e+00 4.04165e+01 ) ] .\n\n",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/tutorial/sensors/airQualitySensor/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An air quality monitoring sensor station as a GeoJSON Feature\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    properties:\n      type: object\n      properties:\n        name:\n          type: string\n          description: Human-readable name of the sensor station\n          x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n        serialNumber:\n          type: string\n          description: Manufacturer-assigned serial number of the sensor unit\n          x-jsonld-id: http://purl.org/dc/terms/identifier\n        hasObservations:\n          type: array\n          description: Air quality observations recorded at this station\n          items:\n            $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml\n          x-jsonld-id: http://www.w3.org/ns/sosa/isFeatureOfInterestOf\n      required:\n      - name\n",
   "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
   "gitPath": "_sources/airQualitySensor"

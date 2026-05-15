@@ -1,0 +1,38 @@
+{
+  "@context": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld",
+  "type": "Feature",
+  "id": "stations/alpha",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -3.70325,
+      40.4165
+    ]
+  },
+  "properties": {
+    "name": "Station Alpha - Madrid Centro",
+    "serialNumber": "AQS-2024-0042",
+    "hasObservations": [
+      {
+        "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/NO2",
+        "hasResult": {
+          "http://qudt.org/schema/qudt/value": 42.7,
+          "http://qudt.org/schema/qudt/hasUnit": {
+            "@id": "http://qudt.org/vocab/unit/MicroGM-PER-M3"
+          }
+        },
+        "resultTime": "2024-06-01T12:00:00Z"
+      },
+      {
+        "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/pm10",
+        "hasResult": {
+          "http://qudt.org/schema/qudt/value": 18.3,
+          "http://qudt.org/schema/qudt/hasUnit": {
+            "@id": "http://qudt.org/vocab/unit/MicroGM-PER-M3"
+          }
+        },
+        "resultTime": "2024-06-01T12:00:00Z"
+      }
+    ]
+  }
+}

@@ -194,7 +194,7 @@
   "name": "Building Blocks - Air Quality Sensor Blocks",
   "abstract": "Demo register related to rainbow-docs tutorial.\n",
   "description": "register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.\n",
-  "modified": "2026-05-15T12:07:42.496698",
+  "modified": "2026-05-15T12:59:33.406432",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6b01f188cc614cc2e65f4bf86a2623f98f101dfd",
@@ -262,26 +262,26 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
             "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.sosa.properties.observation"
+        "bblocks://ogc.sosa.properties.observation",
+        "bblocks://ogc.geo.features.feature"
       ],
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld",
@@ -308,6 +308,7 @@
       "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/resolvedProperties.json",
       "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/build/tests/tutorial/sensors/airQualitySensor/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",

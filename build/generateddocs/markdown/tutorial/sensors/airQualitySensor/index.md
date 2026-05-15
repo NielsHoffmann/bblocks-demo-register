@@ -20,6 +20,114 @@ property (such as NO₂ concentration or PM10 levels) at a specific point in tim
 Semantic annotations are provided for all locally defined properties. Properties
 inherited from the base GeoJSON Feature and SOSA Observation blocks carry their
 own annotations and do not need to be re-declared.
+## Examples
+
+### Station Alpha - Madrid Centro
+A fixed air quality monitoring station in central Madrid, with NO₂ and PM10 observations.
+
+#### json
+```json
+{
+  "type": "Feature",
+  "id": "stations/alpha",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-3.70325, 40.41650]
+  },
+  "properties": {
+    "name": "Station Alpha - Madrid Centro",
+    "serialNumber": "AQS-2024-0042",
+    "hasObservations": [
+      {
+        "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/NO2",
+        "hasResult": {
+          "http://qudt.org/schema/qudt/value": 42.7,
+          "http://qudt.org/schema/qudt/hasUnit": { "@id": "http://qudt.org/vocab/unit/MicroGM-PER-M3" }
+        },
+        "resultTime": "2024-06-01T12:00:00Z"
+      },
+      {
+        "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/pm10",
+        "hasResult": {
+          "http://qudt.org/schema/qudt/value": 18.3,
+          "http://qudt.org/schema/qudt/hasUnit": { "@id": "http://qudt.org/vocab/unit/MicroGM-PER-M3" }
+        },
+        "resultTime": "2024-06-01T12:00:00Z"
+      }
+    ]
+  }
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld",
+  "type": "Feature",
+  "id": "stations/alpha",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -3.70325,
+      40.4165
+    ]
+  },
+  "properties": {
+    "name": "Station Alpha - Madrid Centro",
+    "serialNumber": "AQS-2024-0042",
+    "hasObservations": [
+      {
+        "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/NO2",
+        "hasResult": {
+          "http://qudt.org/schema/qudt/value": 42.7,
+          "http://qudt.org/schema/qudt/hasUnit": {
+            "@id": "http://qudt.org/vocab/unit/MicroGM-PER-M3"
+          }
+        },
+        "resultTime": "2024-06-01T12:00:00Z"
+      },
+      {
+        "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/pm10",
+        "hasResult": {
+          "http://qudt.org/schema/qudt/value": 18.3,
+          "http://qudt.org/schema/qudt/hasUnit": {
+            "@id": "http://qudt.org/vocab/unit/MicroGM-PER-M3"
+          }
+        },
+        "resultTime": "2024-06-01T12:00:00Z"
+      }
+    ]
+  }
+}
+```
+
+#### ttl
+```ttl
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.com/sensors/stations/alpha> a geojson:Feature ;
+    rdfs:label "Station Alpha - Madrid Centro" ;
+    dcterms:identifier "AQS-2024-0042" ;
+    sosa:isFeatureOfInterestOf [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;
+                    ns1:value 1.83e+01 ] ;
+            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/pm10> ;
+            sosa:resultTime "2024-06-01T12:00:00Z" ],
+        [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;
+                    ns1:value 4.27e+01 ] ;
+            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/NO2> ;
+            sosa:resultTime "2024-06-01T12:00:00Z" ] ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( -3.70325e+00 4.04165e+01 ) ] .
+
+
+```
+
 ## Schema
 
 ```yaml

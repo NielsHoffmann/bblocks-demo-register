@@ -21,12 +21,12 @@
     rdfs:label "Air Quality Sensor Station" ;
     dct:abstract "A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-15T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/r1.tutorial.sensors.airQualitySensor> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/tutorial/sensors/airQualitySensor/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/tutorial/sensors/airQualitySensor/index.json> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/tutorial/sensors/airQualitySensor/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/r1.tutorial.sensors.airQualitySensor> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-05-15"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -36,28 +36,28 @@
         "observations",
         "sensors",
         "sosa" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
-            prof:hasArtifact <https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
-            prof:hasRole role:validation ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/schema.yaml> ;
-            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
+            prof:hasArtifact <https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.geo.features.feature> ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
         <bblocks://ogc.sosa.properties.observation> ;
@@ -68,18 +68,18 @@
 
 <https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Nf86a7e41e18a4f04835240710d81aa51 ;
+    prov:wasAttributedTo _:Nf2239b90e802410f816ac9e473aa1264 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-05-15T12:07:43.321742"^^xsd:dateTime ;
-            prov:startedAtTime "2026-05-15T12:07:43.233744"^^xsd:dateTime ;
+            prov:endedAtTime "2026-05-15T12:59:34.805599"^^xsd:dateTime ;
+            prov:startedAtTime "2026-05-15T12:59:34.628258"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/json" ;
-                    dct:hasVersion "git:9f04f2272605ed7a7a2ea499a7731b8e981ddacf" ;
-                    rdfs:seeAlso <https://nielshoffmann.github.io/bblocks-demo-register/build/register.json> ],
-                [ a prov:Entity ;
                     dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:Nf86a7e41e18a4f04835240710d81aa51 ] .
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:194ba74142394ab63702a0e8a6331852ed7beb92" ;
+                    rdfs:seeAlso <https://nielshoffmann.github.io/bblocks-demo-register/build/register.json> ] ;
+            prov:wasAssociatedWith _:Nf2239b90e802410f816ac9e473aa1264 ] .
 
 <https://nielshoffmann.github.io/bblocks-demo-register/> a skos:ConceptScheme,
         dcat:Catalog,
@@ -89,19 +89,19 @@
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:description """register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-05-15T12:07:42.496698"^^xsd:dateTime ;
+    dct:modified "2026-05-15T12:59:33.406432"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json>,
         <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> ;
     skos:hasTopConcept <bblocks://r1.tutorial.sensors.airQualitySensor> ;
     skos:prefLabel "Building Blocks - Air Quality Sensor Blocks" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
-            dct:type "text/turtle" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.ttl> ],
-        [ rdfs:label "This Building Blocks Register in JSON format" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
             ns2:hasTarget <https://nielshoffmann.github.io/bblocks-demo-register/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.ttl> ],
         [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
@@ -109,7 +109,7 @@
     foaf:homepage <https://nielshoffmann.github.io/bblocks-demo-register/> ;
     bblocks:hasValidationReport <https://nielshoffmann.github.io/bblocks-demo-register/build/tests/report.html> .
 
-_:Nf86a7e41e18a4f04835240710d81aa51 a prov:Agent,
+_:Nf2239b90e802410f816ac9e473aa1264 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.28" ;
