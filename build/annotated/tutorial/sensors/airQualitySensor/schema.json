@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "An air quality monitoring sensor station as a GeoJSON Feature",
+  "allOf": [
+    {
+      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
+    },
+    {
+      "properties": {
+        "properties": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Human-readable name of the sensor station",
+              "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#label"
+            },
+            "serialNumber": {
+              "type": "string",
+              "description": "Manufacturer-assigned serial number of the sensor unit",
+              "x-jsonld-id": "http://purl.org/dc/terms/identifier"
+            },
+            "hasObservations": {
+              "type": "array",
+              "description": "Air quality observations recorded at this station",
+              "items": {
+                "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.json"
+              },
+              "x-jsonld-id": "http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        }
+      }
+    }
+  ]
+}

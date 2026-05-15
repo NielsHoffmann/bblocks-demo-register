@@ -1,0 +1,48 @@
+
+
+{
+  "itemIdentifier": "r1.tutorial.sensors.airQualitySensor",
+  "name": "Air Quality Sensor Station",
+  "abstract": "A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-15T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-05-15",
+  "scope": "unstable",
+  "isProfileOf": [
+    "ogc.geo.features.feature"
+  ],
+  "tags": [
+    "air-quality",
+    "sensors",
+    "observations",
+    "sosa"
+  ],
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ],
+    "ogc.sosa.properties.observation": [
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.geo.features.feature",
+    "ogc.sosa.properties.observation"
+  ],
+  "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld",
+  "schema": {
+    "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/schema.json"
+  },
+  "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/schema.yaml",
+  "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/context.jsonld",
+  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/resolvedProperties.json",
+  "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/",
+  "validationPassed": true,
+  "description": "# Air Quality Sensor Station\n\nAn OGC Block describing a fixed air quality monitoring station as a GeoJSON Feature.\n\nThe feature's `properties` include basic station metadata and a `hasObservations`\narray of SOSA Observation objects, each capturing a measurement of an atmospheric\nproperty (such as NO\u2082 concentration or PM10 levels) at a specific point in time.\n\nSemantic annotations are provided for all locally defined properties. Properties\ninherited from the base GeoJSON Feature and SOSA Observation blocks carry their\nown annotations and do not need to be re-declared.",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An air quality monitoring sensor station as a GeoJSON Feature\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    properties:\n      type: object\n      properties:\n        name:\n          type: string\n          description: Human-readable name of the sensor station\n          x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n        serialNumber:\n          type: string\n          description: Manufacturer-assigned serial number of the sensor unit\n          x-jsonld-id: http://purl.org/dc/terms/identifier\n        hasObservations:\n          type: array\n          description: Air quality observations recorded at this station\n          items:\n            $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml\n          x-jsonld-id: http://www.w3.org/ns/sosa/isFeatureOfInterestOf\n      required:\n      - name\n",
+  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "gitPath": "_sources/airQualitySensor"
+}

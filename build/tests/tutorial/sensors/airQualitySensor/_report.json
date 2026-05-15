@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for r1.tutorial.sensors.airQualitySensor - Air Quality Sensor Station",
+  "bblockName": "Air Quality Sensor Station",
+  "bblockId": "r1.tutorial.sensors.airQualitySensor",
+  "generated": "2026-05-15T12:07:43.219556+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

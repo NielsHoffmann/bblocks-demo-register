@@ -1,154 +1,100 @@
 {
-  "name": "My OGC Building Blocks repository",
-  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
-  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-05-07T11:37:21.546445",
+  "name": "Air Quality Sensor Blocks",
+  "abstract": "Demo register related to rainbow-docs tutorial.\n",
+  "description": "register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.\n",
+  "modified": "2026-05-15T12:07:42.496698",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6c782d91e288340ba681da9c977d75a37c22b8b7",
-      "shortCommitId": "\"6c782d",
-      "date": "2026-05-07T11:32:58+00:00\""
+      "commitId": "\"6b01f188cc614cc2e65f4bf86a2623f98f101dfd",
+      "shortCommitId": "\"6b01f1",
+      "date": "2026-05-12T22:31:51+00:00\""
     }
   },
-  "gitRepository": "https://github.com/opengeospatial/bblocks-template",
-  "gitHubRepository": "https://github.com/opengeospatial/bblocks-template/blob/master/",
-  "baseURL": "https://opengeospatial.github.io/bblocks-template/",
-  "viewerURL": "https://opengeospatial.github.io/bblocks-template/",
-  "validationReport": "https://opengeospatial.github.io/bblocks-template/build/tests/report.html",
-  "validationReportJson": "https://opengeospatial.github.io/bblocks-template/build/tests/report.json",
+  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "gitHubRepository": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/",
+  "baseURL": "https://nielshoffmann.github.io/bblocks-demo-register/",
+  "viewerURL": "https://nielshoffmann.github.io/bblocks-demo-register/",
+  "validationReport": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/report.html",
+  "validationReportJson": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/report.json",
   "imports": [
-    "https://opengeospatial.github.io/bblocks/register.json"
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/register.json"
   ],
   "bblocks": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
-      "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
+      "itemIdentifier": "r1.tutorial.sensors.airQualitySensor",
+      "name": "Air Quality Sensor Station",
+      "abstract": "A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties.",
       "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "dateTimeAddition": "2026-05-15T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-register",
       "version": "0.1",
-      "link": "https://github.com/opengeospatial/bblock-template",
-      "sources": [
-        {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
-        }
-      ],
-      "tags": [
-        "templates"
-      ],
-      "shaclShapes": {
-        "ogc.bbr.template.mySchema": [
-          "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/shapes.shacl"
-        ]
-      },
-      "ldContext": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/context.jsonld",
-      "dateOfLastChange": "2023-04-05",
-      "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.json"
-      },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/context.jsonld",
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks-template/blob/master/build/tests/bbr/template/mySchema/",
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/json-full/bbr/template/mySchema/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/markdown/bbr/template/mySchema/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks-template/bblock/ogc.bbr.template.mySchema"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "dependsOn": [
-        "ogc.bbr.template.mySchema",
+      "dateOfLastChange": "2026-05-15",
+      "scope": "unstable",
+      "isProfileOf": [
         "ogc.geo.features.feature"
       ],
       "tags": [
-        "feature",
-        "examples"
+        "air-quality",
+        "sensors",
+        "observations",
+        "sosa"
       ],
-      "group": "Examples",
-      "highlighted": true,
       "shaclShapes": {
-        "ogc.bbr.template.mySchema": [
-          "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/shapes.shacl"
-        ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.sosa.properties.observation": [
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
         ]
       },
-      "dateOfLastChange": "2023-05-19",
+      "dependsOn": [
+        "ogc.geo.features.feature",
+        "ogc.sosa.properties.observation"
+      ],
+      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/context.jsonld",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/schema.json"
+        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/schema.yaml",
+        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks-template/_sources/myFeature/schema.yaml",
-      "ldContext": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/context.jsonld",
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks-template/_sources/myFeature/",
+      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/schema.yaml",
+      "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/context.jsonld",
+      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/tutorial/sensors/airQualitySensor/resolvedProperties.json",
+      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks-template/blob/master/build/tests/bbr/template/myFeature/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/tutorial/sensors/airQualitySensor/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/tutorial/sensors/airQualitySensor/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks-template/bblock/ogc.bbr.template.myFeature"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/r1.tutorial.sensors.airQualitySensor"
         }
       }
     }
   ],
-  "remoteCacheDir": "https://opengeospatial.github.io/bblocks-template/build/annotated/_cache",
+  "remoteCacheDir": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/register.json",
+      "href": "https://nielshoffmann.github.io/bblocks-demo-register/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/bblocks.ttl",
+      "href": "https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/bblocks.jsonld",
+      "href": "https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
