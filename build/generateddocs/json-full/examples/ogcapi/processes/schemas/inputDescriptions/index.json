@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+  "name": "Example OGC API Processes instance input descriptions",
+  "abstract": "Collection of input descriptions",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-17T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-06-02",
+  "maturity": "development",
+  "tags": [
+    "examples",
+    "ogc api",
+    "ogc api processes"
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+  ],
+  "schema": {
+    "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+    "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.json"
+  },
+  "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+  "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld",
+  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
+  "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/",
+  "validationPassed": true,
+  "annotatedSchema": "anyOf:\n- $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml\n",
+  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "gitPath": "_sources/ogcapi/processes/schemas/inputDescriptions"
+}

@@ -1,0 +1,5 @@
+path	@id	schema
+/dataset		/github/workspace/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml
+/n_neighbors	https://purl.stelselcatalogus.nl/id/mkg/BRTkenmerk_nummer-inrichtingselement	/github/workspace/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml
+/leaf_size	http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verkeerruimte	/github/workspace/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml
+/output_column		/github/workspace/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml

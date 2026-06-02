@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
+  "bblockName": "Localoutlier process output schema",
+  "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+  "generated": "2026-06-02T20:23:22.851602+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

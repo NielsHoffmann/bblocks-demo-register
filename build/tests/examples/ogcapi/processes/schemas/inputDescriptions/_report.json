@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.inputDescriptions - Example OGC API Processes instance input descriptions",
+  "bblockName": "Example OGC API Processes instance input descriptions",
+  "bblockId": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+  "generated": "2026-06-02T20:23:23.754965+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

@@ -1,0 +1,7 @@
+Validation report for tikouka.examples.transforms.ttl - xml to ttl Transforms example
+Generated 2026-06-02T20:23:22.862333+00:00
+=== Files ===
+Using examples/dcat-title.rdf from examples
+Output Turtle example_1_1.rdf.rdf.ttl created
+=== End Files ===
+

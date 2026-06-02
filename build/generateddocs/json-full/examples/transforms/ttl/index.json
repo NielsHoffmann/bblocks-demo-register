@@ -1,0 +1,75 @@
+
+
+{
+  "itemIdentifier": "tikouka.examples.transforms.ttl",
+  "name": "xml to ttl Transforms example",
+  "highlighted": false,
+  "abstract": "A building block to transform xml/rdf to ttl",
+  "status": "under-development",
+  "dateTimeAddition": "2026-06-02T11:31:00+02:00",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-02",
+  "shaclShapes": {},
+  "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/ttl/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/build/tests/examples/transforms/ttl/",
+  "transforms": [
+    {
+      "id": "to-ttl",
+      "type": "python",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/rdf+xml",
+            "label": "RDF/XML",
+            "defaultExtension": "rdf"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "text/turtle",
+            "defaultExtension": "ttl",
+            "label": "RDF/Turtle"
+          }
+        ]
+      },
+      "metadata": {
+        "dependencies": {
+          "pip": "rdflib",
+          "python": ">=3.10"
+        }
+      },
+      "code": "import rdflib\ndata = rdflib.Graph()\ndata.parse(data=input_data, format=\"xml\")\noutput_data = data.serialize(format=\"turtle\")"
+    }
+  ],
+  "examples": [
+    {
+      "title": "rdf/xml to ttl example",
+      "snippets": [
+        {
+          "language": "rdf/xml",
+          "ref": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/ttl/examples/dcat-title.rdf",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
+          "transformResults": {
+            "to-ttl": {
+              "success": true,
+              "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/transforms/ttl/transforms/example_1_1.to-ttl.ttl"
+            }
+          },
+          "code": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:adms=\"http://www.w3.org/ns/adms#\"\n         xmlns:cnt=\"http://www.w3.org/2011/content#\"\n         xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n         xmlns:dcat=\"http://www.w3.org/ns/dcat#\"\n         xmlns:dct=\"http://purl.org/dc/terms/\"\n         xmlns:dctype=\"http://purl.org/dc/dcmitype/\"\n         xmlns:dqv=\"http://www.w3.org/ns/dqv#\"\n         xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n         xmlns:geodcatap=\"http://data.europa.eu/930/\"\n         xmlns:gsp=\"http://www.opengis.net/ont/geosparql#\"\n         xmlns:locn=\"http://www.w3.org/ns/locn#\"\n         xmlns:org=\"http://www.w3.org/ns/org#\"\n         xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n         xmlns:prov=\"http://www.w3.org/ns/prov#\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n         xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n         xmlns:schema=\"http://schema.org/\"\n         xmlns:sdmx-attribute=\"http://purl.org/linked-data/sdmx/2009/attribute#\"\n         xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n         xmlns:vcard=\"http://www.w3.org/2006/vcard/ns#\">\n   <dcat:Dataset rdf:about=\"\">\n      \n        \n          \n            Stads- en Dorpsgezichten\n          \n          \n            beschermde gezichten\n          \n          \n      \n    <dct:identifier>4e2ef670-cddd-11dd-ad8b-0800200c9a66</dct:identifier>\n      <dct:title>Stads- en Dorpsgezichten</dct:title>\n   </dcat:Dataset>\n</rdf:RDF>\n"
+        },
+        {
+          "language": "ttl",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.ttl",
+          "code": "@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n\n<> a dcat:Dataset ;\n    dcterms:identifier \"4e2ef670-cddd-11dd-ad8b-0800200c9a66\" ;\n    dcterms:title \"Stads- en Dorpsgezichten\" .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "gitPath": "_sources/transforms/ttl"
+}

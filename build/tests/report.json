@@ -1,24 +1,127 @@
 {
   "summary": {
-    "total": 1,
-    "passed": 1,
+    "total": 12,
+    "passed": 12,
     "failed": 0,
     "result": true
   },
   "bblocks": {
-    "r1.tutorial.sensors.airQualitySensor": {
-      "title": "Validation report for r1.tutorial.sensors.airQualitySensor - Air Quality Sensor Station",
-      "bblockName": "Air Quality Sensor Station",
-      "bblockId": "r1.tutorial.sensors.airQualitySensor",
-      "generated": "2026-05-15T12:59:34.613738+00:00",
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
+      "bblockName": "Localoutlier process input schema",
+      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+      "generated": "2026-06-02T20:23:22.846715+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
+      "bblockName": "Localoutlier process output schema",
+      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "generated": "2026-06-02T20:23:22.851602+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.transforms.ttl": {
+      "title": "Validation report for tikouka.examples.transforms.ttl - xml to ttl Transforms example",
+      "bblockName": "xml to ttl Transforms example",
+      "bblockId": "tikouka.examples.transforms.ttl",
+      "generated": "2026-06-02T20:23:22.862425+00:00",
       "result": true,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/tutorial/sensors/airQualitySensor/example_1_1.json",
-            "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/tutorial/sensors/airQualitySensor/example_1_1.json",
+            "filename": "build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
+            "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/rdf+xml"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/dcat-title.rdf from examples"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.rdf.rdf.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.rdf.rdf.ttl created"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.transforms.xslt-example": {
+      "title": "Validation report for tikouka.examples.transforms.xslt-example - XSLT Transforms example",
+      "bblockName": "XSLT Transforms example",
+      "bblockId": "tikouka.examples.transforms.xslt-example",
+      "generated": "2026-06-02T20:23:22.883742+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.transforms.xslt2": {
+      "title": "Validation report for tikouka.examples.transforms.xslt2 - XSLT2 Transforms example",
+      "bblockName": "XSLT2 Transforms example",
+      "bblockId": "tikouka.examples.transforms.xslt2",
+      "generated": "2026-06-02T20:23:22.899925+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.airQualitySensor": {
+      "title": "Validation report for tikouka.examples.airQualitySensor - Air Quality Sensor Station",
+      "bblockName": "Air Quality Sensor Station",
+      "bblockId": "tikouka.examples.airQualitySensor",
+      "generated": "2026-06-02T20:23:23.730513+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/airQualitySensor/example_1_1.json",
+            "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/airQualitySensor/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -72,50 +175,6 @@
               "entries": [
                 {
                   "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl",
-                  "focusNodes": {
-                    "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
-                      "nodes": [
-                        "<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf",
-                        "<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf"
-                      ]
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testResult>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: <https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf,<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -129,13 +188,13 @@
                         "<https://example.com/sensors/stations/alpha>"
                       ]
                     },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
+                    "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape": {
                       "nodes": []
                     },
-                    "geojson:LinkShape": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
@@ -143,7 +202,51 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: <https://example.com/sensors/stations/alpha>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: <https://example.com/sensors/stations/alpha>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl",
+                  "focusNodes": {
+                    "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
+                      "nodes": [
+                        "<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf",
+                        "<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testResult>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: <https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf,<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n"
                 }
               ]
             }
@@ -154,6 +257,90 @@
       "counts": {
         "total": 1,
         "passed": 1,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription - Localoutlier process input description",
+      "bblockName": "Localoutlier process input description",
+      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
+      "generated": "2026-06-02T20:23:23.743100+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
+      "bblockName": "Localoutlier process output description",
+      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
+      "generated": "2026-06-02T20:23:23.749843+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.ogcapi.processes.schemas.inputDescriptions": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.inputDescriptions - Example OGC API Processes instance input descriptions",
+      "bblockName": "Example OGC API Processes instance input descriptions",
+      "bblockId": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+      "generated": "2026-06-02T20:23:23.754965+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription - Localoutlier process description",
+      "bblockName": "Localoutlier process description",
+      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+      "generated": "2026-06-02T20:23:23.761405+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.ogcapi.processes.schemas.outputDescriptions": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.outputDescriptions - Example OGC API Processes instance output descriptions",
+      "bblockName": "Example OGC API Processes instance output descriptions",
+      "bblockId": "tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+      "generated": "2026-06-02T20:23:23.766482+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "tikouka.examples.ogcapi.processes.custom-api": {
+      "title": "Validation report for tikouka.examples.ogcapi.processes.custom-api - Demo OGC API processes instance - LOF",
+      "bblockName": "Demo OGC API processes instance - LOF",
+      "bblockId": "tikouka.examples.ogcapi.processes.custom-api",
+      "generated": "2026-06-02T20:23:23.769852+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
         "failed": 0
       }
     }
