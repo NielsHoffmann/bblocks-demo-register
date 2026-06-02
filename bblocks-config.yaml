@@ -1,21 +1,23 @@
 # A short, descriptive name of this building block collection
-name: Air Quality Sensor Blocks
+name: Demo block collection
 
 # Short abstract for this collection (optional)
 abstract: |
-  Demo register related to rainbow-docs tutorial.
+  Demo register 
 
 # Description for this collection (optional)
 description: |
   register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: r1.tutorial.sensors.
+# identifier-prefix: r1.tutorial.sensors.
+identifier-prefix: tikouka.examples.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
   - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  - https://ogcincubator.github.io/bblocks-ogcapi-processes
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version

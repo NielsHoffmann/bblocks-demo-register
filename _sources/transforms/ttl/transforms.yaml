@@ -1,0 +1,18 @@
+transforms:
+  - id: to-ttl
+    type: python
+    inputs:
+      mediaTypes: [ application/rdf+xml ]
+    outputs:
+      mediaTypes:
+        - mimeType: text/turtle
+          defaultExtension: ttl
+    metadata:
+      dependencies:
+        pip: rdflib
+        python: ">=3.10"   # optional; skipped if not met
+    code: |
+      import rdflib
+      data = rdflib.Graph()
+      data.parse(data=input_data, format="xml")
+      output_data = data.serialize(format="turtle")

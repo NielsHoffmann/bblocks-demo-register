@@ -1,0 +1,5 @@
+examples:
+  - title: iso19139 to dcat-ap example
+    snippets:
+      - language: xml
+        ref: examples/simple-test.xml

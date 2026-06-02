@@ -1,0 +1,5 @@
+transforms:
+  - id: dcat-title
+    description: This transform extracts the title from DCAT-AP records, using an XSLT stylesheet.
+    type: xslt2
+    ref: transforms/dcat-title.xsl

@@ -1,5 +1,9 @@
 # Air Quality Sensor Station
 
+__NOTE__ This block is part of the OGC Rainbow Tutorials: https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/introduction
+
+---
+
 An OGC Block describing a fixed air quality monitoring station as a GeoJSON Feature.
 
 The feature's `properties` include basic station metadata and a `hasObservations`
