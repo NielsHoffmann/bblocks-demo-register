@@ -3,13 +3,13 @@
 {
   "itemIdentifier": "tikouka.examples.transforms.xslt-example",
   "name": "XSLT Transforms example",
-  "highlighted": true,
+  "highlighted": false,
   "abstract": "A sample building block to showcase transforms",
   "status": "under-development",
   "dateTimeAddition": "2026-05-08T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-02",
+  "dateOfLastChange": "2026-06-17",
   "shaclShapes": {},
   "schema": {
     "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.yaml",

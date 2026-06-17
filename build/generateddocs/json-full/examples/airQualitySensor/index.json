@@ -8,7 +8,7 @@
   "dateTimeAddition": "2026-05-15T00:00:00Z",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-02",
+  "dateOfLastChange": "2026-06-17",
   "scope": "unstable",
   "isProfileOf": [
     "ogc.geo.features.feature"
@@ -20,16 +20,16 @@
     "sosa"
   ],
   "shaclShapes": {
-    "ogc.geo.features.feature": [
-      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-    ],
     "ogc.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ]
   },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.sosa.properties.observation"
+    "ogc.sosa.properties.observation",
+    "ogc.geo.features.feature"
   ],
   "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/context.jsonld",
   "schema": {
@@ -63,7 +63,7 @@
         {
           "language": "ttl",
           "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/airQualitySensor/example_1_1.ttl",
-          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://qudt.org/schema/qudt/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.com/sensors/stations/alpha> a geojson:Feature ;\n    rdfs:label \"Station Alpha - Madrid Centro\" ;\n    dcterms:identifier \"AQS-2024-0042\" ;\n    sosa:isFeatureOfInterestOf [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;\n                    ns1:value 1.83e+01 ] ;\n            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/pm10> ;\n            sosa:resultTime \"2024-06-01T12:00:00Z\" ],\n        [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;\n                    ns1:value 4.27e+01 ] ;\n            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/NO2> ;\n            sosa:resultTime \"2024-06-01T12:00:00Z\" ] ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( -3.70325e+00 4.04165e+01 ) ] .\n\n"
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://qudt.org/schema/qudt/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.com/sensors/stations/alpha> a geojson:Feature ;\n    rdfs:label \"Station Alpha - Madrid Centro\" ;\n    dcterms:identifier \"AQS-2024-0042\" ;\n    sosa:isFeatureOfInterestOf [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;\n                    ns1:value 4.27e+01 ] ;\n            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/NO2> ;\n            sosa:resultTime \"2024-06-01T12:00:00Z\" ],\n        [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;\n                    ns1:value 1.83e+01 ] ;\n            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/pm10> ;\n            sosa:resultTime \"2024-06-01T12:00:00Z\" ] ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( -3.70325e+00 4.04165e+01 ) ] .\n\n"
         }
       ]
     }

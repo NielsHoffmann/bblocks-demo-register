@@ -119,12 +119,12 @@ A fixed air quality monitoring station in central Madrid, with NO₂ and PM10 ob
     rdfs:label "Station Alpha - Madrid Centro" ;
     dcterms:identifier "AQS-2024-0042" ;
     sosa:isFeatureOfInterestOf [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;
-                    ns1:value 1.83e+01 ] ;
-            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/pm10> ;
-            sosa:resultTime "2024-06-01T12:00:00Z" ],
-        [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;
                     ns1:value 4.27e+01 ] ;
             sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/NO2> ;
+            sosa:resultTime "2024-06-01T12:00:00Z" ],
+        [ sosa:hasResult [ ns1:hasUnit <http://qudt.org/vocab/unit/MicroGM-PER-M3> ;
+                    ns1:value 1.83e+01 ] ;
+            sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/pm10> ;
             sosa:resultTime "2024-06-01T12:00:00Z" ] ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( -3.70325e+00 4.04165e+01 ) ] .

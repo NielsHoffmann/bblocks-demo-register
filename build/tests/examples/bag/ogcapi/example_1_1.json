@@ -1,0 +1,47 @@
+{
+  "type": "Feature",
+  "id": "c3de65af-ca00-5971-87cd-04d4bdd456f4",
+  "properties": {
+    "id": "c3de65af-ca00-5971-87cd-04d4bdd456f4",
+    "\"verblijfsobject\"": "verblijfsobject",
+    "aantal_verblijfsobjecten": 1,
+    "bouwjaar": 2024,
+    "documentdatum": "2024-12-06",
+    "documentnummer": "28041487 OD",
+    "gebruiksdoel": "industriefunctie",
+    "geconstateerd": "N",
+    "identificatie": "0394100003049202",
+    "rdf_seealso": "http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202",
+    "status": "Bouwvergunning verleend",
+    "verblijfsobject.href": [
+      "https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed"
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          4.69778280718237,
+          52.3169768690814
+        ],
+        [
+          4.69818701155428,
+          52.3167762314658
+        ],
+        [
+          4.69826126055391,
+          52.3168324071802
+        ],
+        [
+          4.69785707066875,
+          52.3170330451325
+        ],
+        [
+          4.69778280718237,
+          52.3169768690814
+        ]
+      ]
+    ]
+  }
+}
