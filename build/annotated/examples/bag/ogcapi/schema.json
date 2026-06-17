@@ -12,23 +12,5 @@
         }
       }
     }
-  ],
-  "x-jsonld-extra-terms": {
-    "verblijfsobject": "https://catalogus.kadaster.nl/bag/nl/page/Verblijfsobject",
-    "gebruiksdoel": "https://catalogus.kadaster.nl/bag/nl/page/Gebruiksdoel",
-    "bouwjaar": "https://data.crow.nl/imbor/term/88878766-6d5a-4382-8f91-2275b0db94e7",
-    "documentdatum": "https://catalogus.kadaster.nl/bag/nl/page/Documentdatum",
-    "documentnummer": "https://catalogus.kadaster.nl/bag/nl/page/Documentnummer",
-    "geconstateerd": "https://catalogus.kadaster.nl/bag/nl/page/Geconstateerd",
-    "identificatie": "https://catalogus.kadaster.nl/bag/nl/page/Identificatie",
-    "status": "https://catalogus.kadaster.nl/bag/nl/page/Status",
-    "rdf_seealso": {
-      "x-jsonld-id": "https://www.w3.org/2000/01/rdf-schema#seeAlso",
-      "x-jsonld-type": "@id"
-    },
-    "verblijfsobject.href": {
-      "x-jsonld-id": "https://www.w3.org/1999/xhtml/vocab#href",
-      "x-jsonld-type": "@id"
-    }
-  }
+  ]
 }

@@ -1,0 +1,11 @@
+path	@id	schema
+/aantal_verblijfsobjecten		/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/bouwjaar	https://data.crow.nl/imbor/term/88878766-6d5a-4382-8f91-2275b0db94e7	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/documentdatum	https://catalogus.kadaster.nl/bag/nl/page/Documentdatum	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/documentnummer	https://catalogus.kadaster.nl/bag/nl/page/Documentnummer	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/gebruiksdoel	https://catalogus.kadaster.nl/bag/nl/page/Gebruiksdoel	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/geconstateerd	https://catalogus.kadaster.nl/bag/nl/page/Geconstateerd	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/identificatie	https://catalogus.kadaster.nl/bag/nl/page/Identificatie	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/rdf_seealso	https://www.w3.org/2000/01/rdf-schema#seeAlso	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/status	https://catalogus.kadaster.nl/bag/nl/page/Status	/github/workspace/build/annotated/examples/bag/schema/schema.yaml
+/verblijfsobject	https://catalogus.kadaster.nl/bag/nl/page/Verblijfsobject	/github/workspace/build/annotated/examples/bag/schema/schema.yaml

@@ -49,6 +49,10 @@
       },
       "@id": "rdfs:seeAlso"
     },
+    "verblijfsobject.href": {
+      "@id": "https://www.w3.org/1999/xhtml/vocab#href",
+      "@type": "@id"
+    },
     "bouwjaar": "https://data.crow.nl/imbor/term/88878766-6d5a-4382-8f91-2275b0db94e7",
     "documentdatum": "https://catalogus.kadaster.nl/bag/nl/page/Documentdatum",
     "documentnummer": "https://catalogus.kadaster.nl/bag/nl/page/Documentnummer",
@@ -61,10 +65,6 @@
     },
     "status": "https://catalogus.kadaster.nl/bag/nl/page/Status",
     "verblijfsobject": "https://catalogus.kadaster.nl/bag/nl/page/Verblijfsobject",
-    "verblijfsobject.href": {
-      "@id": "https://www.w3.org/1999/xhtml/vocab#href",
-      "@type": "@id"
-    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

@@ -13,20 +13,29 @@ properties:
     type: integer
   bouwjaar:
     type: integer
+    x-jsonld-id: https://data.crow.nl/imbor/term/88878766-6d5a-4382-8f91-2275b0db94e7
   documentdatum:
     type: string
+    x-jsonld-id: https://catalogus.kadaster.nl/bag/nl/page/Documentdatum
   documentnummer:
     type: string
+    x-jsonld-id: https://catalogus.kadaster.nl/bag/nl/page/Documentnummer
   gebruiksdoel:
     type: string
+    x-jsonld-id: https://catalogus.kadaster.nl/bag/nl/page/Gebruiksdoel
   geconstateerd:
     type: string
+    x-jsonld-id: https://catalogus.kadaster.nl/bag/nl/page/Geconstateerd
   identificatie:
     type: string
+    x-jsonld-id: https://catalogus.kadaster.nl/bag/nl/page/Identificatie
   rdf_seealso:
     type: string
+    x-jsonld-id: https://www.w3.org/2000/01/rdf-schema#seeAlso
+    x-jsonld-type: '@id'
   status:
     type: string
+    x-jsonld-id: https://catalogus.kadaster.nl/bag/nl/page/Status
   verblijfsobject:
     description: 'Representeert een relatie tussen dit feature en het gerefereerde
       feature. '
@@ -35,4 +44,9 @@ properties:
       x-ogc-role: reference
       x-ogc-collectionId: verblijfsobject
     type: array
+    x-jsonld-id: https://catalogus.kadaster.nl/bag/nl/page/Verblijfsobject
 additionalProperties: true
+x-jsonld-extra-terms:
+  verblijfsobject.href:
+    x-jsonld-id: https://www.w3.org/1999/xhtml/vocab#href
+    x-jsonld-type: '@id'

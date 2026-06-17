@@ -26,21 +26,20 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "tikouka.examples.bag.schema"
+    "tikouka.examples.bag.schema",
+    "ogc.geo.features.feature"
   ],
-  "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
   "schema": {
     "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml",
     "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json"
   },
   "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/schema.yaml",
-  "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/context.jsonld",
+  "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
   "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/resolvedProperties.json",
   "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/",
   "validationPassed": true,
   "testOutputs": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/build/tests/examples/bag/ogcapi/",
-  "description": "# Bag Pand Feature definition",
+  "description": "# Bag Pand Feature definitie\n\n(Let op: alleen als demo bedoelt!)\n\n- Dit building block dient als voorbeeld hoe schema's gecombineerd kunnen worden.\n\nDe basis definitie van een BAG Pand wordt hier gecombineerd met het OGC bouwblok van een Feature. Hiermee ontstaat een Feature met de eigenschappen van een Pand.\n\n- Semantische verrijking\n\nIn de 'semantic uplift' sectie van het bag schema (andere building block) staat een JSON-LD context document wat de link legt tussen het schema en de definities in de begrippenkaders.\n\n- Examples\n\nIn het voorbeeld zie je in de mapview hoe de json-ld context gebruikt wordt om de definities met de eigenschappen te verbinden. Hierdoor wordt expliciet wat er precies bedoelt wordt met verblijfsobject of documentnummer.",
   "examples": [
     {
       "title": "Pand",
@@ -61,12 +60,12 @@
         {
           "language": "ttl",
           "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/bag/ogcapi/example_1_1.ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://catalogus.kadaster.nl/bag/nl/page/> .\n@prefix ns2: <https://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns3: <https://www.w3.org/1999/xhtml/vocab#> .\n@prefix ns4: <https://data.crow.nl/imbor/term/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4> a geojson:Feature ;\n    ns1:Documentdatum \"2024-12-06\" ;\n    ns1:Documentnummer \"28041487 OD\" ;\n    ns1:Gebruiksdoel \"industriefunctie\" ;\n    ns1:Geconstateerd \"N\" ;\n    ns1:Identificatie \"0394100003049202\" ;\n    ns1:Status \"Bouwvergunning verleend\" ;\n    ns4:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 4.697783e+00 5.231698e+01 ) ( 4.698187e+00 5.231678e+01 ) ( 4.698261e+00 5.231683e+01 ) ( 4.697857e+00 5.231703e+01 ) ( 4.697783e+00 5.231698e+01 ) ) ) ] ;\n    ns3:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;\n    ns2:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .\n\n"
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://catalogus.kadaster.nl/bag/nl/page/> .\n@prefix ns2: <https://www.w3.org/1999/xhtml/vocab#> .\n@prefix ns3: <https://data.crow.nl/imbor/term/> .\n@prefix ns4: <https://www.w3.org/2000/01/rdf-schema#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4> a geojson:Feature ;\n    ns1:Documentdatum \"2024-12-06\" ;\n    ns1:Documentnummer \"28041487 OD\" ;\n    ns1:Gebruiksdoel \"industriefunctie\" ;\n    ns1:Geconstateerd \"N\" ;\n    ns1:Identificatie \"0394100003049202\" ;\n    ns1:Status \"Bouwvergunning verleend\" ;\n    ns3:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 4.697783e+00 5.231698e+01 ) ( 4.698187e+00 5.231678e+01 ) ( 4.698261e+00 5.231683e+01 ) ( 4.697857e+00 5.231703e+01 ) ( 4.697783e+00 5.231698e+01 ) ) ) ] ;\n    ns2:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;\n    ns4:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .\n\n"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: BAG Pand als GeoJSON Feature\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    properties:\n      $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml\nx-jsonld-extra-terms:\n  verblijfsobject: https://catalogus.kadaster.nl/bag/nl/page/Verblijfsobject\n  gebruiksdoel: https://catalogus.kadaster.nl/bag/nl/page/Gebruiksdoel\n  bouwjaar: https://data.crow.nl/imbor/term/88878766-6d5a-4382-8f91-2275b0db94e7\n  documentdatum: https://catalogus.kadaster.nl/bag/nl/page/Documentdatum\n  documentnummer: https://catalogus.kadaster.nl/bag/nl/page/Documentnummer\n  geconstateerd: https://catalogus.kadaster.nl/bag/nl/page/Geconstateerd\n  identificatie: https://catalogus.kadaster.nl/bag/nl/page/Identificatie\n  status: https://catalogus.kadaster.nl/bag/nl/page/Status\n  rdf_seealso:\n    x-jsonld-id: https://www.w3.org/2000/01/rdf-schema#seeAlso\n    x-jsonld-type: '@id'\n  verblijfsobject.href:\n    x-jsonld-id: https://www.w3.org/1999/xhtml/vocab#href\n    x-jsonld-type: '@id'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: BAG Pand als GeoJSON Feature\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    properties:\n      $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml\n",
   "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
   "gitPath": "_sources/bag/ogcapi"
 }

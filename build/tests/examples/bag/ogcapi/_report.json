@@ -2,7 +2,7 @@
   "title": "Validation report for tikouka.examples.bag.ogcapi - BAG-Pand",
   "bblockName": "BAG-Pand",
   "bblockId": "tikouka.examples.bag.ogcapi",
-  "generated": "2026-06-17T14:48:00.476487+00:00",
+  "generated": "2026-06-17T15:30:10.150746+00:00",
   "result": true,
   "items": [
     {
@@ -75,13 +75,13 @@
                 "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
                 "geojson:FeatureShape": {
                   "nodes": [
                     "<https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>"
                   ]
-                },
-                "geojson:GeometryShape/sh:or/rdf:first": {
-                  "nodes": []
                 },
                 "geojson:GeometryShape": {
                   "nodes": []
@@ -91,7 +91,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n"
             }
           ]
         }

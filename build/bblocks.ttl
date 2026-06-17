@@ -23,10 +23,10 @@
     dct:created "2026-05-15T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.airQualitySensor> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/airQualitySensor/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/airQualitySensor/index.json> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/airQualitySensor/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/airQualitySensor/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -36,28 +36,28 @@
         "observations",
         "sensors",
         "sosa" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/context.jsonld> ;
-            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
             prof:hasArtifact <https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.geo.features.feature> ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
         <bblocks://ogc.sosa.properties.observation> ;
@@ -73,12 +73,12 @@
     rdfs:label "BAG-Pand" ;
     dct:abstract "A GeoJSON Feature beschrijving van een BAG Pand."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/ogcapi/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/ogcapi/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.bag.ogcapi> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/ogcapi/index.md> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/ogcapi/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -89,26 +89,25 @@
         "basisregister",
         "pdok" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.geo.features.feature> ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
         <bblocks://tikouka.examples.bag.schema> ;
-    bblocks:hasSourceJsonLdContext <https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -120,10 +119,10 @@
     rdfs:label "Demo OGC API processes instance - LOF" ;
     dct:abstract "An example of an OGC API Processes implementation using building blocks - Local Outlier Factor"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/custom-api/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.custom-api> ] ;
     dct:hasVersion "1.0" ;
@@ -162,12 +161,12 @@
     rdfs:label "xml to ttl Transforms example" ;
     dct:abstract "A building block to transform xml/rdf to ttl"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-06-02T11:31:00+02:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/ttl/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/ttl/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.ttl> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/ttl/index.json> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/ttl/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -183,10 +182,10 @@
     rdfs:label "XSLT Transforms example" ;
     dct:abstract "A sample building block to showcase transforms"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-08T11:31:00+02:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.xslt-example> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt-example/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.xslt-example> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt-example/index.json> ] ;
     dct:hasVersion "0.1" ;
@@ -212,12 +211,12 @@
     rdfs:label "XSLT2 Transforms example" ;
     dct:abstract "A sample building block to showcase transforms"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-11T11:31:00+02:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt2/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt2/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.xslt2> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt2/index.json> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt2/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -228,18 +227,18 @@
 
 <https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N89923fa52d634d87ad715f20231038dd ;
+    prov:wasAttributedTo _:Ne5cfe50868b2492b8c098207a3c856d0 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-06-17T14:48:01.821186"^^xsd:dateTime ;
-            prov:startedAtTime "2026-06-17T14:48:01.641132"^^xsd:dateTime ;
+            prov:endedAtTime "2026-06-17T15:30:11.398848"^^xsd:dateTime ;
+            prov:startedAtTime "2026-06-17T15:30:11.264273"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/json" ;
-                    dct:hasVersion "git:49d97e873ccf87e1832f263802bacf549a001ac6" ;
-                    rdfs:seeAlso <https://nielshoffmann.github.io/bblocks-demo-register/build/register.json> ],
-                [ a prov:Entity ;
                     dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N89923fa52d634d87ad715f20231038dd ] .
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:f6198a9a10f87f86a0d98205c50f9cfba451c0fd" ;
+                    rdfs:seeAlso <https://nielshoffmann.github.io/bblocks-demo-register/build/register.json> ] ;
+            prov:wasAssociatedWith _:Ne5cfe50868b2492b8c098207a3c856d0 ] .
 
 <bblocks://tikouka.examples.bag.schema> a skos:Concept,
         dcat:Dataset,
@@ -250,10 +249,10 @@
     dct:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/schema/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.bag.schema> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.bag.schema> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/schema/index.md> ] ;
     dct:hasVersion "0.8" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -267,10 +266,15 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.json> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml> ;
             prof:hasRole role:schema ] ;
+    bblocks:hasSourceJsonLdContext <https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/schema/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -284,10 +288,10 @@
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/inputDescriptions/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.inputDescriptions> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.inputDescriptions> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -297,17 +301,17 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -319,10 +323,10 @@
     rdfs:label "Localoutlier process description" ;
     dct:abstract "Process description for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.md> ] ;
     dct:hasVersion "1.0" ;
@@ -338,12 +342,12 @@
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.process>,
         <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription>,
@@ -358,12 +362,12 @@
     rdfs:label "Example OGC API Processes instance output descriptions" ;
     dct:abstract "Collection of output descriptions"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.outputDescriptions> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/outputDescriptions/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/outputDescriptions/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.outputDescriptions> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/outputDescriptions/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -372,17 +376,17 @@
     dcat:keyword "examples",
         "ogc api",
         "ogc api processes" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -433,12 +437,12 @@
     rdfs:label "Localoutlier process input schema" ;
     dct:abstract "Input schema for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -448,17 +452,17 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:hasSourceJsonLdContext <https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -470,10 +474,10 @@
     rdfs:label "Localoutlier process output description" ;
     dct:abstract "Output description for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -485,17 +489,17 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.outputDescription>,
         <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -508,12 +512,12 @@
     rdfs:label "Localoutlier process output schema" ;
     dct:abstract "Output schema for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -523,12 +527,12 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -541,7 +545,7 @@
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:description """register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-06-17T14:47:53.486861"^^xsd:dateTime ;
+    dct:modified "2026-06-17T15:30:03.972343"^^xsd:dateTime ;
     owl:imports <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json>,
         <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> ;
@@ -575,7 +579,7 @@
     foaf:homepage <https://nielshoffmann.github.io/bblocks-demo-register/> ;
     bblocks:hasValidationReport <https://nielshoffmann.github.io/bblocks-demo-register/build/tests/report.html> .
 
-_:N89923fa52d634d87ad715f20231038dd a prov:Agent,
+_:Ne5cfe50868b2492b8c098207a3c856d0 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.31" ;

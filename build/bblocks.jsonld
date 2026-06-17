@@ -194,7 +194,7 @@
   "name": "Building Blocks - Demo block collection",
   "abstract": "Demo register \n",
   "description": "register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.\n",
-  "modified": "2026-06-17T14:47:53.486861",
+  "modified": "2026-06-17T15:30:03.972343",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"89c04825320d476cbe210a33c6f4a1b40078df17",
@@ -288,6 +288,12 @@
       ],
       "highlighted": false,
       "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "schema": [
         {
           "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml",
@@ -303,6 +309,7 @@
         }
       ],
       "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/schema/schema.json",
+      "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/schema/context.jsonld",
       "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/resolvedProperties.json",
       "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/schema/",
       "validationPassed": true,
@@ -328,6 +335,72 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Bag eigenschappen",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://nielshoffmann.github.io/bblocks-demo-register/"
+      }
+    },
+    {
+      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "name": "Localoutlier process output schema",
+      "abstract": "Output schema for the localoutlier process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-06-17",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
+      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+        }
+      },
+      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Localoutlier process output schema",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -402,73 +475,6 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Localoutlier process input schema",
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "dependsOn": null,
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://nielshoffmann.github.io/bblocks-demo-register/"
-      }
-    },
-    {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "name": "Localoutlier process output schema",
-      "abstract": "Output schema for the localoutlier process",
-      "status": "under-development",
-      "dateTimeAddition": "2025-12-17T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
-      "maturity": "development",
-      "tags": [
-        "examples",
-        "ogc api",
-        "ogc api processes"
-      ],
-      "shaclShapes": null,
-      "schema": [
-        {
-          "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
-        }
-      },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Localoutlier process output schema",
-      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
@@ -749,15 +755,9 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.geo.features.feature",
-        "bblocks://tikouka.examples.bag.schema"
+        "bblocks://tikouka.examples.bag.schema",
+        "bblocks://ogc.geo.features.feature"
       ],
-      "ldContext": {
-        "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "schema": [
         {
           "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml",
@@ -773,7 +773,12 @@
         }
       ],
       "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/schema.yaml",
-      "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/context.jsonld",
+      "ldContext": {
+        "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/resolvedProperties.json",
       "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/",
       "validationPassed": true,
@@ -829,26 +834,26 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
             "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.sosa.properties.observation"
+        "bblocks://ogc.sosa.properties.observation",
+        "bblocks://ogc.geo.features.feature"
       ],
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/context.jsonld",
@@ -923,8 +928,8 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription"
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
       ],
       "schema": [
         {
@@ -1147,9 +1152,9 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
         "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
-        "bblocks://ogc.api.processes.v1.schemas.process"
+        "bblocks://ogc.api.processes.v1.schemas.process",
+        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
       ],
       "schema": [
         {
@@ -1307,22 +1312,22 @@
       },
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
         "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
-        "bblocks://ogc.api.processes.v1.api",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://ogc.api.processes.v1.responses.NotFound",
-        "bblocks://ogc.api.processes.v1.schemas.execute",
         "bblocks://ogc.api.processes.v1.parameters.jobId",
         "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://ogc.api.processes.v1.paths.JobList",
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
-        "bblocks://ogc.api.processes.v1.paths.LandingPage",
-        "bblocks://ogc.api.processes.v1.paths.Conformance",
         "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription",
         "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+        "bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
+        "bblocks://ogc.api.processes.v1.paths.JobList",
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+        "bblocks://ogc.api.processes.v1.paths.Conformance",
+        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+        "bblocks://ogc.api.processes.v1.responses.NotFound",
         "bblocks://ogc.api.processes.v1.paths.ProcessList"
       ],
       "sourceOpenAPIDocument": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/openapi.yaml",
@@ -1370,10 +1375,10 @@
       "@id": "bblocks://tikouka.examples.bag.schema"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
     },
     {
       "@id": "bblocks://tikouka.examples.transforms.ttl"

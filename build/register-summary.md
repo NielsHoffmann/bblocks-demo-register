@@ -14,17 +14,17 @@ register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applie
 
 Dit blok definieert de eigenschappen van een BAG-object.
 
-### `tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema` — Localoutlier process input schema
-
-**Type:** schema
-
-Input schema for the localoutlier process
-
 ### `tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema` — Localoutlier process output schema
 
 **Type:** schema
 
 Output schema for the localoutlier process
+
+### `tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema` — Localoutlier process input schema
+
+**Type:** schema
+
+Input schema for the localoutlier process
 
 ### `tikouka.examples.transforms.ttl` — xml to ttl Transforms example
 
