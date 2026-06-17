@@ -9,6 +9,7 @@
   "itemClass": "schema",
   "version": "0.1",
   "dateOfLastChange": "2026-06-17",
+  "highlighted": true,
   "shaclShapes": {},
   "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt2/",
   "validationPassed": true,

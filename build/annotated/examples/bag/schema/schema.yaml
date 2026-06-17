@@ -8,16 +8,7 @@ description: 'Een zelfstandig bouwwerk, zowel zelfstandig in de manier hoe het i
   Een eenheid kan alleen een pand zijn als het voldoet aan alle eisen uit de Catalogus
   BAG 2018. Voor meer informatie zie: bag:pand '
 type: object
-required:
-- id
 properties:
-  id:
-    readOnly: true
-    x-ogc-role: id
-    description: De unieke identificatie van dit feature. Dit ID zou stabiel moeten
-      zijn door de tijd heen en altijd naar hetzelfde feature moeten verwijzen.
-    type: string
-    format: uuid
   aantal_verblijfsobjecten:
     type: integer
   bouwjaar:
@@ -30,9 +21,6 @@ properties:
     type: string
   geconstateerd:
     type: string
-  geometry:
-    x-ogc-role: primary-geometry
-    format: geometry-polygon
   identificatie:
     type: string
   rdf_seealso:

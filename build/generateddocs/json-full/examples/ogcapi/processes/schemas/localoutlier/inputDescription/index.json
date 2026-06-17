@@ -18,8 +18,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.processes.v1.schemas.inputDescription",
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+    "ogc.api.processes.v1.schemas.inputDescription"
   ],
   "schema": {
     "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",

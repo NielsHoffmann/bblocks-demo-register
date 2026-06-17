@@ -18,8 +18,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
     "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
+    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
     "ogc.api.processes.v1.schemas.process"
   ],
   "schema": {
