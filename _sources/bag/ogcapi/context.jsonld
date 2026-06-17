@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "serialNumber": "http://purl.org/dc/terms/identifier",
+    "hasObservations": "http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
+  }
+}

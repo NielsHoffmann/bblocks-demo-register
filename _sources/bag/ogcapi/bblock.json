@@ -1,0 +1,19 @@
+{
+  "name": "BAG Pand",
+  "abstract": "A GeoJSON Feature beschrijving van een BAG Pand.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-06-17T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-17",
+  "scope": "unstable",
+  "isProfileOf": [
+    "ogc.geo.features.feature"
+  ],
+  "tags": [
+    "pdok",
+    "bag",
+    "basisregister",
+    "Feature"
+  ]
+}

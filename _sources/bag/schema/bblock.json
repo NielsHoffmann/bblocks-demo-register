@@ -1,0 +1,19 @@
+{
+  "name": "Bag eigenschappen",
+  "abstract": "Dit blok definieert de eigenschappen van een BAG-object.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-06-17T00:00:00Z",
+  "itemClass": "schema",
+  "register": "bblocks-demo-register",
+  "version": "0.8",
+  "dateOfLastChange": "2026-06-17",
+  "maturity": "development",
+  "scope": "development",
+  "tags": [
+    "pdok",
+    "bag",
+    "nasisregister",
+    "schema"
+  ],
+  "highlighted": true
+}

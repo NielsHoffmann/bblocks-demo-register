@@ -1,0 +1,28 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An air quality monitoring sensor station as a GeoJSON Feature
+
+allOf:
+  # Inherit the full GeoJSON Feature structure and its semantic annotations
+  - $ref: bblocks://ogc.geo.features.feature
+  # Add our own properties on top
+  - properties:
+      # "properties" here refers to the GeoJSON Feature's "properties" object
+      properties:
+        type: object
+        properties:
+          name:
+            type: string
+            description: Human-readable name of the sensor station
+          serialNumber:
+            type: string
+            description: Manufacturer-assigned serial number of the sensor unit
+          hasObservations:
+            type: array
+            description: Air quality observations recorded at this station
+            items:
+              # Each observation must conform to the SOSA Observation block.
+              # Its schema, validation rules, and JSON-LD context are all
+              # inherited automatically from the imported register.
+              $ref: bblocks://ogc.sosa.properties.observation
+        required:
+          - name
