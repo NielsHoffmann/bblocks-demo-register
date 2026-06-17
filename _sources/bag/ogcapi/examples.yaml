@@ -1,9 +1,8 @@
 examples:
-  - title: Station Alpha - Madrid Centro
+  - title: Pand
     content: >
-      A fixed air quality monitoring station in central Madrid, with NO₂ and
-      PM10 observations.
-    base-uri: https://example.com/sensors/
+      Een voorbeeld van een BAG Pand als GeoJSON Feature. Door de semantic uplift worden de definities van de BAG Pand en zijn eigenschappen hergebruikt, zodat de betekenis van de data duidelijk is.
+    base-uri: https://example.com/pand/
     snippets:
       - language: json
-        ref: sensor.json
+        ref: examples/pand.json

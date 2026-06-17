@@ -1,5 +1,5 @@
 {
-  "name": "BAG Pand",
+  "name": "BAG-Pand",
   "abstract": "A GeoJSON Feature beschrijving van een BAG Pand.",
   "status": "under-development",
   "dateTimeAddition": "2026-06-17T00:00:00Z",
@@ -15,5 +15,6 @@
     "bag",
     "basisregister",
     "Feature"
-  ]
+  ],
+  "highlighted": true
 }
