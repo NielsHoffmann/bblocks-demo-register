@@ -8,7 +8,7 @@
     {
       "properties": {
         "properties": {
-          "$ref": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.json"
+          "$ref": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.json"
         }
       }
     }

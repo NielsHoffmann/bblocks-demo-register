@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-06-17",
+  "dateOfLastChange": "2026-06-26",
   "maturity": "development",
   "tags": [
     "examples",
@@ -17,17 +17,17 @@
     "ogc api processes"
   ],
   "shaclShapes": {},
-  "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
+  "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
   "schema": {
-    "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
-    "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.json"
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.json"
   },
-  "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
-  "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
-  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/resolvedProperties.json",
-  "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/",
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
+  "sourceLdContext": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/",
   "validationPassed": true,
   "annotatedSchema": "type: object\nrequired:\n- dataset\nproperties:\n  dataset:\n    type: string\n    format: url\n  n_neighbors:\n    oneOf:\n    - type: integer\n    default: 20\n    x-jsonld-id: https://purl.stelselcatalogus.nl/id/mkg/BRTkenmerk_nummer-inrichtingselement\n  leaf_size:\n    oneOf:\n    - type: integer\n    default: 30\n    x-jsonld-id: http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verkeerruimte\n  output_column:\n    oneOf:\n    - type: string\n    default: abnormality\n",
-  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
   "gitPath": "_sources/ogcapi/processes/schemas/localoutlier/inputSchema"
 }

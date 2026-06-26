@@ -50,7 +50,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml
+                $ref: https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml
         default:
           $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/responses/ServerError/schema.yaml
   /processes/localoutlier/execution:
@@ -81,7 +81,7 @@ paths:
                 - inputs
                 properties:
                   inputs:
-                    $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml
+                    $ref: https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml
             example:
               inputs:
                 dataset: https://example.com/data/points.geojson
@@ -96,12 +96,12 @@ paths:
               schema:
                 properties:
                   outputs:
-                    $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml
-        201:
+                    $ref: https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml
+        '201':
           $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/responses/ExecuteAsync/schema.yaml
-        404:
+        '404':
           $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/responses/NotFound/schema.yaml
-        500:
+        '500':
           $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/responses/ServerError/schema.yaml
   /jobs:
     $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/paths/JobList/openapi.yaml
@@ -123,15 +123,15 @@ paths:
       parameters:
       - $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/parameters/jobId/openapi.yaml
       responses:
-        200:
+        '200':
           description: Job results
           content:
             application/json:
               schema:
-                $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml
-        404:
+                $ref: https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml
+        '404':
           $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/responses/NotFound/schema.yaml
-        500:
+        '500':
           $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/responses/ServerError/schema.yaml
 servers:
 - description: Local development server

@@ -1,7 +1,7 @@
 {
   "anyOf": [
     {
-      "$ref": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json"
+      "$ref": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json"
     }
   ]
 }

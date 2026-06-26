@@ -1,7 +1,7 @@
 {
   "summary": {
-    "total": 14,
-    "passed": 14,
+    "total": 13,
+    "passed": 13,
     "failed": 0,
     "result": true
   },
@@ -10,21 +10,7 @@
       "title": "Validation report for geonovum.examples.bag.schema - Bag eigenschappen",
       "bblockName": "Bag eigenschappen",
       "bblockId": "geonovum.examples.bag.schema",
-      "generated": "2026-06-17T15:30:09.860154+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema": {
-      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
-      "bblockName": "Localoutlier process output schema",
-      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "generated": "2026-06-17T15:30:09.865627+00:00",
+      "generated": "2026-06-26T08:39:18.990542+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -38,7 +24,21 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
       "bblockName": "Localoutlier process input schema",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-      "generated": "2026-06-17T15:30:09.873298+00:00",
+      "generated": "2026-06-26T08:39:18.998036+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
+      "bblockName": "Localoutlier process output schema",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "generated": "2026-06-26T08:39:19.002861+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -52,7 +52,7 @@
       "title": "Validation report for geonovum.examples.transforms.ttl - xml to ttl Transforms example",
       "bblockName": "xml to ttl Transforms example",
       "bblockId": "geonovum.examples.transforms.ttl",
-      "generated": "2026-06-17T15:30:09.884865+00:00",
+      "generated": "2026-06-26T08:39:19.013790+00:00",
       "result": true,
       "items": [
         {
@@ -60,7 +60,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
-            "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/rdf+xml"
@@ -99,7 +99,7 @@
       "title": "Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example",
       "bblockName": "XSLT Transforms example",
       "bblockId": "geonovum.examples.transforms.xslt-example",
-      "generated": "2026-06-17T15:30:09.907735+00:00",
+      "generated": "2026-06-26T08:39:19.035753+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -113,7 +113,7 @@
       "title": "Validation report for geonovum.examples.transforms.xslt2 - XSLT2 Transforms example",
       "bblockName": "XSLT2 Transforms example",
       "bblockId": "geonovum.examples.transforms.xslt2",
-      "generated": "2026-06-17T15:30:09.925232+00:00",
+      "generated": "2026-06-26T08:39:19.052770+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -127,7 +127,7 @@
       "title": "Validation report for geonovum.examples.bag.ogcapi - BAG-Pand",
       "bblockName": "BAG-Pand",
       "bblockId": "geonovum.examples.bag.ogcapi",
-      "generated": "2026-06-17T15:30:10.150746+00:00",
+      "generated": "2026-06-26T08:39:19.301168+00:00",
       "result": true,
       "items": [
         {
@@ -135,7 +135,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/examples/bag/ogcapi/example_1_1.json",
-            "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/bag/ogcapi/example_1_1.json",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/bag/ogcapi/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -197,10 +197,10 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                    "geojson:LinkShape": {
                       "nodes": []
                     },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
@@ -211,163 +211,12 @@
                     "geojson:GeometryShape": {
                       "nodes": []
                     },
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 1,
-        "failed": 0
-      }
-    },
-    "geonovum.examples.airQualitySensor": {
-      "title": "Validation report for geonovum.examples.airQualitySensor - Air Quality Sensor Station",
-      "bblockName": "Air Quality Sensor Station",
-      "bblockId": "geonovum.examples.airQualitySensor",
-      "generated": "2026-06-17T15:30:10.553676+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/examples/airQualitySensor/example_1_1.json",
-            "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/airQualitySensor/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using sensor.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 22,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            },
-            {
-              "name": "SHACL",
-              "title": "SHACL",
-              "entries": [
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl",
-                  "focusNodes": {
-                    "<https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
-                      "nodes": [
-                        "<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf",
-                        "<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf"
-                      ]
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/sosa/#testResult>": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: <https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf,<https://example.com/sensors/stations/alpha>/sosa:isFeatureOfInterestOf\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "focusNodes": {
                     "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
-                    },
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "<https://example.com/sensors/stations/alpha>"
-                      ]
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:LinkShape": {
-                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://example.com/sensors/stations/alpha>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
                 }
               ]
             }
@@ -385,7 +234,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription - Localoutlier process input description",
       "bblockName": "Localoutlier process input description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
-      "generated": "2026-06-17T15:30:10.567023+00:00",
+      "generated": "2026-06-26T08:39:19.315305+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -399,7 +248,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
       "bblockName": "Localoutlier process output description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
-      "generated": "2026-06-17T15:30:10.574034+00:00",
+      "generated": "2026-06-26T08:39:19.322294+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -413,7 +262,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.inputDescriptions - Example OGC API Processes instance input descriptions",
       "bblockName": "Example OGC API Processes instance input descriptions",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
-      "generated": "2026-06-17T15:30:10.579431+00:00",
+      "generated": "2026-06-26T08:39:19.327512+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -427,7 +276,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription - Localoutlier process description",
       "bblockName": "Localoutlier process description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
-      "generated": "2026-06-17T15:30:10.586114+00:00",
+      "generated": "2026-06-26T08:39:19.333928+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -441,7 +290,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.outputDescriptions - Example OGC API Processes instance output descriptions",
       "bblockName": "Example OGC API Processes instance output descriptions",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
-      "generated": "2026-06-17T15:30:10.591422+00:00",
+      "generated": "2026-06-26T08:39:19.339145+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -455,7 +304,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.custom-api - Demo OGC API processes instance - LOF",
       "bblockName": "Demo OGC API processes instance - LOF",
       "bblockId": "geonovum.examples.ogcapi.processes.custom-api",
-      "generated": "2026-06-17T15:30:10.594990+00:00",
+      "generated": "2026-06-26T08:39:19.342841+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

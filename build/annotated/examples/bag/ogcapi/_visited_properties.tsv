@@ -51,13 +51,13 @@ path	@id	schema
 /links/hreflang	http://purl.org/dc/terms/language	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
 /links/title	http://www.w3.org/2000/01/rdf-schema#label	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
 /links/length	http://purl.org/dc/terms/extent	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
-/properties/aantal_verblijfsobjecten		https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/bouwjaar	https://data.crow.nl/imbor/term/88878766-6d5a-4382-8f91-2275b0db94e7	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/documentdatum	https://catalogus.kadaster.nl/bag/nl/page/Documentdatum	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/documentnummer	https://catalogus.kadaster.nl/bag/nl/page/Documentnummer	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/gebruiksdoel	https://catalogus.kadaster.nl/bag/nl/page/Gebruiksdoel	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/geconstateerd	https://catalogus.kadaster.nl/bag/nl/page/Geconstateerd	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/identificatie	https://catalogus.kadaster.nl/bag/nl/page/Identificatie	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/rdf_seealso	https://www.w3.org/2000/01/rdf-schema#seeAlso	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/status	https://catalogus.kadaster.nl/bag/nl/page/Status	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
-/properties/verblijfsobject	https://catalogus.kadaster.nl/bag/nl/page/Verblijfsobject	https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/aantal_verblijfsobjecten		https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/bouwjaar	https://data.crow.nl/imbor/term/88878766-6d5a-4382-8f91-2275b0db94e7	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/documentdatum	https://catalogus.kadaster.nl/bag/nl/page/Documentdatum	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/documentnummer	https://catalogus.kadaster.nl/bag/nl/page/Documentnummer	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/gebruiksdoel	https://catalogus.kadaster.nl/bag/nl/page/Gebruiksdoel	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/geconstateerd	https://catalogus.kadaster.nl/bag/nl/page/Geconstateerd	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/identificatie	https://catalogus.kadaster.nl/bag/nl/page/Identificatie	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/rdf_seealso	https://www.w3.org/2000/01/rdf-schema#seeAlso	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/status	https://catalogus.kadaster.nl/bag/nl/page/Status	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+/properties/verblijfsobject	https://catalogus.kadaster.nl/bag/nl/page/Verblijfsobject	https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml

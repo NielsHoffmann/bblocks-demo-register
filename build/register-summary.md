@@ -3,7 +3,7 @@
 Demo register 
 
 
-register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.
+register for various examples of building blocks.
 
 
 ## Building Blocks
@@ -14,17 +14,17 @@ register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applie
 
 Dit blok definieert de eigenschappen van een BAG-object.
 
-### `geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema` — Localoutlier process output schema
-
-**Type:** schema
-
-Output schema for the localoutlier process
-
 ### `geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema` — Localoutlier process input schema
 
 **Type:** schema
 
 Input schema for the localoutlier process
+
+### `geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema` — Localoutlier process output schema
+
+**Type:** schema
+
+Output schema for the localoutlier process
 
 ### `geonovum.examples.transforms.ttl` — xml to ttl Transforms example
 
@@ -49,12 +49,6 @@ A sample building block to showcase transforms
 **Type:** schema
 
 A GeoJSON Feature beschrijving van een BAG Pand.
-
-### `geonovum.examples.airQualitySensor` — Air Quality Sensor Station
-
-**Type:** schema
-
-A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties.
 
 ### `geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription` — Localoutlier process input description
 

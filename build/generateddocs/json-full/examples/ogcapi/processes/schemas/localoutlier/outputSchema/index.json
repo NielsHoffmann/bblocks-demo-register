@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-06-17",
+  "dateOfLastChange": "2026-06-26",
   "maturity": "development",
   "tags": [
     "examples",
@@ -18,14 +18,14 @@
   ],
   "shaclShapes": {},
   "schema": {
-    "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-    "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json"
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json"
   },
-  "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
-  "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
   "validationPassed": true,
   "annotatedSchema": "type: object\nproperties:\n  output_dataset:\n    type: object\n    contentMediaType: application/json\n",
-  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
   "gitPath": "_sources/ogcapi/processes/schemas/localoutlier/outputSchema"
 }

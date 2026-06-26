@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-06-17",
+  "dateOfLastChange": "2026-06-26",
   "maturity": "development",
   "tags": [
     "examples",
@@ -21,15 +21,15 @@
     "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
   ],
   "schema": {
-    "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
-    "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.json"
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.json"
   },
-  "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
-  "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld",
-  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
-  "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/",
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+  "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/",
   "validationPassed": true,
-  "annotatedSchema": "anyOf:\n- $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml\n",
-  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "annotatedSchema": "anyOf:\n- $ref: https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
   "gitPath": "_sources/ogcapi/processes/schemas/inputDescriptions"
 }

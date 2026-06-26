@@ -1,24 +1,23 @@
 {
   "name": "Demo block collection",
   "abstract": "Demo register \n",
-  "description": "register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.\n",
-  "modified": "2026-06-17T15:30:03.972343",
+  "description": "register for various examples of building blocks.\n",
+  "modified": "2026-06-26T08:39:06.744668",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"89c04825320d476cbe210a33c6f4a1b40078df17",
-      "shortCommitId": "\"89c048",
-      "date": "2026-06-16T13:37:40+00:00\""
+      "commitId": "\"16a4f35d2189f0542931cf422c86706b2607cf01",
+      "shortCommitId": "\"16a4f3",
+      "date": "2026-06-25T15:20:49+00:00\""
     }
   },
-  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
-  "gitHubRepository": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/",
-  "baseURL": "https://nielshoffmann.github.io/bblocks-demo-register/",
-  "viewerURL": "https://nielshoffmann.github.io/bblocks-demo-register/",
-  "validationReport": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/report.html",
-  "validationReportJson": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/report.json",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitHubRepository": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/",
+  "baseURL": "https://geonovum-labs.github.io/bblocks-demo-register/",
+  "viewerURL": "https://geonovum-labs.github.io/bblocks-demo-register/",
+  "validationReport": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/report.html",
+  "validationReportJson": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
-    "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
     "https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json"
   ],
   "bblocks": [
@@ -31,7 +30,7 @@
       "itemClass": "schema",
       "register": "bblocks-demo-register",
       "version": "0.8",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "scope": "development",
       "tags": [
@@ -42,68 +41,28 @@
       ],
       "highlighted": false,
       "shaclShapes": {},
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/context.jsonld",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/context.jsonld",
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/schema/schema.json",
-      "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/schema/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/schema/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/schema/schema.json",
+      "sourceLdContext": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/schema/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/schema/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/schema/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/schema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.schema"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "name": "Localoutlier process output schema",
-      "abstract": "Output schema for the localoutlier process",
-      "status": "under-development",
-      "dateTimeAddition": "2025-12-17T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
-      "maturity": "development",
-      "tags": [
-        "examples",
-        "ogc api",
-        "ogc api processes"
-      ],
-      "shaclShapes": {},
-      "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json"
-      },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.schema"
         }
       }
     },
@@ -116,7 +75,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "tags": [
         "examples",
@@ -124,28 +83,68 @@
         "ogc api processes"
       ],
       "shaclShapes": {},
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
-      "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml",
+      "sourceLdContext": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "name": "Localoutlier process output schema",
+      "abstract": "Output schema for the localoutlier process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-06-26",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json"
+      },
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
         }
       }
     },
@@ -158,11 +157,11 @@
       "dateTimeAddition": "2026-06-02T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "shaclShapes": {},
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/ttl/",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/ttl/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/build/tests/examples/transforms/ttl/",
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/transforms/ttl/",
       "transforms": [
         {
           "id": "to-ttl",
@@ -197,15 +196,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/ttl/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/ttl/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/ttl/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/ttl/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.ttl"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.ttl"
         }
       }
     },
@@ -218,22 +217,22 @@
       "dateTimeAddition": "2026-05-08T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "shaclShapes": {},
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt-example/schema.yaml",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt-example/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/schema.yaml",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/",
       "validationPassed": true,
       "transforms": [
         {
           "id": "sample-xslt",
           "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
           "type": "xslt2",
-          "ref": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt-example/transforms/sample.xslt",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/transforms/sample.xslt",
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n  <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n  \n  <!-- Match the root node -->\n  <xsl:template match=\"/\">\n    <xsl:apply-templates select=\"Article\"/>\n  </xsl:template>\n  \n  <!-- Transform <Article> -->\n  <xsl:template match=\"Article\">\n    <Document type=\"article\">\n      <xsl:apply-templates select=\"*\"/>\n    </Document>\n  </xsl:template>\n  \n  <!-- Transform <Title> to <Heading> -->\n  <xsl:template match=\"Title\">\n    <Heading>\n      <xsl:apply-templates/>\n    </Heading>\n  </xsl:template>\n  \n  <!-- Wrap <Authors> content in <Contributors> -->\n  <xsl:template match=\"Authors\">\n    <Contributors>\n      <xsl:apply-templates select=\"Author\"/>\n    </Contributors>\n  </xsl:template>\n  \n  <!-- Leave <Author> as is -->\n  <xsl:template match=\"Author\">\n    <xsl:copy>\n      <xsl:apply-templates/>\n    </xsl:copy>\n  </xsl:template>\n  \n  <!-- Append \" [Modified]\" to the <Body> -->\n  <xsl:template match=\"Body\">\n    <xsl:copy>\n      <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n    </xsl:copy>\n  </xsl:template>\n  \n</xsl:stylesheet>",
           "inputs": {
             "mediaTypes": [
@@ -258,15 +257,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt-example/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt-example/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt-example/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt-example/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt-example"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt-example"
         }
       }
     },
@@ -278,17 +277,17 @@
       "dateTimeAddition": "2026-05-11T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "highlighted": true,
       "shaclShapes": {},
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt2/",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/",
       "validationPassed": true,
       "transforms": [
         {
           "id": "dcat-title",
           "description": "This transform extracts the title from DCAT-AP records, using an XSLT stylesheet.",
           "type": "xslt2",
-          "ref": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt2/transforms/dcat-title.xsl",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/transforms/dcat-title.xsl",
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<xsl:transform\n    xmlns:adms   = \"http://www.w3.org/ns/adms#\"\n    xmlns:cnt    = \"http://www.w3.org/2011/content#\"\n    xmlns:dc     = \"http://purl.org/dc/elements/1.1/\"\n    xmlns:dcat   = \"http://www.w3.org/ns/dcat#\"\n    xmlns:dct    = \"http://purl.org/dc/terms/\"\n    xmlns:dctype = \"http://purl.org/dc/dcmitype/\"\n    xmlns:dqv    = \"http://www.w3.org/ns/dqv#\"\n    xmlns:earl   = \"http://www.w3.org/ns/earl#\"\n    xmlns:foaf   = \"http://xmlns.com/foaf/0.1/\"\n    xmlns:gco    = \"http://www.isotc211.org/2005/gco\"\n    xmlns:geodcatap = \"http://data.europa.eu/930/\"\n    xmlns:gmd    = \"http://www.isotc211.org/2005/gmd\"\n    xmlns:gml    = \"http://www.opengis.net/gml\"\n    xmlns:gmx    = \"http://www.isotc211.org/2005/gmx\"\n    xmlns:gsp    = \"http://www.opengis.net/ont/geosparql#\"\n    xmlns:i      = \"http://inspire.ec.europa.eu/schemas/common/1.0\"\n    xmlns:i-gp   = \"http://inspire.ec.europa.eu/schemas/geoportal/1.0\"\n    xmlns:locn   = \"http://www.w3.org/ns/locn#\"\n    xmlns:owl    = \"http://www.w3.org/2002/07/owl#\"\n    xmlns:org    = \"http://www.w3.org/ns/org#\"\n    xmlns:prov   = \"http://www.w3.org/ns/prov#\"\n    xmlns:rdf    = \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:rdfs   = \"http://www.w3.org/2000/01/rdf-schema#\"\n    xmlns:schema = \"http://schema.org/\"\n    xmlns:sdmx-attribute = \"http://purl.org/linked-data/sdmx/2009/attribute#\"\n    xmlns:skos   = \"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:srv    = \"http://www.isotc211.org/2005/srv\"\n    xmlns:vcard  = \"http://www.w3.org/2006/vcard/ns#\"\n    xmlns:wdrs   = \"http://www.w3.org/2007/05/powder-s#\"\n    xmlns:xlink  = \"http://www.w3.org/1999/xlink\"\n    xmlns:xsi    = \"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:xsl    = \"http://www.w3.org/1999/XSL/Transform\"\n    exclude-result-prefixes=\"earl gco gmd gml gmx i i-gp srv xlink xsi xsl wdrs\"\n    version=\"2.0\">\n\n  <xsl:output method=\"xml\"\n              indent=\"yes\"\n              encoding=\"utf-8\" />\n\n    <xsl:param name=\"xsd\">http://www.w3.org/2001/XMLSchema#</xsl:param>\n\n  <!--\n\n  Master template\n  ===============\n\n-->\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"gmd:MD_Metadata|//gmd:MD_Metadata\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n<!--\n\n  Metadata template\n  =================\n\n-->\n\n  <xsl:template match=\"gmd:MD_Metadata|//gmd:MD_Metadata\">\n\n    <xsl:param name=\"MetadataUri\">\n    <xsl:variable name=\"mURI\" select=\"gmd:fileIdentifier/gco:CharacterString\"/>\n    <xsl:if test=\"$mURI != '' and ( starts-with($mURI, 'http://') or starts-with($mURI, 'https://') )\">\n      <xsl:value-of select=\"$mURI\"/>\n    </xsl:if>\n  </xsl:param>\n\n  <xsl:param name=\"ResourceTitle\">\n      <xsl:for-each select=\"gmd:identificationInfo[1]/*/gmd:citation/*/gmd:title\">\n        <dct:title >\n          <xsl:value-of select=\"normalize-space(gco:CharacterString)\"/>\n        </dct:title>\n      </xsl:for-each>\n    </xsl:param>\n\n    <dcat:Dataset rdf:about=\"{$MetadataUri}\">\n      <xsl:apply-templates select=\"gmd:identificationInfo/gmd:MD_DataIdentification\"/>\n      \n      <xsl:for-each select=\"gmd:fileIdentifier/gco:CharacterString\">\n          <dct:identifier><xsl:value-of select=\".\"/></dct:identifier>\n        </xsl:for-each>\n    \n     <xsl:copy-of select=\"$ResourceTitle\"/>\n    \n    </dcat:Dataset>\n\n   \n\n  </xsl:template>\n</xsl:transform>\n",
           "inputs": {
             "mediaTypes": [
@@ -313,15 +312,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt2/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt2/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt2/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt2/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt2"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt2"
         }
       }
     },
@@ -333,7 +332,7 @@
       "dateTimeAddition": "2026-06-17T00:00:00Z",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "scope": "unstable",
       "isProfileOf": [
         "bblocks://ogc.geo.features.feature"
@@ -355,84 +354,27 @@
         "bblocks://ogc.geo.features.feature"
       ],
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/schema.yaml",
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/bag/ogcapi/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/ogcapi/schema.yaml",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/ogcapi/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/build/tests/examples/bag/ogcapi/",
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/bag/ogcapi/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/ogcapi/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/ogcapi/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/ogcapi/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/ogcapi/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.ogcapi"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "geonovum.examples.airQualitySensor",
-      "name": "Air Quality Sensor Station",
-      "abstract": "A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-05-15T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "dateOfLastChange": "2026-06-17",
-      "scope": "unstable",
-      "isProfileOf": [
-        "bblocks://ogc.geo.features.feature"
-      ],
-      "tags": [
-        "air-quality",
-        "sensors",
-        "observations",
-        "sosa"
-      ],
-      "shaclShapes": {
-        "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-        ],
-        "ogc.geo.features.feature": [
-          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-        ]
-      },
-      "dependsOn": [
-        "bblocks://ogc.sosa.properties.observation",
-        "bblocks://ogc.geo.features.feature"
-      ],
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/context.jsonld",
-      "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/schema.json"
-      },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/schema.yaml",
-      "sourceLdContext": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/airQualitySensor/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/airQualitySensor/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/NielsHoffmann/bblocks-demo-register/blob/master/build/tests/examples/airQualitySensor/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/airQualitySensor/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/airQualitySensor/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.airQualitySensor"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.ogcapi"
         }
       }
     },
@@ -445,7 +387,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "tags": [
         "examples",
@@ -458,26 +400,26 @@
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
       ],
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputDescription/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputDescription/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
         }
       }
     },
@@ -490,7 +432,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "tags": [
         "examples",
@@ -503,26 +445,26 @@
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
       ],
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputDescription/schema.yaml",
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputDescription/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputDescription/schema.yaml",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputDescription/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
         }
       }
     },
@@ -535,7 +477,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "tags": [
         "examples",
@@ -547,26 +489,26 @@
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
       ],
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/inputDescriptions/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/inputDescriptions/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.inputDescriptions"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.inputDescriptions"
         }
       }
     },
@@ -579,7 +521,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "tags": [
         "examples",
@@ -588,31 +530,31 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
         "bblocks://ogc.api.processes.v1.schemas.process",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
       ],
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml",
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/processDescription/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/processDescription/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription"
         }
       }
     },
@@ -625,7 +567,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "tags": [
         "examples",
@@ -637,26 +579,26 @@
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
       ],
       "schema": {
-        "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
-        "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.json"
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.json"
       },
-      "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
-      "ldContext": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/context.jsonld",
-      "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/resolvedProperties.json",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/outputDescriptions/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
+      "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/context.jsonld",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/outputDescriptions/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/outputDescriptions/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/outputDescriptions/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/outputDescriptions/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/outputDescriptions/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.outputDescriptions"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.outputDescriptions"
         }
       }
     },
@@ -669,7 +611,7 @@
       "itemClass": "api",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-17",
+      "dateOfLastChange": "2026-06-26",
       "maturity": "development",
       "tags": [
         "examples",
@@ -688,40 +630,40 @@
       },
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://ogc.api.processes.v1.parameters.jobId",
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+        "bblocks://ogc.api.processes.v1.paths.ProcessList",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+        "bblocks://ogc.api.processes.v1.parameters.jobId",
+        "bblocks://ogc.api.processes.v1.paths.JobList",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
+        "bblocks://ogc.api.processes.v1.responses.NotFound",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.responses.ServerError",
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.api.processes.v1.paths.Conformance",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
-        "bblocks://ogc.api.processes.v1.paths.JobList",
-        "bblocks://ogc.api.processes.v1.paths.LandingPage",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://ogc.api.processes.v1.api",
-        "bblocks://ogc.api.processes.v1.schemas.execute",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
-        "bblocks://ogc.api.processes.v1.paths.Conformance",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-        "bblocks://ogc.api.processes.v1.responses.NotFound",
-        "bblocks://ogc.api.processes.v1.paths.ProcessList"
+        "bblocks://ogc.api.processes.v1.schemas.execute"
       ],
-      "sourceOpenAPIDocument": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/openapi.yaml",
-      "openAPIDocument": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/custom-api/openapi.yaml",
-      "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/",
+      "sourceOpenAPIDocument": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/openapi.yaml",
+      "openAPIDocument": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/custom-api/openapi.yaml",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/custom-api/index.json"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/custom-api/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.custom-api"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.custom-api"
         }
       }
     }
@@ -747,29 +689,29 @@
           ]
         }
       ],
-      "pip": "git+https://github.com/NielsHoffmann/bblocks-xslt2-transform-plugin.git@main",
+      "pip": "git+https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin.git@main",
       "urls": [
-        "https://github.com/NielsHoffmann/bblocks-xslt2-transform-plugin"
+        "https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin"
       ]
     }
   ],
-  "remoteCacheDir": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/_cache",
+  "remoteCacheDir": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://nielshoffmann.github.io/bblocks-demo-register/build/register.json",
+      "href": "https://geonovum-labs.github.io/bblocks-demo-register/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.ttl",
+      "href": "https://geonovum-labs.github.io/bblocks-demo-register/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://nielshoffmann.github.io/bblocks-demo-register/build/bblocks.jsonld",
+      "href": "https://geonovum-labs.github.io/bblocks-demo-register/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }

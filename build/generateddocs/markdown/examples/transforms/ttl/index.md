@@ -68,6 +68,6 @@ A building block to transform xml/rdf to ttl
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/NielsHoffmann/bblocks-demo-register](https://github.com/NielsHoffmann/bblocks-demo-register)
+* URL: [https://github.com/Geonovum-labs/bblocks-demo-register](https://github.com/Geonovum-labs/bblocks-demo-register)
 * Path: `_sources/transforms/ttl`
 

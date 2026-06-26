@@ -67,7 +67,7 @@ Een voorbeeld van een BAG Pand als GeoJSON Feature. Door de semantic uplift word
 #### jsonld
 ```jsonld
 {
-  "@context": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
+  "@context": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld",
   "type": "Feature",
   "id": "c3de65af-ca00-5971-87cd-04d4bdd456f4",
   "properties": {
@@ -119,9 +119,9 @@ Een voorbeeld van een BAG Pand als GeoJSON Feature. Door de semantic uplift word
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <https://catalogus.kadaster.nl/bag/nl/page/> .
-@prefix ns2: <https://www.w3.org/1999/xhtml/vocab#> .
-@prefix ns3: <https://data.crow.nl/imbor/term/> .
-@prefix ns4: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2: <https://data.crow.nl/imbor/term/> .
+@prefix ns3: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns4: <https://www.w3.org/1999/xhtml/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -132,11 +132,11 @@ Een voorbeeld van een BAG Pand als GeoJSON Feature. Door de semantic uplift word
     ns1:Geconstateerd "N" ;
     ns1:Identificatie "0394100003049202" ;
     ns1:Status "Bouwvergunning verleend" ;
-    ns3:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;
+    ns2:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 4.697783e+00 5.231698e+01 ) ( 4.698187e+00 5.231678e+01 ) ( 4.698261e+00 5.231683e+01 ) ( 4.697857e+00 5.231703e+01 ) ( 4.697783e+00 5.231698e+01 ) ) ) ] ;
-    ns2:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;
-    ns4:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .
+    ns4:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;
+    ns3:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .
 
 
 ```
@@ -150,14 +150,14 @@ allOf:
 - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
 - properties:
     properties:
-      $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+      $ref: https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
 
 ```
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json)
-* JSON version: [schema.json](https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml)
+* YAML version: [schema.yaml](https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json)
+* JSON version: [schema.json](https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml)
 
 
 # JSON-LD Context
@@ -240,13 +240,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld)
+[context.jsonld](https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/NielsHoffmann/bblocks-demo-register](https://github.com/NielsHoffmann/bblocks-demo-register)
+* URL: [https://github.com/Geonovum-labs/bblocks-demo-register](https://github.com/Geonovum-labs/bblocks-demo-register)
 * Path: `_sources/bag/ogcapi`
 

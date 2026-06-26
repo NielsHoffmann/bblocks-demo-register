@@ -12,6 +12,6 @@ An example of an OGC API Processes implementation using building blocks - Local 
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/NielsHoffmann/bblocks-demo-register](https://github.com/NielsHoffmann/bblocks-demo-register)
+* URL: [https://github.com/Geonovum-labs/bblocks-demo-register](https://github.com/Geonovum-labs/bblocks-demo-register)
 * Path: `_sources/ogcapi/processes/custom-api`
 

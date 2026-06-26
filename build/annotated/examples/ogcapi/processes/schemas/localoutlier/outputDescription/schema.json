@@ -20,7 +20,7 @@
               "const": "output"
             },
             "schema": {
-              "$ref": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json#/properties/output_dataset"
+              "$ref": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json#/properties/output_dataset"
             }
           }
         }

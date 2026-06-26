@@ -4,4 +4,4 @@ allOf:
 - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
 - properties:
     properties:
-      $ref: https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml
+      $ref: https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml

@@ -9,22 +9,22 @@
   "dateTimeAddition": "2026-05-08T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-17",
+  "dateOfLastChange": "2026-06-26",
   "shaclShapes": {},
   "schema": {
-    "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.yaml",
-    "application/json": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.json"
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.json"
   },
-  "sourceSchema": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt-example/schema.yaml",
-  "resolvedSchemaProperties": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/resolvedProperties.json",
-  "sourceFiles": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt-example/",
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/schema.yaml",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/",
   "validationPassed": true,
   "transforms": [
     {
       "id": "sample-xslt",
       "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
       "type": "xslt2",
-      "ref": "https://nielshoffmann.github.io/bblocks-demo-register/_sources/transforms/xslt-example/transforms/sample.xslt",
+      "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/transforms/sample.xslt",
       "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n  <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n  \n  <!-- Match the root node -->\n  <xsl:template match=\"/\">\n    <xsl:apply-templates select=\"Article\"/>\n  </xsl:template>\n  \n  <!-- Transform <Article> -->\n  <xsl:template match=\"Article\">\n    <Document type=\"article\">\n      <xsl:apply-templates select=\"*\"/>\n    </Document>\n  </xsl:template>\n  \n  <!-- Transform <Title> to <Heading> -->\n  <xsl:template match=\"Title\">\n    <Heading>\n      <xsl:apply-templates/>\n    </Heading>\n  </xsl:template>\n  \n  <!-- Wrap <Authors> content in <Contributors> -->\n  <xsl:template match=\"Authors\">\n    <Contributors>\n      <xsl:apply-templates select=\"Author\"/>\n    </Contributors>\n  </xsl:template>\n  \n  <!-- Leave <Author> as is -->\n  <xsl:template match=\"Author\">\n    <xsl:copy>\n      <xsl:apply-templates/>\n    </xsl:copy>\n  </xsl:template>\n  \n  <!-- Append \" [Modified]\" to the <Body> -->\n  <xsl:template match=\"Body\">\n    <xsl:copy>\n      <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n    </xsl:copy>\n  </xsl:template>\n  \n</xsl:stylesheet>",
       "inputs": {
         "mediaTypes": [
@@ -52,11 +52,11 @@
       "snippets": [
         {
           "language": "xml",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/example_1_1.xml",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/example_1_1.xml",
           "transformResults": {
             "sample-xslt": {
               "success": true,
-              "url": "https://nielshoffmann.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/transforms/example_1_1.sample-xslt.rdf"
+              "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/transforms/example_1_1.sample-xslt.rdf"
             }
           },
           "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>"
@@ -65,6 +65,6 @@
     }
   ],
   "annotatedSchema": "type: object\nproperties:\n  one:\n    type: number\n  two:\n    type: number\n  string:\n    type: string\n",
-  "gitRepository": "https://github.com/NielsHoffmann/bblocks-demo-register",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
   "gitPath": "_sources/transforms/xslt-example"
 }
