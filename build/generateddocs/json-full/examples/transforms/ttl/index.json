@@ -10,6 +10,10 @@
   "itemClass": "schema",
   "version": "0.1",
   "dateOfLastChange": "2026-06-26",
+  "tags": [
+    "transform",
+    "xml"
+  ],
   "shaclShapes": {},
   "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/ttl/",
   "validationPassed": true,

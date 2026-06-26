@@ -39,6 +39,21 @@ A sample building block to showcase transforms
 ```
 
 
+### Example for XSLT transform
+#### xml
+```xml
+<?xml version="1.0"?>
+<Article>
+  <Title>My Article</Title>
+  <Authors>
+    <Author>Mr. Foo</Author>
+    <Author>Mr. Bar</Author>
+  </Authors>
+  <Body>This is my article text.</Body>
+</Article>
+```
+
+
 # For developers
 
 The source code for this Building Block can be found in the following repository:

@@ -14,17 +14,17 @@ register for various examples of building blocks.
 
 Dit blok definieert de eigenschappen van een BAG-object.
 
-### `geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema` — Localoutlier process input schema
-
-**Type:** schema
-
-Input schema for the localoutlier process
-
 ### `geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema` — Localoutlier process output schema
 
 **Type:** schema
 
 Output schema for the localoutlier process
+
+### `geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema` — Localoutlier process input schema
+
+**Type:** schema
+
+Input schema for the localoutlier process
 
 ### `geonovum.examples.transforms.ttl` — xml to ttl Transforms example
 

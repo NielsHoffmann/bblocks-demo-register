@@ -18,9 +18,9 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.processes.v1.schemas.process",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
     "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
-    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
+    "ogc.api.processes.v1.schemas.process"
   ],
   "schema": {
     "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml",

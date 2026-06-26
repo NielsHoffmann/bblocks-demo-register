@@ -10,6 +10,10 @@
   "itemClass": "schema",
   "version": "0.1",
   "dateOfLastChange": "2026-06-26",
+  "tags": [
+    "transform",
+    "xml"
+  ],
   "shaclShapes": {},
   "schema": {
     "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.yaml",
@@ -23,24 +27,81 @@
     {
       "id": "sample-xslt",
       "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
-      "type": "xslt2",
+      "type": "xslt",
       "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/transforms/sample.xslt",
       "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n  <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n  \n  <!-- Match the root node -->\n  <xsl:template match=\"/\">\n    <xsl:apply-templates select=\"Article\"/>\n  </xsl:template>\n  \n  <!-- Transform <Article> -->\n  <xsl:template match=\"Article\">\n    <Document type=\"article\">\n      <xsl:apply-templates select=\"*\"/>\n    </Document>\n  </xsl:template>\n  \n  <!-- Transform <Title> to <Heading> -->\n  <xsl:template match=\"Title\">\n    <Heading>\n      <xsl:apply-templates/>\n    </Heading>\n  </xsl:template>\n  \n  <!-- Wrap <Authors> content in <Contributors> -->\n  <xsl:template match=\"Authors\">\n    <Contributors>\n      <xsl:apply-templates select=\"Author\"/>\n    </Contributors>\n  </xsl:template>\n  \n  <!-- Leave <Author> as is -->\n  <xsl:template match=\"Author\">\n    <xsl:copy>\n      <xsl:apply-templates/>\n    </xsl:copy>\n  </xsl:template>\n  \n  <!-- Append \" [Modified]\" to the <Body> -->\n  <xsl:template match=\"Body\">\n    <xsl:copy>\n      <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n    </xsl:copy>\n  </xsl:template>\n  \n</xsl:stylesheet>",
       "inputs": {
         "mediaTypes": [
           {
-            "mimeType": "application/xml",
+            "id": "xml",
+            "defaultExtension": "xml",
             "label": "XML",
-            "defaultExtension": "xml"
+            "mimeType": "application/xml",
+            "aliases": [
+              "application/xml",
+              "text/xml"
+            ],
+            "extensions": [
+              "xml"
+            ]
           }
         ]
       },
       "outputs": {
         "mediaTypes": [
           {
-            "mimeType": "application/rdf+xml",
-            "label": "RDF/XML",
-            "defaultExtension": "rdf"
+            "id": "xml",
+            "defaultExtension": "xml",
+            "label": "XML",
+            "mimeType": "application/xml",
+            "aliases": [
+              "application/xml",
+              "text/xml"
+            ],
+            "extensions": [
+              "xml"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "dcat-title",
+      "description": "This transform extracts the title from DCAT-AP records, using an XSLT stylesheet.",
+      "type": "xslt",
+      "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/transforms/dcat-title.xsl",
+      "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<xsl:transform\n    xmlns:adms   = \"http://www.w3.org/ns/adms#\"\n    xmlns:cnt    = \"http://www.w3.org/2011/content#\"\n    xmlns:dc     = \"http://purl.org/dc/elements/1.1/\"\n    xmlns:dcat   = \"http://www.w3.org/ns/dcat#\"\n    xmlns:dct    = \"http://purl.org/dc/terms/\"\n    xmlns:dctype = \"http://purl.org/dc/dcmitype/\"\n    xmlns:dqv    = \"http://www.w3.org/ns/dqv#\"\n    xmlns:earl   = \"http://www.w3.org/ns/earl#\"\n    xmlns:foaf   = \"http://xmlns.com/foaf/0.1/\"\n    xmlns:gco    = \"http://www.isotc211.org/2005/gco\"\n    xmlns:geodcatap = \"http://data.europa.eu/930/\"\n    xmlns:gmd    = \"http://www.isotc211.org/2005/gmd\"\n    xmlns:gml    = \"http://www.opengis.net/gml\"\n    xmlns:gmx    = \"http://www.isotc211.org/2005/gmx\"\n    xmlns:gsp    = \"http://www.opengis.net/ont/geosparql#\"\n    xmlns:i      = \"http://inspire.ec.europa.eu/schemas/common/1.0\"\n    xmlns:i-gp   = \"http://inspire.ec.europa.eu/schemas/geoportal/1.0\"\n    xmlns:locn   = \"http://www.w3.org/ns/locn#\"\n    xmlns:owl    = \"http://www.w3.org/2002/07/owl#\"\n    xmlns:org    = \"http://www.w3.org/ns/org#\"\n    xmlns:prov   = \"http://www.w3.org/ns/prov#\"\n    xmlns:rdf    = \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:rdfs   = \"http://www.w3.org/2000/01/rdf-schema#\"\n    xmlns:schema = \"http://schema.org/\"\n    xmlns:sdmx-attribute = \"http://purl.org/linked-data/sdmx/2009/attribute#\"\n    xmlns:skos   = \"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:srv    = \"http://www.isotc211.org/2005/srv\"\n    xmlns:vcard  = \"http://www.w3.org/2006/vcard/ns#\"\n    xmlns:wdrs   = \"http://www.w3.org/2007/05/powder-s#\"\n    xmlns:xlink  = \"http://www.w3.org/1999/xlink\"\n    xmlns:xsi    = \"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:xsl    = \"http://www.w3.org/1999/XSL/Transform\"\n    exclude-result-prefixes=\"earl gco gmd gml gmx i i-gp srv xlink xsi xsl wdrs\"\n    version=\"2.0\">\n\n  <xsl:output method=\"xml\"\n              indent=\"yes\"\n              encoding=\"utf-8\" />\n\n    <xsl:param name=\"xsd\">http://www.w3.org/2001/XMLSchema#</xsl:param>\n\n  \n\n  <!--\n\n  Master template\n  ===============\n\n-->\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"gmd:MD_Metadata|//gmd:MD_Metadata\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n<!--\n\n  Metadata template\n  =================\n\n-->\n\n  <xsl:template match=\"gmd:MD_Metadata|//gmd:MD_Metadata\">\n    \n    <xsl:param name=\"MetadataUri\">\n\n    <xsl:variable name=\"mURI\" select=\"gmd:fileIdentifier/gco:CharacterString\"/>\n    <xsl:if test=\"$mURI != '' and ( starts-with($mURI, 'http://') or starts-with($mURI, 'https://') )\">\n      <xsl:value-of select=\"$mURI\"/>\n    </xsl:if>\n  </xsl:param>\n\n  <xsl:param name=\"ResourceTitle\">\n      <xsl:for-each select=\"gmd:identificationInfo[1]/*/gmd:citation/*/gmd:title\">\n        <dct:title >\n          <xsl:value-of select=\"normalize-space(gco:CharacterString)\"/>\n        </dct:title>\n      </xsl:for-each>\n    </xsl:param>\n\n    <dcat:Dataset rdf:about=\"{$MetadataUri}\">\n      <xsl:apply-templates select=\"gmd:identificationInfo/gmd:MD_DataIdentification\"/>\n      \n      <xsl:for-each select=\"gmd:fileIdentifier/gco:CharacterString\">\n          <dct:identifier><xsl:value-of select=\".\"/></dct:identifier>\n        </xsl:for-each>\n    \n     <xsl:copy-of select=\"$ResourceTitle\"/>\n    \n    </dcat:Dataset>\n\n   \n\n  </xsl:template>\n</xsl:transform>\n",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "id": "xml",
+            "defaultExtension": "xml",
+            "label": "XML",
+            "mimeType": "application/xml",
+            "aliases": [
+              "application/xml",
+              "text/xml"
+            ],
+            "extensions": [
+              "xml"
+            ]
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "id": "xml",
+            "defaultExtension": "xml",
+            "label": "XML",
+            "mimeType": "application/xml",
+            "aliases": [
+              "application/xml",
+              "text/xml"
+            ],
+            "extensions": [
+              "xml"
+            ]
           }
         ]
       }
@@ -56,10 +117,35 @@
           "transformResults": {
             "sample-xslt": {
               "success": true,
-              "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/transforms/example_1_1.sample-xslt.rdf"
+              "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/transforms/example_1_1.sample-xslt.xml"
+            },
+            "dcat-title": {
+              "success": true,
+              "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/transforms/example_1_1.dcat-title.xml"
             }
           },
           "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>"
+        }
+      ]
+    },
+    {
+      "title": "iso19139 to dcat-ap example",
+      "snippets": [
+        {
+          "language": "xml",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/examples/simple-test.xml",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/example_2_1.xml",
+          "transformResults": {
+            "sample-xslt": {
+              "success": false,
+              "stderr": "AttributeError: 'NoneType' object has no attribute 'decode'\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 605, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 932, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/xslt.py\", line 26, in do_transform\n    return etree.tostring(result, encoding='utf-8', pretty_print=True, xml_declaration=True).decode('utf-8')\nAttributeError: 'NoneType' object has no attribute 'decode'\n"
+            },
+            "dcat-title": {
+              "success": true,
+              "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/transforms/example_2_1.dcat-title.xml"
+            }
+          },
+          "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<gmd:MD_Metadata xmlns:gmd=\"http://www.isotc211.org/2005/gmd\" xmlns:gco=\"http://www.isotc211.org/2005/gco\" xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" xmlns:gmx=\"http://www.isotc211.org/2005/gmx\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:srv=\"http://www.isotc211.org/2005/srv\" xmlns:gts=\"http://www.isotc211.org/2005/gts\" xmlns:gsr=\"http://www.isotc211.org/2005/gsr\" xsi:schemaLocation=\"http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd\">\r\n  <gmd:fileIdentifier>\r\n    <gco:CharacterString>4e2ef670-cddd-11dd-ad8b-0800200c9a66</gco:CharacterString>\r\n  </gmd:fileIdentifier>\r\n  <gmd:language>\r\n    <gmd:LanguageCode codeList=\"http://www.loc.gov/standards/iso639-2/\" codeListValue=\"dut\">Nederlands; Vlaams</gmd:LanguageCode>\r\n  </gmd:language>\r\n  <gmd:identificationInfo>\r\n    <gmd:MD_DataIdentification>\r\n      <gmd:citation>\r\n        <gmd:CI_Citation>\r\n          <gmd:title>\r\n            <gco:CharacterString>Stads- en Dorpsgezichten</gco:CharacterString>\r\n          </gmd:title>\r\n          <gmd:alternateTitle>\r\n            <gco:CharacterString>beschermde gezichten</gco:CharacterString>\r\n          </gmd:alternateTitle>\r\n          </gmd:CI_Citation>\r\n      </gmd:citation>\r\n    </gmd:MD_DataIdentification>\r\n  </gmd:identificationInfo>\r\n</gmd:MD_Metadata>\r\n"
         }
       ]
     }

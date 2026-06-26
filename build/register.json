@@ -2,7 +2,7 @@
   "name": "Demo block collection",
   "abstract": "Demo register \n",
   "description": "register for various examples of building blocks.\n",
-  "modified": "2026-06-26T08:39:06.744668",
+  "modified": "2026-06-26T11:58:46.720917",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"16a4f35d2189f0542931cf422c86706b2607cf01",
@@ -67,6 +67,46 @@
       }
     },
     {
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "name": "Localoutlier process output schema",
+      "abstract": "Output schema for the localoutlier process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-06-26",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json"
+      },
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+        }
+      }
+    },
+    {
       "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
       "name": "Localoutlier process input schema",
       "abstract": "Input schema for the localoutlier process",
@@ -109,46 +149,6 @@
       }
     },
     {
-      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "name": "Localoutlier process output schema",
-      "abstract": "Output schema for the localoutlier process",
-      "status": "under-development",
-      "dateTimeAddition": "2025-12-17T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2026-06-26",
-      "maturity": "development",
-      "tags": [
-        "examples",
-        "ogc api",
-        "ogc api processes"
-      ],
-      "shaclShapes": {},
-      "schema": {
-        "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-        "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json"
-      },
-      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
-      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
-        }
-      }
-    },
-    {
       "itemIdentifier": "geonovum.examples.transforms.ttl",
       "name": "xml to ttl Transforms example",
       "highlighted": false,
@@ -158,6 +158,10 @@
       "itemClass": "schema",
       "version": "0.1",
       "dateOfLastChange": "2026-06-26",
+      "tags": [
+        "transform",
+        "xml"
+      ],
       "shaclShapes": {},
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/ttl/",
       "validationPassed": true,
@@ -218,6 +222,10 @@
       "itemClass": "schema",
       "version": "0.1",
       "dateOfLastChange": "2026-06-26",
+      "tags": [
+        "transform",
+        "xml"
+      ],
       "shaclShapes": {},
       "schema": {
         "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/schema.yaml",
@@ -231,24 +239,81 @@
         {
           "id": "sample-xslt",
           "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
-          "type": "xslt2",
+          "type": "xslt",
           "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/transforms/sample.xslt",
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n  <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n  \n  <!-- Match the root node -->\n  <xsl:template match=\"/\">\n    <xsl:apply-templates select=\"Article\"/>\n  </xsl:template>\n  \n  <!-- Transform <Article> -->\n  <xsl:template match=\"Article\">\n    <Document type=\"article\">\n      <xsl:apply-templates select=\"*\"/>\n    </Document>\n  </xsl:template>\n  \n  <!-- Transform <Title> to <Heading> -->\n  <xsl:template match=\"Title\">\n    <Heading>\n      <xsl:apply-templates/>\n    </Heading>\n  </xsl:template>\n  \n  <!-- Wrap <Authors> content in <Contributors> -->\n  <xsl:template match=\"Authors\">\n    <Contributors>\n      <xsl:apply-templates select=\"Author\"/>\n    </Contributors>\n  </xsl:template>\n  \n  <!-- Leave <Author> as is -->\n  <xsl:template match=\"Author\">\n    <xsl:copy>\n      <xsl:apply-templates/>\n    </xsl:copy>\n  </xsl:template>\n  \n  <!-- Append \" [Modified]\" to the <Body> -->\n  <xsl:template match=\"Body\">\n    <xsl:copy>\n      <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n    </xsl:copy>\n  </xsl:template>\n  \n</xsl:stylesheet>",
           "inputs": {
             "mediaTypes": [
               {
-                "mimeType": "application/xml",
+                "id": "xml",
+                "defaultExtension": "xml",
                 "label": "XML",
-                "defaultExtension": "xml"
+                "mimeType": "application/xml",
+                "aliases": [
+                  "application/xml",
+                  "text/xml"
+                ],
+                "extensions": [
+                  "xml"
+                ]
               }
             ]
           },
           "outputs": {
             "mediaTypes": [
               {
-                "mimeType": "application/rdf+xml",
-                "label": "RDF/XML",
-                "defaultExtension": "rdf"
+                "id": "xml",
+                "defaultExtension": "xml",
+                "label": "XML",
+                "mimeType": "application/xml",
+                "aliases": [
+                  "application/xml",
+                  "text/xml"
+                ],
+                "extensions": [
+                  "xml"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dcat-title",
+          "description": "This transform extracts the title from DCAT-AP records, using an XSLT stylesheet.",
+          "type": "xslt",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/transforms/dcat-title.xsl",
+          "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<xsl:transform\n    xmlns:adms   = \"http://www.w3.org/ns/adms#\"\n    xmlns:cnt    = \"http://www.w3.org/2011/content#\"\n    xmlns:dc     = \"http://purl.org/dc/elements/1.1/\"\n    xmlns:dcat   = \"http://www.w3.org/ns/dcat#\"\n    xmlns:dct    = \"http://purl.org/dc/terms/\"\n    xmlns:dctype = \"http://purl.org/dc/dcmitype/\"\n    xmlns:dqv    = \"http://www.w3.org/ns/dqv#\"\n    xmlns:earl   = \"http://www.w3.org/ns/earl#\"\n    xmlns:foaf   = \"http://xmlns.com/foaf/0.1/\"\n    xmlns:gco    = \"http://www.isotc211.org/2005/gco\"\n    xmlns:geodcatap = \"http://data.europa.eu/930/\"\n    xmlns:gmd    = \"http://www.isotc211.org/2005/gmd\"\n    xmlns:gml    = \"http://www.opengis.net/gml\"\n    xmlns:gmx    = \"http://www.isotc211.org/2005/gmx\"\n    xmlns:gsp    = \"http://www.opengis.net/ont/geosparql#\"\n    xmlns:i      = \"http://inspire.ec.europa.eu/schemas/common/1.0\"\n    xmlns:i-gp   = \"http://inspire.ec.europa.eu/schemas/geoportal/1.0\"\n    xmlns:locn   = \"http://www.w3.org/ns/locn#\"\n    xmlns:owl    = \"http://www.w3.org/2002/07/owl#\"\n    xmlns:org    = \"http://www.w3.org/ns/org#\"\n    xmlns:prov   = \"http://www.w3.org/ns/prov#\"\n    xmlns:rdf    = \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:rdfs   = \"http://www.w3.org/2000/01/rdf-schema#\"\n    xmlns:schema = \"http://schema.org/\"\n    xmlns:sdmx-attribute = \"http://purl.org/linked-data/sdmx/2009/attribute#\"\n    xmlns:skos   = \"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:srv    = \"http://www.isotc211.org/2005/srv\"\n    xmlns:vcard  = \"http://www.w3.org/2006/vcard/ns#\"\n    xmlns:wdrs   = \"http://www.w3.org/2007/05/powder-s#\"\n    xmlns:xlink  = \"http://www.w3.org/1999/xlink\"\n    xmlns:xsi    = \"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:xsl    = \"http://www.w3.org/1999/XSL/Transform\"\n    exclude-result-prefixes=\"earl gco gmd gml gmx i i-gp srv xlink xsi xsl wdrs\"\n    version=\"2.0\">\n\n  <xsl:output method=\"xml\"\n              indent=\"yes\"\n              encoding=\"utf-8\" />\n\n    <xsl:param name=\"xsd\">http://www.w3.org/2001/XMLSchema#</xsl:param>\n\n  \n\n  <!--\n\n  Master template\n  ===============\n\n-->\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"gmd:MD_Metadata|//gmd:MD_Metadata\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n<!--\n\n  Metadata template\n  =================\n\n-->\n\n  <xsl:template match=\"gmd:MD_Metadata|//gmd:MD_Metadata\">\n    \n    <xsl:param name=\"MetadataUri\">\n\n    <xsl:variable name=\"mURI\" select=\"gmd:fileIdentifier/gco:CharacterString\"/>\n    <xsl:if test=\"$mURI != '' and ( starts-with($mURI, 'http://') or starts-with($mURI, 'https://') )\">\n      <xsl:value-of select=\"$mURI\"/>\n    </xsl:if>\n  </xsl:param>\n\n  <xsl:param name=\"ResourceTitle\">\n      <xsl:for-each select=\"gmd:identificationInfo[1]/*/gmd:citation/*/gmd:title\">\n        <dct:title >\n          <xsl:value-of select=\"normalize-space(gco:CharacterString)\"/>\n        </dct:title>\n      </xsl:for-each>\n    </xsl:param>\n\n    <dcat:Dataset rdf:about=\"{$MetadataUri}\">\n      <xsl:apply-templates select=\"gmd:identificationInfo/gmd:MD_DataIdentification\"/>\n      \n      <xsl:for-each select=\"gmd:fileIdentifier/gco:CharacterString\">\n          <dct:identifier><xsl:value-of select=\".\"/></dct:identifier>\n        </xsl:for-each>\n    \n     <xsl:copy-of select=\"$ResourceTitle\"/>\n    \n    </dcat:Dataset>\n\n   \n\n  </xsl:template>\n</xsl:transform>\n",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "id": "xml",
+                "defaultExtension": "xml",
+                "label": "XML",
+                "mimeType": "application/xml",
+                "aliases": [
+                  "application/xml",
+                  "text/xml"
+                ],
+                "extensions": [
+                  "xml"
+                ]
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "id": "xml",
+                "defaultExtension": "xml",
+                "label": "XML",
+                "mimeType": "application/xml",
+                "aliases": [
+                  "application/xml",
+                  "text/xml"
+                ],
+                "extensions": [
+                  "xml"
+                ]
               }
             ]
           }
@@ -279,6 +344,10 @@
       "version": "0.1",
       "dateOfLastChange": "2026-06-26",
       "highlighted": true,
+      "tags": [
+        "transform",
+        "xml"
+      ],
       "shaclShapes": {},
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/",
       "validationPassed": true,
@@ -288,7 +357,32 @@
           "description": "This transform extracts the title from DCAT-AP records, using an XSLT stylesheet.",
           "type": "xslt2",
           "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/transforms/dcat-title.xsl",
-          "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<xsl:transform\n    xmlns:adms   = \"http://www.w3.org/ns/adms#\"\n    xmlns:cnt    = \"http://www.w3.org/2011/content#\"\n    xmlns:dc     = \"http://purl.org/dc/elements/1.1/\"\n    xmlns:dcat   = \"http://www.w3.org/ns/dcat#\"\n    xmlns:dct    = \"http://purl.org/dc/terms/\"\n    xmlns:dctype = \"http://purl.org/dc/dcmitype/\"\n    xmlns:dqv    = \"http://www.w3.org/ns/dqv#\"\n    xmlns:earl   = \"http://www.w3.org/ns/earl#\"\n    xmlns:foaf   = \"http://xmlns.com/foaf/0.1/\"\n    xmlns:gco    = \"http://www.isotc211.org/2005/gco\"\n    xmlns:geodcatap = \"http://data.europa.eu/930/\"\n    xmlns:gmd    = \"http://www.isotc211.org/2005/gmd\"\n    xmlns:gml    = \"http://www.opengis.net/gml\"\n    xmlns:gmx    = \"http://www.isotc211.org/2005/gmx\"\n    xmlns:gsp    = \"http://www.opengis.net/ont/geosparql#\"\n    xmlns:i      = \"http://inspire.ec.europa.eu/schemas/common/1.0\"\n    xmlns:i-gp   = \"http://inspire.ec.europa.eu/schemas/geoportal/1.0\"\n    xmlns:locn   = \"http://www.w3.org/ns/locn#\"\n    xmlns:owl    = \"http://www.w3.org/2002/07/owl#\"\n    xmlns:org    = \"http://www.w3.org/ns/org#\"\n    xmlns:prov   = \"http://www.w3.org/ns/prov#\"\n    xmlns:rdf    = \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:rdfs   = \"http://www.w3.org/2000/01/rdf-schema#\"\n    xmlns:schema = \"http://schema.org/\"\n    xmlns:sdmx-attribute = \"http://purl.org/linked-data/sdmx/2009/attribute#\"\n    xmlns:skos   = \"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:srv    = \"http://www.isotc211.org/2005/srv\"\n    xmlns:vcard  = \"http://www.w3.org/2006/vcard/ns#\"\n    xmlns:wdrs   = \"http://www.w3.org/2007/05/powder-s#\"\n    xmlns:xlink  = \"http://www.w3.org/1999/xlink\"\n    xmlns:xsi    = \"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:xsl    = \"http://www.w3.org/1999/XSL/Transform\"\n    exclude-result-prefixes=\"earl gco gmd gml gmx i i-gp srv xlink xsi xsl wdrs\"\n    version=\"2.0\">\n\n  <xsl:output method=\"xml\"\n              indent=\"yes\"\n              encoding=\"utf-8\" />\n\n    <xsl:param name=\"xsd\">http://www.w3.org/2001/XMLSchema#</xsl:param>\n\n  <!--\n\n  Master template\n  ===============\n\n-->\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"gmd:MD_Metadata|//gmd:MD_Metadata\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n<!--\n\n  Metadata template\n  =================\n\n-->\n\n  <xsl:template match=\"gmd:MD_Metadata|//gmd:MD_Metadata\">\n\n    <xsl:param name=\"MetadataUri\">\n    <xsl:variable name=\"mURI\" select=\"gmd:fileIdentifier/gco:CharacterString\"/>\n    <xsl:if test=\"$mURI != '' and ( starts-with($mURI, 'http://') or starts-with($mURI, 'https://') )\">\n      <xsl:value-of select=\"$mURI\"/>\n    </xsl:if>\n  </xsl:param>\n\n  <xsl:param name=\"ResourceTitle\">\n      <xsl:for-each select=\"gmd:identificationInfo[1]/*/gmd:citation/*/gmd:title\">\n        <dct:title >\n          <xsl:value-of select=\"normalize-space(gco:CharacterString)\"/>\n        </dct:title>\n      </xsl:for-each>\n    </xsl:param>\n\n    <dcat:Dataset rdf:about=\"{$MetadataUri}\">\n      <xsl:apply-templates select=\"gmd:identificationInfo/gmd:MD_DataIdentification\"/>\n      \n      <xsl:for-each select=\"gmd:fileIdentifier/gco:CharacterString\">\n          <dct:identifier><xsl:value-of select=\".\"/></dct:identifier>\n        </xsl:for-each>\n    \n     <xsl:copy-of select=\"$ResourceTitle\"/>\n    \n    </dcat:Dataset>\n\n   \n\n  </xsl:template>\n</xsl:transform>\n",
+          "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<xsl:transform\n    xmlns:adms   = \"http://www.w3.org/ns/adms#\"\n    xmlns:cnt    = \"http://www.w3.org/2011/content#\"\n    xmlns:dc     = \"http://purl.org/dc/elements/1.1/\"\n    xmlns:dcat   = \"http://www.w3.org/ns/dcat#\"\n    xmlns:dct    = \"http://purl.org/dc/terms/\"\n    xmlns:dctype = \"http://purl.org/dc/dcmitype/\"\n    xmlns:dqv    = \"http://www.w3.org/ns/dqv#\"\n    xmlns:earl   = \"http://www.w3.org/ns/earl#\"\n    xmlns:foaf   = \"http://xmlns.com/foaf/0.1/\"\n    xmlns:gco    = \"http://www.isotc211.org/2005/gco\"\n    xmlns:geodcatap = \"http://data.europa.eu/930/\"\n    xmlns:gmd    = \"http://www.isotc211.org/2005/gmd\"\n    xmlns:gml    = \"http://www.opengis.net/gml\"\n    xmlns:gmx    = \"http://www.isotc211.org/2005/gmx\"\n    xmlns:gsp    = \"http://www.opengis.net/ont/geosparql#\"\n    xmlns:i      = \"http://inspire.ec.europa.eu/schemas/common/1.0\"\n    xmlns:i-gp   = \"http://inspire.ec.europa.eu/schemas/geoportal/1.0\"\n    xmlns:locn   = \"http://www.w3.org/ns/locn#\"\n    xmlns:owl    = \"http://www.w3.org/2002/07/owl#\"\n    xmlns:org    = \"http://www.w3.org/ns/org#\"\n    xmlns:prov   = \"http://www.w3.org/ns/prov#\"\n    xmlns:rdf    = \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:rdfs   = \"http://www.w3.org/2000/01/rdf-schema#\"\n    xmlns:schema = \"http://schema.org/\"\n    xmlns:sdmx-attribute = \"http://purl.org/linked-data/sdmx/2009/attribute#\"\n    xmlns:skos   = \"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:srv    = \"http://www.isotc211.org/2005/srv\"\n    xmlns:vcard  = \"http://www.w3.org/2006/vcard/ns#\"\n    xmlns:wdrs   = \"http://www.w3.org/2007/05/powder-s#\"\n    xmlns:xlink  = \"http://www.w3.org/1999/xlink\"\n    xmlns:xsi    = \"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:xsl    = \"http://www.w3.org/1999/XSL/Transform\"\n    exclude-result-prefixes=\"earl gco gmd gml gmx i i-gp srv xlink xsi xsl wdrs\"\n    version=\"2.0\">\n\n  <xsl:output method=\"xml\"\n              indent=\"yes\"\n              encoding=\"utf-8\" />\n\n    <xsl:param name=\"xsd\">http://www.w3.org/2001/XMLSchema#</xsl:param>\n\n  \n\n  <!--\n\n  Master template\n  ===============\n\n-->\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"gmd:MD_Metadata|//gmd:MD_Metadata\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n<!--\n\n  Metadata template\n  =================\n\n-->\n\n  <xsl:template match=\"gmd:MD_Metadata|//gmd:MD_Metadata\">\n    \n    <xsl:param name=\"MetadataUri\">\n\n    <xsl:variable name=\"mURI\" select=\"gmd:fileIdentifier/gco:CharacterString\"/>\n    <xsl:if test=\"$mURI != '' and ( starts-with($mURI, 'http://') or starts-with($mURI, 'https://') )\">\n      <xsl:value-of select=\"$mURI\"/>\n    </xsl:if>\n  </xsl:param>\n\n  <xsl:param name=\"ResourceTitle\">\n      <xsl:for-each select=\"gmd:identificationInfo[1]/*/gmd:citation/*/gmd:title\">\n        <dct:title >\n          <xsl:value-of select=\"normalize-space(gco:CharacterString)\"/>\n        </dct:title>\n      </xsl:for-each>\n    </xsl:param>\n\n    <dcat:Dataset rdf:about=\"{$MetadataUri}\">\n      <xsl:apply-templates select=\"gmd:identificationInfo/gmd:MD_DataIdentification\"/>\n      \n      <xsl:for-each select=\"gmd:fileIdentifier/gco:CharacterString\">\n          <dct:identifier><xsl:value-of select=\".\"/></dct:identifier>\n        </xsl:for-each>\n    \n     <xsl:copy-of select=\"$ResourceTitle\"/>\n    \n    </dcat:Dataset>\n\n   \n\n  </xsl:template>\n</xsl:transform>\n",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/xml",
+                "label": "XML",
+                "defaultExtension": "xml"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/rdf+xml",
+                "label": "RDF/XML",
+                "defaultExtension": "rdf"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sample-xslt",
+          "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
+          "type": "xslt2",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/transforms/sample.xslt",
+          "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n  <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n  \n  <!-- Match the root node -->\n  <xsl:template match=\"/\">\n    <xsl:apply-templates select=\"Article\"/>\n  </xsl:template>\n  \n  <!-- Transform <Article> -->\n  <xsl:template match=\"Article\">\n    <Document type=\"article\">\n      <xsl:apply-templates select=\"*\"/>\n    </Document>\n  </xsl:template>\n  \n  <!-- Transform <Title> to <Heading> -->\n  <xsl:template match=\"Title\">\n    <Heading>\n      <xsl:apply-templates/>\n    </Heading>\n  </xsl:template>\n  \n  <!-- Wrap <Authors> content in <Contributors> -->\n  <xsl:template match=\"Authors\">\n    <Contributors>\n      <xsl:apply-templates select=\"Author\"/>\n    </Contributors>\n  </xsl:template>\n  \n  <!-- Leave <Author> as is -->\n  <xsl:template match=\"Author\">\n    <xsl:copy>\n      <xsl:apply-templates/>\n    </xsl:copy>\n  </xsl:template>\n  \n  <!-- Append \" [Modified]\" to the <Body> -->\n  <xsl:template match=\"Body\">\n    <xsl:copy>\n      <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n    </xsl:copy>\n  </xsl:template>\n  \n</xsl:stylesheet>",
           "inputs": {
             "mediaTypes": [
               {
@@ -350,8 +444,8 @@
         ]
       },
       "dependsOn": [
-        "bblocks://geonovum.examples.bag.schema",
-        "bblocks://ogc.geo.features.feature"
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://geonovum.examples.bag.schema"
       ],
       "schema": {
         "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml",
@@ -396,8 +490,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription"
       ],
       "schema": {
         "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",
@@ -530,9 +624,9 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.schemas.process",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
+        "bblocks://ogc.api.processes.v1.schemas.process"
       ],
       "schema": {
         "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml",
@@ -630,23 +724,23 @@
       },
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
-        "bblocks://ogc.api.processes.v1.api",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-        "bblocks://ogc.api.processes.v1.paths.ProcessList",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
-        "bblocks://ogc.api.processes.v1.parameters.jobId",
-        "bblocks://ogc.api.processes.v1.paths.JobList",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
-        "bblocks://ogc.api.processes.v1.responses.NotFound",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://ogc.api.processes.v1.paths.LandingPage",
-        "bblocks://ogc.api.processes.v1.paths.Conformance",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+        "bblocks://ogc.api.processes.v1.responses.ServerError",
+        "bblocks://ogc.api.processes.v1.responses.NotFound",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
-        "bblocks://ogc.api.processes.v1.schemas.execute"
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
+        "bblocks://ogc.api.processes.v1.paths.JobList",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
+        "bblocks://ogc.api.processes.v1.paths.Conformance",
+        "bblocks://ogc.api.processes.v1.paths.ProcessList",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://ogc.api.processes.v1.parameters.jobId"
       ],
       "sourceOpenAPIDocument": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/custom-api/openapi.yaml",

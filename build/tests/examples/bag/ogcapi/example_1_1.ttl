@@ -1,21 +1,21 @@
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://catalogus.kadaster.nl/bag/nl/page/> .
-@prefix ns2: <https://data.crow.nl/imbor/term/> .
-@prefix ns3: <https://www.w3.org/2000/01/rdf-schema#> .
-@prefix ns4: <https://www.w3.org/1999/xhtml/vocab#> .
+@prefix ns1: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2: <https://www.w3.org/1999/xhtml/vocab#> .
+@prefix ns3: <https://catalogus.kadaster.nl/bag/nl/page/> .
+@prefix ns4: <https://data.crow.nl/imbor/term/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4> a geojson:Feature ;
-    ns1:Documentdatum "2024-12-06" ;
-    ns1:Documentnummer "28041487 OD" ;
-    ns1:Gebruiksdoel "industriefunctie" ;
-    ns1:Geconstateerd "N" ;
-    ns1:Identificatie "0394100003049202" ;
-    ns1:Status "Bouwvergunning verleend" ;
-    ns2:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;
+    ns3:Documentdatum "2024-12-06" ;
+    ns3:Documentnummer "28041487 OD" ;
+    ns3:Gebruiksdoel "industriefunctie" ;
+    ns3:Geconstateerd "N" ;
+    ns3:Identificatie "0394100003049202" ;
+    ns3:Status "Bouwvergunning verleend" ;
+    ns4:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 4.697783e+00 5.231698e+01 ) ( 4.698187e+00 5.231678e+01 ) ( 4.698261e+00 5.231683e+01 ) ( 4.697857e+00 5.231703e+01 ) ( 4.697783e+00 5.231698e+01 ) ) ) ] ;
-    ns4:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;
-    ns3:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .
+    ns2:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;
+    ns1:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .
 
