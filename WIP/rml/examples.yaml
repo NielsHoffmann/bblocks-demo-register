@@ -1,0 +1,5 @@
+examples:
+  - title: json to rdf example
+    snippets:
+      - language: json
+        ref: examples/trace.json

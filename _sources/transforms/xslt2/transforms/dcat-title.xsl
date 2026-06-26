@@ -42,6 +42,8 @@
 
     <xsl:param name="xsd">http://www.w3.org/2001/XMLSchema#</xsl:param>
 
+  
+
   <!--
 
   Master template
@@ -63,8 +65,9 @@
 -->
 
   <xsl:template match="gmd:MD_Metadata|//gmd:MD_Metadata">
-
+    
     <xsl:param name="MetadataUri">
+
     <xsl:variable name="mURI" select="gmd:fileIdentifier/gco:CharacterString"/>
     <xsl:if test="$mURI != '' and ( starts-with($mURI, 'http://') or starts-with($mURI, 'https://') )">
       <xsl:value-of select="$mURI"/>

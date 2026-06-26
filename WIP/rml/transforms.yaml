@@ -1,0 +1,25 @@
+transforms:
+  - id: rml-json-to-rdf
+    type: python
+    inputs:
+      mediaTypes: [ application/json ]
+    outputs:
+      mediaTypes:
+        - mimeType: text/turtle
+          defaultExtension: ttl
+    metadata:
+      dependencies:
+        pip: pyrml-lib
+        python: ">=3.10"   # optional; skipped if not met
+    code: |
+      from pyrml import Mapper, PyRML
+      from rdflib import Graph
+      import os
+
+      # Create an instance of RML Mapper with PyRML.
+      mapper : Mapper = PyRML.get_mapper()
+      
+      rml_file_path = input_data
+      rdf_graph : Graph  = mapper.convert(rml_file_path)
+      
+      output_data = rdf_graph.serialize(format="turtle")

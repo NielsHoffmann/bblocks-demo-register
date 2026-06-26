@@ -12,3 +12,8 @@ examples:
             </Authors>
             <Body>This is my article text.</Body>
           </Article>
+  
+  - title: iso19139 to dcat-ap example
+    snippets:
+      - language: xml
+        ref: ../xslt2/examples/simple-test.xml

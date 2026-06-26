@@ -4,4 +4,4 @@ __!! Work in progress !!__
 
 Met deze building blocks willen we onderzoeken en demonstreren hoe de transformatie van ISO-19115 naar DCAT gedaan kan worden.
 
-Gebruikt een custom transformer op basis van saxonche
+Dit BBlock gebruikt een custom XSLT transformer op basis van saxonche, hiermee wordt XSLT2 en 3 ondersteunt

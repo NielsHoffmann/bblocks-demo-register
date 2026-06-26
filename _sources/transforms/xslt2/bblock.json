@@ -6,5 +6,9 @@
   "itemClass": "schema",
   "version": "0.1",
   "dateOfLastChange": "2026-05-11",
-  "highlighted": true
+  "highlighted": true,
+  "tags": [
+    "transform",
+    "xml"
+  ]
 }
