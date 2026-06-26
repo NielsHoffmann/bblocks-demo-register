@@ -1,7 +1,7 @@
 
 # Localoutlier process input schema (Schema)
 
-`tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema` *v1.0*
+`geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema` *v1.0*
 
 Input schema for the localoutlier process
 

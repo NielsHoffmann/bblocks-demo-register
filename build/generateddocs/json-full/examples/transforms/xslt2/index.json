@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.transforms.xslt2",
+  "itemIdentifier": "geonovum.examples.transforms.xslt2",
   "name": "XSLT2 Transforms example",
   "abstract": "A sample building block to showcase transforms",
   "status": "under-development",

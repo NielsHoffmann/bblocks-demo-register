@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+  "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
   "name": "Example OGC API Processes instance output descriptions",
   "abstract": "Collection of output descriptions",
   "status": "under-development",
@@ -18,7 +18,7 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
   ],
   "schema": {
     "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml",

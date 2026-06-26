@@ -1,7 +1,7 @@
 
 # Bag eigenschappen (Schema)
 
-`tikouka.examples.bag.schema` *v0.8*
+`geonovum.examples.bag.schema` *v0.8*
 
 Dit blok definieert de eigenschappen van een BAG-object.
 

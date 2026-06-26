@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.transforms.ttl",
+  "itemIdentifier": "geonovum.examples.transforms.ttl",
   "name": "xml to ttl Transforms example",
   "highlighted": false,
   "abstract": "A building block to transform xml/rdf to ttl",

@@ -269,7 +269,7 @@
   "skos:prefLabel": "Building Blocks - Demo block collection",
   "hasConcepts": [
     {
-      "itemIdentifier": "tikouka.examples.bag.schema",
+      "itemIdentifier": "geonovum.examples.bag.schema",
       "name": "Bag eigenschappen",
       "abstract": "Dit blok definieert de eigenschappen van een BAG-object.",
       "status": "under-development",
@@ -324,10 +324,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.bag.schema"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.schema"
         }
       },
-      "@id": "bblocks://tikouka.examples.bag.schema",
+      "@id": "bblocks://geonovum.examples.bag.schema",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -345,7 +345,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
       "name": "Localoutlier process output schema",
       "abstract": "Output schema for the localoutlier process",
       "status": "under-development",
@@ -390,10 +390,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -412,7 +412,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
       "name": "Localoutlier process input schema",
       "abstract": "Input schema for the localoutlier process",
       "status": "under-development",
@@ -464,10 +464,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -485,7 +485,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.transforms.ttl",
+      "itemIdentifier": "geonovum.examples.transforms.ttl",
       "name": "xml to ttl Transforms example",
       "highlighted": false,
       "abstract": "A building block to transform xml/rdf to ttl",
@@ -540,10 +540,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.ttl"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.ttl"
         }
       },
-      "@id": "bblocks://tikouka.examples.transforms.ttl",
+      "@id": "bblocks://geonovum.examples.transforms.ttl",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -563,7 +563,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.transforms.xslt-example",
+      "itemIdentifier": "geonovum.examples.transforms.xslt-example",
       "name": "XSLT Transforms example",
       "highlighted": false,
       "abstract": "A sample building block to showcase transforms",
@@ -629,10 +629,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.xslt-example"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt-example"
         }
       },
-      "@id": "bblocks://tikouka.examples.transforms.xslt-example",
+      "@id": "bblocks://geonovum.examples.transforms.xslt-example",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -651,7 +651,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.transforms.xslt2",
+      "itemIdentifier": "geonovum.examples.transforms.xslt2",
       "name": "XSLT2 Transforms example",
       "abstract": "A sample building block to showcase transforms",
       "status": "under-development",
@@ -701,10 +701,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.xslt2"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt2"
         }
       },
-      "@id": "bblocks://tikouka.examples.transforms.xslt2",
+      "@id": "bblocks://geonovum.examples.transforms.xslt2",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -724,7 +724,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.bag.ogcapi",
+      "itemIdentifier": "geonovum.examples.bag.ogcapi",
       "name": "BAG-Pand",
       "abstract": "A GeoJSON Feature beschrijving van een BAG Pand.",
       "status": "under-development",
@@ -755,7 +755,7 @@
         }
       ],
       "dependsOn": [
-        "bblocks://tikouka.examples.bag.schema",
+        "bblocks://geonovum.examples.bag.schema",
         "bblocks://ogc.geo.features.feature"
       ],
       "schema": [
@@ -794,10 +794,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.bag.ogcapi"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.ogcapi"
         }
       },
-      "@id": "bblocks://tikouka.examples.bag.ogcapi",
+      "@id": "bblocks://geonovum.examples.bag.ogcapi",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -813,7 +813,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.airQualitySensor",
+      "itemIdentifier": "geonovum.examples.airQualitySensor",
       "name": "Air Quality Sensor Station",
       "abstract": "A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties.",
       "status": "under-development",
@@ -892,10 +892,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.airQualitySensor"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.airQualitySensor"
         }
       },
-      "@id": "bblocks://tikouka.examples.airQualitySensor",
+      "@id": "bblocks://geonovum.examples.airQualitySensor",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -911,7 +911,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
       "name": "Localoutlier process input description",
       "abstract": "Input description for the localoutlier process",
       "status": "under-development",
@@ -929,7 +929,7 @@
       "shaclShapes": null,
       "dependsOn": [
         "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
       ],
       "schema": [
         {
@@ -966,10 +966,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -986,7 +986,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
       "name": "Localoutlier process output description",
       "abstract": "Output description for the localoutlier process",
       "status": "under-development",
@@ -1004,7 +1004,7 @@
       "shaclShapes": null,
       "dependsOn": [
         "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
       ],
       "schema": [
         {
@@ -1041,10 +1041,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -1061,7 +1061,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
       "name": "Example OGC API Processes instance input descriptions",
       "abstract": "Collection of input descriptions",
       "status": "under-development",
@@ -1078,7 +1078,7 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
       ],
       "schema": [
         {
@@ -1115,10 +1115,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.inputDescriptions"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.inputDescriptions"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -1135,7 +1135,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
       "name": "Localoutlier process description",
       "abstract": "Process description for the localoutlier process",
       "status": "under-development",
@@ -1152,9 +1152,9 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
         "bblocks://ogc.api.processes.v1.schemas.process",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
       ],
       "schema": [
         {
@@ -1191,10 +1191,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -1211,7 +1211,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
       "name": "Example OGC API Processes instance output descriptions",
       "abstract": "Collection of output descriptions",
       "status": "under-development",
@@ -1228,7 +1228,7 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
       ],
       "schema": [
         {
@@ -1265,10 +1265,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.outputDescriptions"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.outputDescriptions"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
@@ -1285,7 +1285,7 @@
       }
     },
     {
-      "itemIdentifier": "tikouka.examples.ogcapi.processes.custom-api",
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.custom-api",
       "name": "Demo OGC API processes instance - LOF",
       "abstract": "An example of an OGC API Processes implementation using building blocks - Local Outlier Factor",
       "status": "under-development",
@@ -1306,8 +1306,8 @@
       "extensionPoints": {
         "baseBuildingBlock": "bblocks://ogc.api.processes.v1.api",
         "extensions": {
-          "bblocks://ogc.api.processes.v1.schemas.inputDescription": "bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
-          "bblocks://ogc.api.processes.v1.schemas.outputDescription": "bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions"
+          "bblocks://ogc.api.processes.v1.schemas.inputDescription": "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
+          "bblocks://ogc.api.processes.v1.schemas.outputDescription": "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions"
         }
       },
       "shaclShapes": null,
@@ -1315,18 +1315,18 @@
         "bblocks://ogc.api.processes.v1.responses.ServerError",
         "bblocks://ogc.api.processes.v1.parameters.jobId",
         "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
         "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
         "bblocks://ogc.api.processes.v1.paths.JobList",
         "bblocks://ogc.api.processes.v1.paths.LandingPage",
         "bblocks://ogc.api.processes.v1.schemas.outputDescription",
         "bblocks://ogc.api.processes.v1.api",
         "bblocks://ogc.api.processes.v1.schemas.execute",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
         "bblocks://ogc.api.processes.v1.paths.Conformance",
-        "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
         "bblocks://ogc.api.processes.v1.responses.NotFound",
         "bblocks://ogc.api.processes.v1.paths.ProcessList"
       ],
@@ -1350,10 +1350,10 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.custom-api"
+          "url": "https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.custom-api"
         }
       },
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.custom-api",
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.custom-api",
       "@type": [
         "bblocks:Api",
         "skos:Concept",
@@ -1372,46 +1372,46 @@
   ],
   "skos:hasTopConcept": [
     {
-      "@id": "bblocks://tikouka.examples.bag.schema"
+      "@id": "bblocks://geonovum.examples.bag.schema"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
     },
     {
-      "@id": "bblocks://tikouka.examples.transforms.ttl"
+      "@id": "bblocks://geonovum.examples.transforms.ttl"
     },
     {
-      "@id": "bblocks://tikouka.examples.transforms.xslt-example"
+      "@id": "bblocks://geonovum.examples.transforms.xslt-example"
     },
     {
-      "@id": "bblocks://tikouka.examples.transforms.xslt2"
+      "@id": "bblocks://geonovum.examples.transforms.xslt2"
     },
     {
-      "@id": "bblocks://tikouka.examples.bag.ogcapi"
+      "@id": "bblocks://geonovum.examples.bag.ogcapi"
     },
     {
-      "@id": "bblocks://tikouka.examples.airQualitySensor"
+      "@id": "bblocks://geonovum.examples.airQualitySensor"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions"
     },
     {
-      "@id": "bblocks://tikouka.examples.ogcapi.processes.custom-api"
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.custom-api"
     }
   ]
 }

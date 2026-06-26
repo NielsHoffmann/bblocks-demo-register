@@ -1,7 +1,7 @@
 {
-  "title": "Validation report for tikouka.examples.transforms.xslt2 - XSLT2 Transforms example",
+  "title": "Validation report for geonovum.examples.transforms.xslt2 - XSLT2 Transforms example",
   "bblockName": "XSLT2 Transforms example",
-  "bblockId": "tikouka.examples.transforms.xslt2",
+  "bblockId": "geonovum.examples.transforms.xslt2",
   "generated": "2026-06-17T15:30:09.925232+00:00",
   "result": true,
   "items": [],

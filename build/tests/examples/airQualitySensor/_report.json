@@ -1,7 +1,7 @@
 {
-  "title": "Validation report for tikouka.examples.airQualitySensor - Air Quality Sensor Station",
+  "title": "Validation report for geonovum.examples.airQualitySensor - Air Quality Sensor Station",
   "bblockName": "Air Quality Sensor Station",
-  "bblockId": "tikouka.examples.airQualitySensor",
+  "bblockId": "geonovum.examples.airQualitySensor",
   "generated": "2026-06-17T15:30:10.553676+00:00",
   "result": true,
   "items": [

@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.bag.ogcapi",
+  "itemIdentifier": "geonovum.examples.bag.ogcapi",
   "name": "BAG-Pand",
   "abstract": "A GeoJSON Feature beschrijving van een BAG Pand.",
   "status": "under-development",
@@ -26,7 +26,7 @@
     ]
   },
   "dependsOn": [
-    "tikouka.examples.bag.schema",
+    "geonovum.examples.bag.schema",
     "ogc.geo.features.feature"
   ],
   "schema": {

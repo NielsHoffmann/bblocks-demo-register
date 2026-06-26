@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: "OGC API - Processes 1.0 tikouka example"
+  title: "OGC API - Processes 1.0 geonovum example"
   version: 1.0.0
   description: |-
     This is an OGC API - Processes 1.0 implementation using Building Blocks for a DTaaS demo.
@@ -46,7 +46,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription
+                $ref: bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription
         default:
           $ref: "bblocks://ogc.api.processes.v1.responses.ServerError"
 
@@ -76,7 +76,7 @@ paths:
                 - required: [inputs]
                   properties:
                     inputs:
-                      $ref: bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema
+                      $ref: bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema
             example:
               inputs:
                 dataset: https://example.com/data/points.geojson
@@ -91,12 +91,12 @@ paths:
               schema:
                 properties:
                   outputs:
-                    $ref: bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema
-        201:
+                    $ref: bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema
+        '201':
           $ref: "bblocks://ogc.api.processes.v1.responses.ExecuteAsync"
-        404:
+        '404':
           $ref: "bblocks://ogc.api.processes.v1.responses.NotFound"
-        500:
+        '500':
           $ref: "bblocks://ogc.api.processes.v1.responses.ServerError"
 
   /jobs:
@@ -118,15 +118,15 @@ paths:
       parameters:
         - $ref: "bblocks://ogc.api.processes.v1.parameters.jobId"
       responses:
-        200:
+        '200':
           description: Job results
           content:
             application/json:
               schema:
-                $ref: bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions
-        404:
+                $ref: bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions
+        '404':
           $ref: "bblocks://ogc.api.processes.v1.responses.NotFound"
-        500:
+        '500':
           $ref: "bblocks://ogc.api.processes.v1.responses.ServerError"
 
 servers:

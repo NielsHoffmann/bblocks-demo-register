@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
+  "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
   "name": "Localoutlier process input description",
   "abstract": "Input description for the localoutlier process",
   "status": "under-development",
@@ -19,7 +19,7 @@
   "shaclShapes": {},
   "dependsOn": [
     "ogc.api.processes.v1.schemas.inputDescription",
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
   ],
   "schema": {
     "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",

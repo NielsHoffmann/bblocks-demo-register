@@ -19,8 +19,8 @@
   "extensionPoints": {
     "baseBuildingBlock": "ogc.api.processes.v1.api",
     "extensions": {
-      "ogc.api.processes.v1.schemas.inputDescription": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
-      "ogc.api.processes.v1.schemas.outputDescription": "tikouka.examples.ogcapi.processes.schemas.outputDescriptions"
+      "ogc.api.processes.v1.schemas.inputDescription": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
+      "ogc.api.processes.v1.schemas.outputDescription": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions"
     }
   }
 }

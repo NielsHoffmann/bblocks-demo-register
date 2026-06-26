@@ -1,7 +1,7 @@
 
 # BAG-Pand (Schema)
 
-`tikouka.examples.bag.ogcapi` *v0.1*
+`geonovum.examples.bag.ogcapi` *v0.1*
 
 A GeoJSON Feature beschrijving van een BAG Pand.
 

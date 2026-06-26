@@ -1,7 +1,7 @@
 
 # Demo OGC API processes instance - LOF (Api)
 
-`tikouka.examples.ogcapi.processes.custom-api` *v1.0*
+`geonovum.examples.ogcapi.processes.custom-api` *v1.0*
 
 An example of an OGC API Processes implementation using building blocks - Local Outlier Factor
 

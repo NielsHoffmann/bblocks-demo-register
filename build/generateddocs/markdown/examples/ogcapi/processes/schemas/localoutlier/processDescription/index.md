@@ -1,7 +1,7 @@
 
 # Localoutlier process description (Schema)
 
-`tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription` *v1.0*
+`geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription` *v1.0*
 
 Process description for the localoutlier process
 

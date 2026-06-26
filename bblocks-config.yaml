@@ -7,16 +7,16 @@ abstract: |
 
 # Description for this collection (optional)
 description: |
-  register for [this](https://ogcincubator.github.io/rainbow-docs/tutorials/applied-ogc-blocks/1-define-your-block) tutorial.
+  register for various examples of building blocks.
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
 # identifier-prefix: r1.tutorial.sensors.
-identifier-prefix: tikouka.examples.
+identifier-prefix: geonovum.examples.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
-  - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  # - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
   - https://ogcincubator.github.io/bblocks-ogcapi-processes
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
@@ -46,3 +46,8 @@ schema-oas30-downcompile: False
 #   query: https://example.com/sparql       # SPARQL query endpoint where data will be available
 #   resources:                              # Additional resources to upload apart from building block metadata
 #      ontologies: true                     #   Whether to upload ontology files to the triplestore
+plugins:
+   transforms:
+    - pip: git+https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin.git@main
+      modules:
+        - bbplugin_xslt2

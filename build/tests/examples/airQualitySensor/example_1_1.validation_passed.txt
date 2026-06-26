@@ -1,4 +1,4 @@
-Validation report for tikouka.examples.airQualitySensor - Air Quality Sensor Station
+Validation report for geonovum.examples.airQualitySensor - Air Quality Sensor Station
 Generated 2026-06-17T15:30:10.553585+00:00
 === Files ===
 Using sensor.json from examples

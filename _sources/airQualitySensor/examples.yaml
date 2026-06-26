@@ -1,9 +1,0 @@
-examples:
-  - title: Station Alpha - Madrid Centro
-    content: >
-      A fixed air quality monitoring station in central Madrid, with NO₂ and
-      PM10 observations.
-    base-uri: https://example.com/sensors/
-    snippets:
-      - language: json
-        ref: sensor.json

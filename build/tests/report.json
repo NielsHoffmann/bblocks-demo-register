@@ -6,10 +6,10 @@
     "result": true
   },
   "bblocks": {
-    "tikouka.examples.bag.schema": {
-      "title": "Validation report for tikouka.examples.bag.schema - Bag eigenschappen",
+    "geonovum.examples.bag.schema": {
+      "title": "Validation report for geonovum.examples.bag.schema - Bag eigenschappen",
       "bblockName": "Bag eigenschappen",
-      "bblockId": "tikouka.examples.bag.schema",
+      "bblockId": "geonovum.examples.bag.schema",
       "generated": "2026-06-17T15:30:09.860154+00:00",
       "result": true,
       "items": [],
@@ -20,10 +20,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
       "bblockName": "Localoutlier process output schema",
-      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
       "generated": "2026-06-17T15:30:09.865627+00:00",
       "result": true,
       "items": [],
@@ -34,10 +34,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
       "bblockName": "Localoutlier process input schema",
-      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
       "generated": "2026-06-17T15:30:09.873298+00:00",
       "result": true,
       "items": [],
@@ -48,10 +48,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.transforms.ttl": {
-      "title": "Validation report for tikouka.examples.transforms.ttl - xml to ttl Transforms example",
+    "geonovum.examples.transforms.ttl": {
+      "title": "Validation report for geonovum.examples.transforms.ttl - xml to ttl Transforms example",
       "bblockName": "xml to ttl Transforms example",
-      "bblockId": "tikouka.examples.transforms.ttl",
+      "bblockId": "geonovum.examples.transforms.ttl",
       "generated": "2026-06-17T15:30:09.884865+00:00",
       "result": true,
       "items": [
@@ -95,10 +95,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.transforms.xslt-example": {
-      "title": "Validation report for tikouka.examples.transforms.xslt-example - XSLT Transforms example",
+    "geonovum.examples.transforms.xslt-example": {
+      "title": "Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example",
       "bblockName": "XSLT Transforms example",
-      "bblockId": "tikouka.examples.transforms.xslt-example",
+      "bblockId": "geonovum.examples.transforms.xslt-example",
       "generated": "2026-06-17T15:30:09.907735+00:00",
       "result": true,
       "items": [],
@@ -109,10 +109,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.transforms.xslt2": {
-      "title": "Validation report for tikouka.examples.transforms.xslt2 - XSLT2 Transforms example",
+    "geonovum.examples.transforms.xslt2": {
+      "title": "Validation report for geonovum.examples.transforms.xslt2 - XSLT2 Transforms example",
       "bblockName": "XSLT2 Transforms example",
-      "bblockId": "tikouka.examples.transforms.xslt2",
+      "bblockId": "geonovum.examples.transforms.xslt2",
       "generated": "2026-06-17T15:30:09.925232+00:00",
       "result": true,
       "items": [],
@@ -123,10 +123,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.bag.ogcapi": {
-      "title": "Validation report for tikouka.examples.bag.ogcapi - BAG-Pand",
+    "geonovum.examples.bag.ogcapi": {
+      "title": "Validation report for geonovum.examples.bag.ogcapi - BAG-Pand",
       "bblockName": "BAG-Pand",
-      "bblockId": "tikouka.examples.bag.ogcapi",
+      "bblockId": "geonovum.examples.bag.ogcapi",
       "generated": "2026-06-17T15:30:10.150746+00:00",
       "result": true,
       "items": [
@@ -230,10 +230,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.airQualitySensor": {
-      "title": "Validation report for tikouka.examples.airQualitySensor - Air Quality Sensor Station",
+    "geonovum.examples.airQualitySensor": {
+      "title": "Validation report for geonovum.examples.airQualitySensor - Air Quality Sensor Station",
       "bblockName": "Air Quality Sensor Station",
-      "bblockId": "tikouka.examples.airQualitySensor",
+      "bblockId": "geonovum.examples.airQualitySensor",
       "generated": "2026-06-17T15:30:10.553676+00:00",
       "result": true,
       "items": [
@@ -381,10 +381,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription - Localoutlier process input description",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription - Localoutlier process input description",
       "bblockName": "Localoutlier process input description",
-      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
       "generated": "2026-06-17T15:30:10.567023+00:00",
       "result": true,
       "items": [],
@@ -395,10 +395,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
       "bblockName": "Localoutlier process output description",
-      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
       "generated": "2026-06-17T15:30:10.574034+00:00",
       "result": true,
       "items": [],
@@ -409,10 +409,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.schemas.inputDescriptions": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.inputDescriptions - Example OGC API Processes instance input descriptions",
+    "geonovum.examples.ogcapi.processes.schemas.inputDescriptions": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.inputDescriptions - Example OGC API Processes instance input descriptions",
       "bblockName": "Example OGC API Processes instance input descriptions",
-      "bblockId": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
       "generated": "2026-06-17T15:30:10.579431+00:00",
       "result": true,
       "items": [],
@@ -423,10 +423,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription - Localoutlier process description",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription - Localoutlier process description",
       "bblockName": "Localoutlier process description",
-      "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
       "generated": "2026-06-17T15:30:10.586114+00:00",
       "result": true,
       "items": [],
@@ -437,10 +437,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.schemas.outputDescriptions": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.outputDescriptions - Example OGC API Processes instance output descriptions",
+    "geonovum.examples.ogcapi.processes.schemas.outputDescriptions": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.outputDescriptions - Example OGC API Processes instance output descriptions",
       "bblockName": "Example OGC API Processes instance output descriptions",
-      "bblockId": "tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
       "generated": "2026-06-17T15:30:10.591422+00:00",
       "result": true,
       "items": [],
@@ -451,10 +451,10 @@
         "failed": 0
       }
     },
-    "tikouka.examples.ogcapi.processes.custom-api": {
-      "title": "Validation report for tikouka.examples.ogcapi.processes.custom-api - Demo OGC API processes instance - LOF",
+    "geonovum.examples.ogcapi.processes.custom-api": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.custom-api - Demo OGC API processes instance - LOF",
       "bblockName": "Demo OGC API processes instance - LOF",
-      "bblockId": "tikouka.examples.ogcapi.processes.custom-api",
+      "bblockId": "geonovum.examples.ogcapi.processes.custom-api",
       "generated": "2026-06-17T15:30:10.594990+00:00",
       "result": true,
       "items": [],

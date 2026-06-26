@@ -14,7 +14,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<bblocks://tikouka.examples.airQualitySensor> a skos:Concept,
+<bblocks://geonovum.examples.airQualitySensor> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -22,7 +22,7 @@
     dct:abstract "A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-15T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.airQualitySensor> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.airQualitySensor> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/airQualitySensor/index.json> ],
         [ dct:format "text/markdown" ;
@@ -66,7 +66,7 @@
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.bag.ogcapi> a skos:Concept,
+<bblocks://geonovum.examples.bag.ogcapi> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -76,7 +76,7 @@
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/ogcapi/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.bag.ogcapi> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.ogcapi> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/ogcapi/index.json> ] ;
     dct:hasVersion "0.1" ;
@@ -107,12 +107,12 @@
             prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.geo.features.feature> ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
-        <bblocks://tikouka.examples.bag.schema> ;
+        <bblocks://geonovum.examples.bag.schema> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.custom-api> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.custom-api> a skos:Concept,
         dcat:Dataset,
         bblocks:Api,
         bblocks:BBlock ;
@@ -124,7 +124,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.custom-api> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.custom-api> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -146,15 +146,15 @@
         <bblocks://ogc.api.processes.v1.schemas.execute>,
         <bblocks://ogc.api.processes.v1.schemas.inputDescription>,
         <bblocks://ogc.api.processes.v1.schemas.outputDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions> ;
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.transforms.ttl> a skos:Concept,
+<bblocks://geonovum.examples.transforms.ttl> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -164,7 +164,7 @@
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/ttl/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.ttl> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.ttl> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/ttl/index.md> ] ;
     dct:hasVersion "0.1" ;
@@ -175,7 +175,7 @@
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.transforms.xslt-example> a skos:Concept,
+<bblocks://geonovum.examples.transforms.xslt-example> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -185,7 +185,7 @@
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt-example/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.xslt-example> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt-example> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt-example/index.json> ] ;
     dct:hasVersion "0.1" ;
@@ -204,7 +204,7 @@
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.transforms.xslt2> a skos:Concept,
+<bblocks://geonovum.examples.transforms.xslt2> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -214,7 +214,7 @@
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt2/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.transforms.xslt2> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt2> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt2/index.md> ] ;
     dct:hasVersion "0.1" ;
@@ -240,7 +240,7 @@
                     rdfs:seeAlso <https://nielshoffmann.github.io/bblocks-demo-register/build/register.json> ] ;
             prov:wasAssociatedWith _:Ne5cfe50868b2492b8c098207a3c856d0 ] .
 
-<bblocks://tikouka.examples.bag.schema> a skos:Concept,
+<bblocks://geonovum.examples.bag.schema> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -250,7 +250,7 @@
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.bag.schema> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.schema> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/schema/index.md> ] ;
     dct:hasVersion "0.8" ;
@@ -279,7 +279,7 @@
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -291,7 +291,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.inputDescriptions> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.inputDescriptions> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -312,11 +312,11 @@
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld> ;
             prof:hasRole role:mapping ] ;
-    bblocks:dependsOn <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ;
+    bblocks:dependsOn <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -326,7 +326,7 @@
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.md> ] ;
     dct:hasVersion "1.0" ;
@@ -350,12 +350,12 @@
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.process>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ;
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -363,7 +363,7 @@
     dct:abstract "Collection of output descriptions"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.outputDescriptions> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.outputDescriptions> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/outputDescriptions/index.md> ],
         [ dct:format "application/json" ;
@@ -388,11 +388,11 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml> ;
             prof:hasRole role:schema ] ;
-    bblocks:dependsOn <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ;
+    bblocks:dependsOn <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -402,7 +402,7 @@
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.md> ] ;
     dct:hasVersion "1.0" ;
@@ -426,11 +426,11 @@
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.inputDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ;
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -442,7 +442,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -467,7 +467,7 @@
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -477,7 +477,7 @@
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ],
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -501,11 +501,11 @@
             prof:hasArtifact <https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.outputDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ;
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema> a skos:Concept,
+<bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
@@ -517,7 +517,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-06-17"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/bblocks-demo-register/> ;
@@ -549,20 +549,20 @@
     owl:imports <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json>,
         <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> ;
-    skos:hasTopConcept <bblocks://tikouka.examples.airQualitySensor>,
-        <bblocks://tikouka.examples.bag.ogcapi>,
-        <bblocks://tikouka.examples.bag.schema>,
-        <bblocks://tikouka.examples.ogcapi.processes.custom-api>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.inputDescriptions>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription>,
-        <bblocks://tikouka.examples.ogcapi.processes.schemas.outputDescriptions>,
-        <bblocks://tikouka.examples.transforms.ttl>,
-        <bblocks://tikouka.examples.transforms.xslt-example>,
-        <bblocks://tikouka.examples.transforms.xslt2> ;
+    skos:hasTopConcept <bblocks://geonovum.examples.airQualitySensor>,
+        <bblocks://geonovum.examples.bag.ogcapi>,
+        <bblocks://geonovum.examples.bag.schema>,
+        <bblocks://geonovum.examples.ogcapi.processes.custom-api>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription>,
+        <bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions>,
+        <bblocks://geonovum.examples.transforms.ttl>,
+        <bblocks://geonovum.examples.transforms.xslt-example>,
+        <bblocks://geonovum.examples.transforms.xslt2> ;
     skos:prefLabel "Building Blocks - Demo block collection" ;
     prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;

@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.bag.schema",
+  "itemIdentifier": "geonovum.examples.bag.schema",
   "name": "Bag eigenschappen",
   "abstract": "Dit blok definieert de eigenschappen van een BAG-object.",
   "status": "under-development",

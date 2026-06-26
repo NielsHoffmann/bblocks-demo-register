@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: OGC API - Processes 1.0 tikouka example
+  title: OGC API - Processes 1.0 geonovum example
   version: 1.0.0
   description: This is an OGC API - Processes 1.0 implementation using Building Blocks
     for a DTaaS demo.

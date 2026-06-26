@@ -1,7 +1,7 @@
 
 # Localoutlier process input description (Schema)
 
-`tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription` *v1.0*
+`geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription` *v1.0*
 
 Input description for the localoutlier process
 

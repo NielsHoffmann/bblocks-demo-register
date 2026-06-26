@@ -1,7 +1,7 @@
 
 # xml to ttl Transforms example (Schema)
 
-`tikouka.examples.transforms.ttl` *v0.1*
+`geonovum.examples.transforms.ttl` *v0.1*
 
 A building block to transform xml/rdf to ttl
 

@@ -8,4 +8,4 @@ allOf:
   - properties:
       # "properties" here refers to the GeoJSON Feature's "properties" object
       properties:
-        $ref: bblocks://tikouka.examples.bag.schema
+        $ref: bblocks://geonovum.examples.bag.schema

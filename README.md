@@ -1,17 +1,26 @@
-# OGC Building Block template
+# OGC Building Block demos
 
-This template provides a working example of an [OGC Building Block](https:blocks.ogc.org). For more info see [the Documentation](https://ogcincubator.github.io/bblocks-docs/).
+This repository shows a number of OGC Building Block demonstrations in the context of work Geonovum is doing.
 
-This template is a working automation recipe to define, test and document a set of Building Blocks.
+For more info on the OGC Building Block framework see [the OGC Documentation](https://ogcincubator.github.io/bblocks-docs/).
 
-The automation-generated documentation for this example is here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
-
-[Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
-
-Please replace the contents of this README with information about your Building Block(s).
-
-# How to use this template
-
-[More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
+This repoistory is based on the that can be found here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
 
 
+# Demo's
+
+## Semnatic annotation of a BAG Pand
+
+These building blocks show a JSON-LD context that connects the JSON schema of a BAG Pand to the relevant terms in a vocabulary.
+The context is than connected to a OGC Feature to show how this link can help make definitions explicit in a User Interface.
+
+## OGC API Processes
+
+Work in progress...
+
+
+## Transforms
+
+The transforms building blocks serve as a test to show the Saxonche XSLT Transformer.
+
+The native BBlocks XSLT transformer uses lxml, which only supports XSLT v1. The [bblocks-xslt2-transform-plugin](https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin) is based on the Saxon transformer and support XSLT v2 and 3.

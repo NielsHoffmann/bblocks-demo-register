@@ -14,4 +14,4 @@ properties:
             type: string
             const: output
           schema:
-            $ref: bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema#/properties/output_dataset
+            $ref: bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema#/properties/output_dataset

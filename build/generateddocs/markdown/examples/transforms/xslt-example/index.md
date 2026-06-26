@@ -1,7 +1,7 @@
 
 # XSLT Transforms example (Schema)
 
-`tikouka.examples.transforms.xslt-example` *v0.1*
+`geonovum.examples.transforms.xslt-example` *v0.1*
 
 A sample building block to showcase transforms
 

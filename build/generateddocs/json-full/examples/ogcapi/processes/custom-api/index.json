@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.ogcapi.processes.custom-api",
+  "itemIdentifier": "geonovum.examples.ogcapi.processes.custom-api",
   "name": "Demo OGC API processes instance - LOF",
   "abstract": "An example of an OGC API Processes implementation using building blocks - Local Outlier Factor",
   "status": "under-development",
@@ -22,8 +22,8 @@
   "extensionPoints": {
     "baseBuildingBlock": "ogc.api.processes.v1.api",
     "extensions": {
-      "ogc.api.processes.v1.schemas.inputDescription": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
-      "ogc.api.processes.v1.schemas.outputDescription": "tikouka.examples.ogcapi.processes.schemas.outputDescriptions"
+      "ogc.api.processes.v1.schemas.inputDescription": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
+      "ogc.api.processes.v1.schemas.outputDescription": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions"
     }
   },
   "shaclShapes": {},
@@ -31,18 +31,18 @@
     "ogc.api.processes.v1.responses.ServerError",
     "ogc.api.processes.v1.parameters.jobId",
     "ogc.api.processes.v1.schemas.inputDescription",
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.processDescription",
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-    "tikouka.examples.ogcapi.processes.schemas.outputDescriptions",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+    "geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
     "ogc.api.processes.v1.responses.ExecuteAsync",
     "ogc.api.processes.v1.paths.JobList",
     "ogc.api.processes.v1.paths.LandingPage",
     "ogc.api.processes.v1.schemas.outputDescription",
     "ogc.api.processes.v1.api",
     "ogc.api.processes.v1.schemas.execute",
-    "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+    "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
     "ogc.api.processes.v1.paths.Conformance",
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
     "ogc.api.processes.v1.responses.NotFound",
     "ogc.api.processes.v1.paths.ProcessList"
   ],

@@ -1,7 +1,7 @@
 {
-  "title": "Validation report for tikouka.examples.bag.ogcapi - BAG-Pand",
+  "title": "Validation report for geonovum.examples.bag.ogcapi - BAG-Pand",
   "bblockName": "BAG-Pand",
-  "bblockId": "tikouka.examples.bag.ogcapi",
+  "bblockId": "geonovum.examples.bag.ogcapi",
   "generated": "2026-06-17T15:30:10.150746+00:00",
   "result": true,
   "items": [

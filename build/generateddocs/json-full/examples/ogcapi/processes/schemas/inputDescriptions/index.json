@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.inputDescriptions",
+  "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
   "name": "Example OGC API Processes instance input descriptions",
   "abstract": "Collection of input descriptions",
   "status": "under-development",
@@ -18,7 +18,7 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription"
   ],
   "schema": {
     "application/yaml": "https://nielshoffmann.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",

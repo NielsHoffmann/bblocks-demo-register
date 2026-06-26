@@ -1,7 +1,7 @@
 
 # Example OGC API Processes instance output descriptions (Schema)
 
-`tikouka.examples.ogcapi.processes.schemas.outputDescriptions` *v1.0*
+`geonovum.examples.ogcapi.processes.schemas.outputDescriptions` *v1.0*
 
 Collection of output descriptions
 

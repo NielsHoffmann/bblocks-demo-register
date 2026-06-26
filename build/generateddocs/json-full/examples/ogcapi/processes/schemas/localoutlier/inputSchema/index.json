@@ -1,7 +1,7 @@
 
 
 {
-  "itemIdentifier": "tikouka.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+  "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
   "name": "Localoutlier process input schema",
   "abstract": "Input schema for the localoutlier process",
   "status": "under-development",

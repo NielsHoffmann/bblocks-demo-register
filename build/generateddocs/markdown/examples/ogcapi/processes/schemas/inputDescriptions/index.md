@@ -1,7 +1,7 @@
 
 # Example OGC API Processes instance input descriptions (Schema)
 
-`tikouka.examples.ogcapi.processes.schemas.inputDescriptions` *v1.0*
+`geonovum.examples.ogcapi.processes.schemas.inputDescriptions` *v1.0*
 
 Collection of input descriptions
 

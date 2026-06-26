@@ -1,2 +1,2 @@
 anyOf:
-  - $ref: bblocks://tikouka.examples.ogcapi.processes.schemas.localoutlier.inputDescription
+  - $ref: bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription

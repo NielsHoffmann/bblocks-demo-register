@@ -1,7 +1,7 @@
 {
-  "title": "Validation report for tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
+  "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
   "bblockName": "Localoutlier process output description",
-  "bblockId": "tikouka.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
+  "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
   "generated": "2026-06-17T15:30:10.574034+00:00",
   "result": true,
   "items": [],

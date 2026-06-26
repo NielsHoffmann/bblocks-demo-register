@@ -1,7 +1,7 @@
 
 # Air Quality Sensor Station (Schema)
 
-`tikouka.examples.airQualitySensor` *v0.1*
+`geonovum.examples.airQualitySensor` *v0.1*
 
 A GeoJSON Feature describing a fixed air quality monitoring station, including SOSA observations of atmospheric properties.
 
