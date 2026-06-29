@@ -1,5 +1,5 @@
 Validation report for geonovum.examples.transforms.ttl - xml to ttl Transforms example
-Generated 2026-06-26T11:58:52.055807+00:00
+Generated 2026-06-29T08:40:27.300708+00:00
 === Files ===
 Using examples/dcat-title.rdf from examples
 Output Turtle example_1_1.rdf.rdf.ttl created
