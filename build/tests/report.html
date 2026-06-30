@@ -64,9 +64,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-06-29T08:40:28.354721+00:00</small>
-                <p class="summary fw-semibold text-success">
-                    Number of passing building blocks: 13 / 13 (100%)
+            <small class="datetime">Generated at 2026-06-30T07:30:37.180527+00:00</small>
+                <p class="summary fw-semibold text-danger">
+                    Number of passing building blocks: 10 / 12 (83.33%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -142,29 +142,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.examples.transforms.ttl" id="bblock-geonovum.examples.transforms.ttl">
+                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.examples.transforms.xslt-example" id="bblock-geonovum.examples.transforms.xslt-example">
                             <h2 class="accordion-header bblock-title anchor-container">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-geonovum\.examples\.transforms\.ttl">
+                                    data-bs-target="#bblock-collapse-geonovum\.examples\.transforms\.xslt-example">
                                     <div class="flex-fill">
-                                        xml to ttl Transforms example
-                                        <small class="ms-2 bblock-id">geonovum.examples.transforms.ttl</small>
-                                        <a class="anchor" href="#bblock-geonovum.examples.transforms.ttl">¶</a>
+                                        XSLT Transforms example
+                                        <small class="ms-2 bblock-id">geonovum.examples.transforms.xslt-example</small>
+                                        <a class="anchor" href="#bblock-geonovum.examples.transforms.xslt-example">¶</a>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (50% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.examples.transforms.ttl">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-geonovum.examples.transforms.xslt-example">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 1 / 1
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 1 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item " id="item-geonovum.examples.transforms.ttl-1">
+                                        <div class="card mb-2 validation-item " id="item-geonovum.examples.transforms.xslt-example-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -174,21 +174,48 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="examples/transforms/ttl/example_1_1.rdf.rdf.xml" target="_blank">example_1_1.rdf.rdf.xml</a>
+                                                    <a href="examples/transforms/xslt-example/example_1_1.xml" target="_blank">example_1_1.xml</a>
                                                     <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-geonovum.examples.transforms.ttl-1">¶</a>
+                                                    <a class="anchor" href="#item-geonovum.examples.transforms.xslt-example-1">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Plugin</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-files ">Using examples/dcat-title.rdf from examples</div>
+                                                                        <div class="font-monospace subsection-title mt-2 text-secondary">bbplugin_rdfxml_validator.RdfXmlValidator</div>
+                                                                    <div class="font-monospace entry-message section-plugin text-danger">Invalid RDF/XML file: sequence item 0: expected str instance, NoneType found</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-geonovum.examples.transforms.xslt-example-2">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
+                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="examples/transforms/xslt-example/example_2_1.xml" target="_blank">example_2_1.xml</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-geonovum.examples.transforms.xslt-example-2">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Plugin</div>
+                                                                
                                                                     
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.rdf.rdf.ttl created</div>
+                                                                        <div class="font-monospace subsection-title mt-2 text-secondary">bbplugin_rdfxml_validator.RdfXmlValidator</div>
+                                                                    <div class="font-monospace entry-message section-plugin ">RDF/XML file is valid (example_2_1.xml)</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,32 +223,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="geonovum.examples.transforms.xslt-example" id="bblock-geonovum.examples.transforms.xslt-example">
-                            <h2 class="accordion-header bblock-title anchor-container">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-geonovum\.examples\.transforms\.xslt-example">
-                                    <div class="flex-fill">
-                                        XSLT Transforms example
-                                        <small class="ms-2 bblock-id">geonovum.examples.transforms.xslt-example</small>
-                                        <a class="anchor" href="#bblock-geonovum.examples.transforms.xslt-example">¶</a>
-                                    </div>
-
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (no tests)
-                                    </span>
-                                </button>
-                            </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.examples.transforms.xslt-example">
-                                <div class="accordion-body">
-                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="accordion-item bblock-report" data-bblock-id="geonovum.examples.transforms.xslt2" id="bblock-geonovum.examples.transforms.xslt2">
                             <h2 class="accordion-header bblock-title anchor-container">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-geonovum\.examples\.transforms\.xslt2">
                                     <div class="flex-fill">
@@ -230,15 +234,73 @@
                                         <a class="anchor" href="#bblock-geonovum.examples.transforms.xslt2">¶</a>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (no tests)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (50% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-geonovum.examples.transforms.xslt2">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-geonovum.examples.transforms.xslt2">
                                 <div class="accordion-body">
-                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 1 / 2
+                                        </p>
+                                        <div class="card mb-2 validation-item " id="item-geonovum.examples.transforms.xslt2-1">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
+                                                            aria-expanded="false" aria-controls="uid-3"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="examples/transforms/xslt2/example_1_1.xml" target="_blank">example_1_1.xml</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-geonovum.examples.transforms.xslt2-1">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Plugin</div>
+                                                                
+                                                                    
+                                                                        <div class="font-monospace subsection-title mt-2 text-secondary">bbplugin_rdfxml_validator.RdfXmlValidator</div>
+                                                                    <div class="font-monospace entry-message section-plugin ">RDF/XML file is valid (example_1_1.xml)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-geonovum.examples.transforms.xslt2-2">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="examples/transforms/xslt2/example_2_1.xml" target="_blank">example_2_1.xml</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-geonovum.examples.transforms.xslt2-2">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Plugin</div>
+                                                                
+                                                                    
+                                                                        <div class="font-monospace subsection-title mt-2 text-secondary">bbplugin_rdfxml_validator.RdfXmlValidator</div>
+                                                                    <div class="font-monospace entry-message section-plugin text-danger">Invalid RDF/XML file: sequence item 0: expected str instance, NoneType found</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -268,8 +330,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
-                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -281,7 +343,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -306,11 +368,11 @@
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4&gt;
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>

@@ -1,0 +1,8 @@
+Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example
+Generated 2026-06-30T07:30:35.864444+00:00
+=== Plugin ===
+
+--- Plugin: bbplugin_rdfxml_validator.RdfXmlValidator ---
+RDF/XML file is valid (example_2_1.xml)
+=== End Plugin ===
+

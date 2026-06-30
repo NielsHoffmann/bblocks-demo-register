@@ -1,16 +1,16 @@
 {
   "summary": {
-    "total": 13,
-    "passed": 13,
-    "failed": 0,
-    "result": true
+    "total": 12,
+    "passed": 10,
+    "failed": 2,
+    "result": false
   },
   "bblocks": {
     "geonovum.examples.bag.schema": {
       "title": "Validation report for geonovum.examples.bag.schema - Bag eigenschappen",
       "bblockName": "Bag eigenschappen",
       "bblockId": "geonovum.examples.bag.schema",
-      "generated": "2026-06-29T08:40:27.277598+00:00",
+      "generated": "2026-06-30T07:30:35.597464+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -24,7 +24,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
       "bblockName": "Localoutlier process input schema",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-      "generated": "2026-06-29T08:40:27.285090+00:00",
+      "generated": "2026-06-30T07:30:35.605760+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -38,7 +38,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
       "bblockName": "Localoutlier process output schema",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "generated": "2026-06-29T08:40:27.289977+00:00",
+      "generated": "2026-06-30T07:30:35.610948+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -48,40 +48,58 @@
         "failed": 0
       }
     },
-    "geonovum.examples.transforms.ttl": {
-      "title": "Validation report for geonovum.examples.transforms.ttl - xml to ttl Transforms example",
-      "bblockName": "xml to ttl Transforms example",
-      "bblockId": "geonovum.examples.transforms.ttl",
-      "generated": "2026-06-29T08:40:27.300761+00:00",
-      "result": true,
+    "geonovum.examples.transforms.xslt-example": {
+      "title": "Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example",
+      "bblockName": "XSLT Transforms example",
+      "bblockId": "geonovum.examples.transforms.xslt-example",
+      "generated": "2026-06-30T07:30:35.864535+00:00",
+      "result": false,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
-            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/ttl/example_1_1.rdf.rdf.xml",
+            "filename": "build/tests/examples/transforms/xslt-example/example_1_1.xml",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/example_1_1.xml",
             "exampleIndex": 1,
             "snippetIndex": 1,
-            "language": "application/rdf+xml"
+            "language": "application/xml"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "PLUGIN",
+              "title": "Plugin",
+              "entries": [
+                {
+                  "plugin": "bbplugin_rdfxml_validator.RdfXmlValidator",
+                  "isError": true,
+                  "message": "Invalid RDF/XML file: sequence item 0: expected str instance, NoneType found"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/transforms/xslt-example/example_2_1.xml",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/example_2_1.xml",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/xml"
           },
           "result": true,
           "sections": [
             {
-              "name": "FILES",
-              "title": "Files",
+              "name": "PLUGIN",
+              "title": "Plugin",
               "entries": [
                 {
+                  "plugin": "bbplugin_rdfxml_validator.RdfXmlValidator",
                   "isError": false,
-                  "message": "Using examples/dcat-title.rdf from examples"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.rdf.rdf.ttl",
-                  "size": 3,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.rdf.rdf.ttl created"
+                  "message": "RDF/XML file is valid (example_2_1.xml)"
                 }
               ]
             }
@@ -90,44 +108,81 @@
       ],
       "globalErrors": {},
       "counts": {
-        "total": 1,
+        "total": 2,
         "passed": 1,
-        "failed": 0
-      }
-    },
-    "geonovum.examples.transforms.xslt-example": {
-      "title": "Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example",
-      "bblockName": "XSLT Transforms example",
-      "bblockId": "geonovum.examples.transforms.xslt-example",
-      "generated": "2026-06-29T08:40:27.322401+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
+        "failed": 1
       }
     },
     "geonovum.examples.transforms.xslt2": {
       "title": "Validation report for geonovum.examples.transforms.xslt2 - XSLT2 Transforms example",
       "bblockName": "XSLT2 Transforms example",
       "bblockId": "geonovum.examples.transforms.xslt2",
-      "generated": "2026-06-29T08:40:27.339336+00:00",
-      "result": true,
-      "items": [],
+      "generated": "2026-06-30T07:30:36.121799+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/transforms/xslt2/example_1_1.xml",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt2/example_1_1.xml",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/xml"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "PLUGIN",
+              "title": "Plugin",
+              "entries": [
+                {
+                  "plugin": "bbplugin_rdfxml_validator.RdfXmlValidator",
+                  "isError": false,
+                  "message": "RDF/XML file is valid (example_1_1.xml)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/transforms/xslt2/example_2_1.xml",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt2/example_2_1.xml",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/xml"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "PLUGIN",
+              "title": "Plugin",
+              "entries": [
+                {
+                  "plugin": "bbplugin_rdfxml_validator.RdfXmlValidator",
+                  "isError": true,
+                  "message": "Invalid RDF/XML file: sequence item 0: expected str instance, NoneType found"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "globalErrors": {},
       "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
+        "total": 2,
+        "passed": 1,
+        "failed": 1
       }
     },
     "geonovum.examples.bag.ogcapi": {
       "title": "Validation report for geonovum.examples.bag.ogcapi - BAG-Pand",
       "bblockName": "BAG-Pand",
       "bblockId": "geonovum.examples.bag.ogcapi",
-      "generated": "2026-06-29T08:40:27.571840+00:00",
+      "generated": "2026-06-30T07:30:36.760435+00:00",
       "result": true,
       "items": [
         {
@@ -197,13 +252,7 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
                     "geojson:GeometryShape": {
-                      "nodes": []
-                    },
-                    "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
@@ -213,10 +262,16 @@
                       "nodes": [
                         "<https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>"
                       ]
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
                 }
               ]
             }
@@ -234,7 +289,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription - Localoutlier process input description",
       "bblockName": "Localoutlier process input description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
-      "generated": "2026-06-29T08:40:27.583559+00:00",
+      "generated": "2026-06-30T07:30:36.773496+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -248,7 +303,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
       "bblockName": "Localoutlier process output description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
-      "generated": "2026-06-29T08:40:27.590167+00:00",
+      "generated": "2026-06-30T07:30:36.780794+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -262,7 +317,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.inputDescriptions - Example OGC API Processes instance input descriptions",
       "bblockName": "Example OGC API Processes instance input descriptions",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
-      "generated": "2026-06-29T08:40:27.595361+00:00",
+      "generated": "2026-06-30T07:30:36.786462+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -276,7 +331,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription - Localoutlier process description",
       "bblockName": "Localoutlier process description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
-      "generated": "2026-06-29T08:40:27.601715+00:00",
+      "generated": "2026-06-30T07:30:36.793206+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -290,7 +345,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.outputDescriptions - Example OGC API Processes instance output descriptions",
       "bblockName": "Example OGC API Processes instance output descriptions",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
-      "generated": "2026-06-29T08:40:27.606825+00:00",
+      "generated": "2026-06-30T07:30:36.798922+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -304,7 +359,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.custom-api - Demo OGC API processes instance - LOF",
       "bblockName": "Demo OGC API processes instance - LOF",
       "bblockId": "geonovum.examples.ogcapi.processes.custom-api",
-      "generated": "2026-06-29T08:40:27.610328+00:00",
+      "generated": "2026-06-30T07:30:36.802988+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

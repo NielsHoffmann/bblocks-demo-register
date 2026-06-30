@@ -2,7 +2,7 @@
   "name": "Demo block collection",
   "abstract": "Demo register \n",
   "description": "register for various examples of building blocks.\n",
-  "modified": "2026-06-29T08:40:18.590615",
+  "modified": "2026-06-30T07:30:19.756885",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"16a4f35d2189f0542931cf422c86706b2607cf01",
@@ -30,7 +30,7 @@
       "itemClass": "schema",
       "register": "bblocks-demo-register",
       "version": "0.8",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "scope": "development",
       "tags": [
@@ -75,7 +75,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -117,7 +117,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -149,70 +149,6 @@
       }
     },
     {
-      "itemIdentifier": "geonovum.examples.transforms.ttl",
-      "name": "xml to ttl Transforms example",
-      "highlighted": false,
-      "abstract": "A building block to transform xml/rdf to ttl",
-      "status": "under-development",
-      "dateTimeAddition": "2026-06-02T11:31:00+02:00",
-      "itemClass": "schema",
-      "version": "0.1",
-      "dateOfLastChange": "2026-06-29",
-      "tags": [
-        "transform",
-        "xml"
-      ],
-      "shaclShapes": {},
-      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/ttl/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/transforms/ttl/",
-      "transforms": [
-        {
-          "id": "to-ttl",
-          "type": "python",
-          "inputs": {
-            "mediaTypes": [
-              {
-                "mimeType": "application/rdf+xml",
-                "label": "RDF/XML",
-                "defaultExtension": "rdf"
-              }
-            ]
-          },
-          "outputs": {
-            "mediaTypes": [
-              {
-                "mimeType": "text/turtle",
-                "defaultExtension": "ttl",
-                "label": "RDF/Turtle"
-              }
-            ]
-          },
-          "metadata": {
-            "dependencies": {
-              "pip": "rdflib",
-              "python": ">=3.10"
-            }
-          },
-          "code": "import rdflib\ndata = rdflib.Graph()\ndata.parse(data=input_data, format=\"xml\")\noutput_data = data.serialize(format=\"turtle\")"
-        }
-      ],
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/ttl/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/ttl/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.ttl"
-        }
-      }
-    },
-    {
       "itemIdentifier": "geonovum.examples.transforms.xslt-example",
       "name": "XSLT Transforms example",
       "highlighted": false,
@@ -221,7 +157,7 @@
       "dateTimeAddition": "2026-05-08T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "tags": [
         "transform",
         "xml"
@@ -234,7 +170,8 @@
       "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/schema.yaml",
       "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/resolvedProperties.json",
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/",
-      "validationPassed": true,
+      "validationPassed": false,
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/transforms/xslt-example/",
       "transforms": [
         {
           "id": "sample-xslt",
@@ -342,15 +279,24 @@
       "dateTimeAddition": "2026-05-11T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "highlighted": true,
       "tags": [
         "transform",
         "xml"
       ],
+      "resources": [
+        {
+          "role": "validation",
+          "ref": "",
+          "format": "application/rdf+xml",
+          "conformsTo": "https://www.w3.org/2001/XMLSchema"
+        }
+      ],
       "shaclShapes": {},
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt2/",
-      "validationPassed": true,
+      "validationPassed": false,
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/transforms/xslt2/",
       "transforms": [
         {
           "id": "dcat-title",
@@ -426,7 +372,7 @@
       "dateTimeAddition": "2026-06-17T00:00:00Z",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "scope": "unstable",
       "isProfileOf": [
         "bblocks://ogc.geo.features.feature"
@@ -444,8 +390,8 @@
         ]
       },
       "dependsOn": [
-        "bblocks://geonovum.examples.bag.schema",
-        "bblocks://ogc.geo.features.feature"
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://geonovum.examples.bag.schema"
       ],
       "schema": {
         "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml",
@@ -481,7 +427,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -526,7 +472,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -571,7 +517,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -615,7 +561,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -624,9 +570,9 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
-        "bblocks://ogc.api.processes.v1.schemas.process"
+        "bblocks://ogc.api.processes.v1.schemas.process",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
       ],
       "schema": {
         "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml",
@@ -661,7 +607,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -705,7 +651,7 @@
       "itemClass": "api",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-06-29",
+      "dateOfLastChange": "2026-06-30",
       "maturity": "development",
       "tags": [
         "examples",
@@ -725,22 +671,22 @@
       "shaclShapes": {},
       "dependsOn": [
         "bblocks://ogc.api.processes.v1.paths.Conformance",
+        "bblocks://ogc.api.processes.v1.responses.ServerError",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
+        "bblocks://ogc.api.processes.v1.responses.NotFound",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.api.processes.v1.parameters.jobId",
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://ogc.api.processes.v1.paths.ProcessList",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
         "bblocks://ogc.api.processes.v1.paths.LandingPage",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://ogc.api.processes.v1.responses.NotFound",
-        "bblocks://ogc.api.processes.v1.paths.JobList",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
-        "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
-        "bblocks://ogc.api.processes.v1.parameters.jobId",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://ogc.api.processes.v1.api",
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
-        "bblocks://ogc.api.processes.v1.paths.ProcessList",
-        "bblocks://ogc.api.processes.v1.schemas.execute"
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+        "bblocks://ogc.api.processes.v1.paths.JobList"
       ],
       "sourceOpenAPIDocument": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/custom-api/openapi.yaml",
@@ -786,6 +732,31 @@
       "pip": "git+https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin.git@main",
       "urls": [
         "https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin"
+      ]
+    }
+  ],
+  "validatorPlugins": [
+    {
+      "modules": [
+        {
+          "module": "bbplugin_rdfxml_validator",
+          "validators": [
+            {
+              "class": "RdfXmlValidator",
+              "mimeTypes": [
+                "application/rdf+xml"
+              ],
+              "fileExtensions": [
+                ".xml",
+                ".rdf"
+              ]
+            }
+          ]
+        }
+      ],
+      "pip": "git+https://github.com/Geonovum-labs/bblocks-rdfxml-validator-plugin.git",
+      "urls": [
+        "https://github.com/Geonovum-labs/bblocks-rdfxml-validator-plugin"
       ]
     }
   ],

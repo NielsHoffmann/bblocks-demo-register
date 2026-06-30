@@ -1,7 +1,0 @@
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-
-<> a dcat:Dataset ;
-    dcterms:identifier "4e2ef670-cddd-11dd-ad8b-0800200c9a66" ;
-    dcterms:title "Stads- en Dorpsgezichten" .
-

@@ -1,0 +1,10 @@
+Validation report for geonovum.examples.transforms.xslt2 - XSLT2 Transforms example
+Generated 2026-06-30T07:30:36.121712+00:00
+=== Plugin ===
+
+--- Plugin: bbplugin_rdfxml_validator.RdfXmlValidator ---
+
+** Validation error **
+Invalid RDF/XML file: sequence item 0: expected str instance, NoneType found
+=== End Plugin ===
+

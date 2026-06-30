@@ -2,13 +2,64 @@
   "title": "Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example",
   "bblockName": "XSLT Transforms example",
   "bblockId": "geonovum.examples.transforms.xslt-example",
-  "generated": "2026-06-29T08:40:27.322401+00:00",
-  "result": true,
-  "items": [],
+  "generated": "2026-06-30T07:30:35.864535+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/examples/transforms/xslt-example/example_1_1.xml",
+        "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/example_1_1.xml",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/xml"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "plugin": "bbplugin_rdfxml_validator.RdfXmlValidator",
+              "isError": true,
+              "message": "Invalid RDF/XML file: sequence item 0: expected str instance, NoneType found"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/examples/transforms/xslt-example/example_2_1.xml",
+        "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt-example/example_2_1.xml",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/xml"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "plugin": "bbplugin_rdfxml_validator.RdfXmlValidator",
+              "isError": false,
+              "message": "RDF/XML file is valid (example_2_1.xml)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "globalErrors": {},
   "counts": {
-    "total": 0,
-    "passed": 0,
-    "failed": 0
+    "total": 2,
+    "passed": 1,
+    "failed": 1
   }
 }

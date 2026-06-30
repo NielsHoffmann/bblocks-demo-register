@@ -26,12 +26,6 @@ Input schema for the localoutlier process
 
 Output schema for the localoutlier process
 
-### `geonovum.examples.transforms.ttl` — xml to ttl Transforms example
-
-**Type:** schema
-
-A building block to transform xml/rdf to ttl
-
 ### `geonovum.examples.transforms.xslt-example` — XSLT Transforms example
 
 **Type:** schema

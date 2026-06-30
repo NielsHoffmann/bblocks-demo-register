@@ -9,7 +9,7 @@
   "dateTimeAddition": "2026-05-08T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-29",
+  "dateOfLastChange": "2026-06-30",
   "tags": [
     "transform",
     "xml"
@@ -22,7 +22,8 @@
   "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/schema.yaml",
   "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/transforms/xslt-example/resolvedProperties.json",
   "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/transforms/xslt-example/",
-  "validationPassed": true,
+  "validationPassed": false,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/transforms/xslt-example/",
   "transforms": [
     {
       "id": "sample-xslt",
