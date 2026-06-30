@@ -47,7 +47,11 @@ schema-oas30-downcompile: False
 #   resources:                              # Additional resources to upload apart from building block metadata
 #      ontologies: true                     #   Whether to upload ontology files to the triplestore
 plugins:
-   transforms:
+  transforms:
     - pip: git+https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin.git@main
       modules:
         - bbplugin_xslt2
+  validators:
+    - pip: git+https://github.com/Geonovum-labs/bblocks-rdfxml-validator-plugin.git
+      modules:
+        - bbplugin_rdfxml_validator

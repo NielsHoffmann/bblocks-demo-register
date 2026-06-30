@@ -1,5 +1,0 @@
-examples:
-  - title: rdf/xml to ttl example
-    snippets:
-      - language: rdf/xml
-        ref: examples/dcat-title.rdf
