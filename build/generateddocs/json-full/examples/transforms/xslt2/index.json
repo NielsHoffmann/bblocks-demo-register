@@ -8,7 +8,7 @@
   "dateTimeAddition": "2026-05-11T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-30",
+  "dateOfLastChange": "2026-07-10",
   "highlighted": true,
   "tags": [
     "transform",
@@ -90,13 +90,16 @@
           "transformResults": {
             "dcat-title": {
               "success": true,
+              "sizeBytes": 1451,
               "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt2/transforms/example_1_1.dcat-title.rdf"
             },
             "sample-xslt": {
               "success": true,
+              "sizeBytes": 39,
               "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt2/transforms/example_1_1.sample-xslt.rdf"
             }
           },
+          "sizeBytes": 1536,
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<gmd:MD_Metadata xmlns:gmd=\"http://www.isotc211.org/2005/gmd\" xmlns:gco=\"http://www.isotc211.org/2005/gco\" xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" xmlns:gmx=\"http://www.isotc211.org/2005/gmx\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:srv=\"http://www.isotc211.org/2005/srv\" xmlns:gts=\"http://www.isotc211.org/2005/gts\" xmlns:gsr=\"http://www.isotc211.org/2005/gsr\" xsi:schemaLocation=\"http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd\">\r\n  <gmd:fileIdentifier>\r\n    <gco:CharacterString>4e2ef670-cddd-11dd-ad8b-0800200c9a66</gco:CharacterString>\r\n  </gmd:fileIdentifier>\r\n  <gmd:language>\r\n    <gmd:LanguageCode codeList=\"http://www.loc.gov/standards/iso639-2/\" codeListValue=\"dut\">Nederlands; Vlaams</gmd:LanguageCode>\r\n  </gmd:language>\r\n  <gmd:identificationInfo>\r\n    <gmd:MD_DataIdentification>\r\n      <gmd:citation>\r\n        <gmd:CI_Citation>\r\n          <gmd:title>\r\n            <gco:CharacterString>Stads- en Dorpsgezichten</gco:CharacterString>\r\n          </gmd:title>\r\n          <gmd:alternateTitle>\r\n            <gco:CharacterString>beschermde gezichten</gco:CharacterString>\r\n          </gmd:alternateTitle>\r\n          </gmd:CI_Citation>\r\n      </gmd:citation>\r\n    </gmd:MD_DataIdentification>\r\n  </gmd:identificationInfo>\r\n</gmd:MD_Metadata>\r\n"
         }
       ]
@@ -110,13 +113,16 @@
           "transformResults": {
             "dcat-title": {
               "success": true,
+              "sizeBytes": 1115,
               "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt2/transforms/example_2_1.dcat-title.rdf"
             },
             "sample-xslt": {
               "success": true,
+              "sizeBytes": 261,
               "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/transforms/xslt2/transforms/example_2_1.sample-xslt.rdf"
             }
           },
+          "sizeBytes": 193,
           "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>"
         }
       ]

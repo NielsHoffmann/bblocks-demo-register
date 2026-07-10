@@ -1,0 +1,12 @@
+@prefix agent: <http://trace.example.com/agent/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema1: <http://schema.org/> .
+@prefix trace: <http://trace.example.com/trace/> .
+
+<https://api.omgevingsdienst.example/logboek> a prov:Entity ;
+    dct:relation "downstream-processing" ;
+    schema1:url <https://api.omgevingsdienst.example/logboek?trace_id=4bf92f3577b34da6a3ce929d0e0e4736> ;
+    prov:wasAttributedTo agent:omgevingsdienst ;
+    prov:wasGeneratedBy trace:4bf92f3577b34da6a3ce929d0e0e4736 .
+

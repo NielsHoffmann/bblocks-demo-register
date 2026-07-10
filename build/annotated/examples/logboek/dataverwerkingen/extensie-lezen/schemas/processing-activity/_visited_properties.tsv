@@ -1,0 +1,6 @@
+path	@id	schema
+/id	@id	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml
+/name	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml
+/controller	http://www.w3.org/ns/prov#actedOnBehalfOf	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml
+/purpose	http://www.w3.org/ns/prov#hadPurpose	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml
+/legal_basis	http://purl.org/dc/terms/rights	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml

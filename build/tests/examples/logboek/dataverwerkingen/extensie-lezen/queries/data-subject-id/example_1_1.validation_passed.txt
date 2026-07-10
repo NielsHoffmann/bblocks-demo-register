@@ -1,0 +1,10 @@
+Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id - Logboek Extensie Lezen Data Subject ID Query
+Generated 2026-07-10T09:50:52.027322+00:00
+=== Files ===
+Using examples/valid.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

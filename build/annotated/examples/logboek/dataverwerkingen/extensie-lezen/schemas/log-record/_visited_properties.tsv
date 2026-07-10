@@ -1,0 +1,10 @@
+path	@id	schema
+/id	@id	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/trace_id	http://www.w3.org/ns/prov#wasGeneratedBy	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/processing_activity_id	http://www.w3.org/ns/prov#qualifiedAssociation	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/data_subject_id	http://www.w3.org/ns/prov#qualifiedAssociation	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/recorded_at	http://www.w3.org/ns/prov#startedAtTime	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/actor	http://www.w3.org/ns/prov#wasAssociatedWith	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/purpose	http://www.w3.org/ns/prov#hadPurpose	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/action	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml
+/source	http://purl.org/dc/terms/source	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml

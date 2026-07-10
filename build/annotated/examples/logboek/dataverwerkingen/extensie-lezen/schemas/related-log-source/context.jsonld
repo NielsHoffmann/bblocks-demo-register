@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "id": "@id",
+    "type": "@type",
+    "RelatedLogSource": "prov:Entity",
+    "href": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "organisation": {
+      "@id": "prov:wasAttributedTo",
+      "@type": "@id"
+    },
+    "relation": "dct:relation",
+    "trace_id": {
+      "@id": "prov:wasGeneratedBy",
+      "@type": "@id"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "http://schema.org/",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "trace": "http://trace.example.com/trace/",
+    "agent": "http://trace.example.com/agent/",
+    "@version": 1.1
+  }
+}

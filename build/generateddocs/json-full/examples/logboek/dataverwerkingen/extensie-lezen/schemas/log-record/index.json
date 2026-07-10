@@ -1,0 +1,55 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record",
+  "name": "Logboek Log Record",
+  "abstract": "Core schema for a single logged data processing record returned by the Logboek Extensie Lezen API.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "shaclShapes": {},
+  "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/context.jsonld",
+  "dateOfLastChange": "2026-07-09",
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml",
+  "sourceLdContext": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/context.jsonld",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/",
+  "examples": [
+    {
+      "title": "Logboek Log Record schema",
+      "content": "Logboek Log Record schema example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/examples/valid.json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/example_1_1.json",
+          "sizeBytes": 447,
+          "code": "{\n  \"id\": \"urn:uuid:11111111-2222-3333-4444-555555555555\",\n  \"type\": \"LogRecord\",\n  \"trace_id\": \"4bf92f3577b34da6a3ce929d0e0e4736\",\n  \"processing_activity_id\": \"urn:uuid:018f4c7c-6e67-7d34-b1b8-42e49c9d1a12\",\n  \"data_subject_id\": \"urn:example:person:123456789\",\n  \"recorded_at\": \"2026-05-26T12:15:00Z\",\n  \"actor\": \"urn:example:organisation:service-a\",\n  \"purpose\": \"besluitvorming\",\n  \"action\": \"read\",\n  \"source\": \"https://example.org/logboek\"\n}\n"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/example_1_1.jsonld",
+          "sizeBytes": 616,
+          "code": "{\n  \"@context\": \"https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/context.jsonld\",\n  \"id\": \"urn:uuid:11111111-2222-3333-4444-555555555555\",\n  \"type\": \"LogRecord\",\n  \"trace_id\": \"4bf92f3577b34da6a3ce929d0e0e4736\",\n  \"processing_activity_id\": \"urn:uuid:018f4c7c-6e67-7d34-b1b8-42e49c9d1a12\",\n  \"data_subject_id\": \"urn:example:person:123456789\",\n  \"recorded_at\": \"2026-05-26T12:15:00Z\",\n  \"actor\": \"urn:example:organisation:service-a\",\n  \"purpose\": \"besluitvorming\",\n  \"action\": \"read\",\n  \"source\": \"https://example.org/logboek\"\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/example_1_1.ttl",
+          "sizeBytes": 712,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<urn:uuid:11111111-2222-3333-4444-555555555555> a prov:Activity ;\n    rdfs:label \"read\" ;\n    dct:source <https://example.org/logboek> ;\n    prov:hadPurpose \"besluitvorming\" ;\n    prov:qualifiedAssociation <urn:example:person:123456789>,\n        <urn:uuid:018f4c7c-6e67-7d34-b1b8-42e49c9d1a12> ;\n    prov:startedAtTime \"2026-05-26T12:15:00+00:00\"^^xsd:dateTime ;\n    prov:wasAssociatedWith <urn:example:organisation:service-a> ;\n    prov:wasGeneratedBy <file:///github/workspace/4bf92f3577b34da6a3ce929d0e0e4736> .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "type: object\ndescription: A single logged data processing record.\nrequired:\n- id\n- recorded_at\nproperties:\n  id:\n    type: string\n    description: Unique identifier of the log record.\n    x-jsonld-id: '@id'\n  trace_id:\n    type: string\n    description: Identifier linking records that belong to the same trace.\n    x-jsonld-id: http://www.w3.org/ns/prov#wasGeneratedBy\n    x-jsonld-type: '@id'\n  processing_activity_id:\n    type: string\n    description: Identifier of the related processing activity.\n    x-jsonld-id: http://www.w3.org/ns/prov#qualifiedAssociation\n    x-jsonld-type: '@id'\n  data_subject_id:\n    type: string\n    description: Identifier of the data subject, if applicable and permitted.\n    x-jsonld-id: http://www.w3.org/ns/prov#qualifiedAssociation\n    x-jsonld-type: '@id'\n  recorded_at:\n    type: string\n    format: date-time\n    description: Timestamp at which the log record was recorded.\n    x-jsonld-id: http://www.w3.org/ns/prov#startedAtTime\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n  actor:\n    type: string\n    description: Actor responsible for or involved in the processing event.\n    x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith\n    x-jsonld-type: '@id'\n  purpose:\n    type: string\n    description: Purpose of the processing event.\n    x-jsonld-id: http://www.w3.org/ns/prov#hadPurpose\n  action:\n    type: string\n    description: Action or operation that was logged.\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  source:\n    type: string\n    format: uri\n    description: URI of the source system or logbook.\n    x-jsonld-id: http://purl.org/dc/terms/source\n    x-jsonld-type: '@id'\nadditionalProperties: true\nx-jsonld-extra-terms:\n  type: '@type'\n  LogRecord: http://www.w3.org/ns/prov#Activity\n  start_time:\n    x-jsonld-id: http://www.w3.org/ns/prov#startedAtTime\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n  end_time:\n    x-jsonld-id: http://www.w3.org/ns/prov#endedAtTime\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n  name: http://www.w3.org/2000/01/rdf-schema#label\n  data_object_id:\n    x-jsonld-id: http://www.w3.org/ns/prov#qualifiedUsage\n    x-jsonld-type: '@id'\n  data_object_def:\n    x-jsonld-id: http://purl.org/dc/terms/source\n    x-jsonld-type: '@id'\nx-jsonld-prefixes:\n  prov: http://www.w3.org/ns/prov#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  dct: http://purl.org/dc/terms/\n  schema: http://schema.org/\n  trace: http://trace.example.com/trace/\n  span: http://trace.example.com/span/\n  entity: http://trace.example.com/entity/\n  usage: http://trace.example.com/usage/\n  association: http://trace.example.com/association/\n  agent: http://trace.example.com/agent/\n  subject: http://trace.example.com/subject/\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record"
+}

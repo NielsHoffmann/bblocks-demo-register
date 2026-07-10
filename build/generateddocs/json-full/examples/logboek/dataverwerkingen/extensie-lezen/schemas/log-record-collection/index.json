@@ -1,0 +1,57 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
+  "name": "Logboek Log Record Collection",
+  "abstract": "Response schema for a collection of log records returned by the Logboek Extensie Lezen API.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "dependsOn": [
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record"
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/context.jsonld",
+  "dateOfLastChange": "2026-07-09",
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/schema.yaml",
+  "sourceLdContext": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/context.jsonld",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/",
+  "examples": [
+    {
+      "title": "Logboek Log Record Collection schema",
+      "content": "Logboek Log Record Collection example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/examples/valid.json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/example_1_1.json",
+          "sizeBytes": 501,
+          "code": "{\n  \"type\": \"LogRecordCollection\",\n  \"records\": [\n    {\n      \"id\": \"urn:uuid:11111111-2222-3333-4444-555555555555\",\n      \"type\": \"LogRecord\",\n      \"trace_id\": \"4bf92f3577b34da6a3ce929d0e0e4736\",\n      \"recorded_at\": \"2026-05-26T12:15:00Z\",\n      \"action\": \"read\"\n    }\n  ],\n  \"processing_activities\": [],\n  \"related_sources\": [],\n  \"links\": [\n    {\n      \"href\": \"https://example.org/logs?trace_id=4bf92f3577b34da6a3ce929d0e0e4736\",\n      \"rel\": \"self\",\n      \"type\": \"application/json\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/example_1_1.jsonld",
+          "sizeBytes": 682,
+          "code": "{\n  \"@context\": \"https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/context.jsonld\",\n  \"type\": \"LogRecordCollection\",\n  \"records\": [\n    {\n      \"id\": \"urn:uuid:11111111-2222-3333-4444-555555555555\",\n      \"type\": \"LogRecord\",\n      \"trace_id\": \"4bf92f3577b34da6a3ce929d0e0e4736\",\n      \"recorded_at\": \"2026-05-26T12:15:00Z\",\n      \"action\": \"read\"\n    }\n  ],\n  \"processing_activities\": [],\n  \"related_sources\": [],\n  \"links\": [\n    {\n      \"href\": \"https://example.org/logs?trace_id=4bf92f3577b34da6a3ce929d0e0e4736\",\n      \"rel\": \"self\",\n      \"type\": \"application/json\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/example_1_1.ttl",
+          "sizeBytes": 416,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix schema1: <http://schema.org/> .\n\n[] a prov:Bundle ;\n    schema1:subjectOf [ a <file:///github/workspace/application/json> ;\n            dct:relation \"self\" ;\n            schema1:url <https://example.org/logs?trace_id=4bf92f3577b34da6a3ce929d0e0e4736> ] ;\n    prov:hadMember [ a <file:///github/workspace/LogRecord> ] .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "name: Logboek Log Record Collection\nabstract: Response schema for a collection of log records returned by the Logboek\n  Extensie Lezen API.\nstatus: under-development\ndateTimeAddition: '2026-07-09T00:00:00Z'\nitemClass: schema\nregister: Logboek Dataverwerkingen\nversion: 0.1.0\ndependsOn:\n- nl.geonovum.logboek.extensie-lezen.schemas.log-record\nx-jsonld-extra-terms:\n  records:\n    x-jsonld-id: http://www.w3.org/ns/prov#hadMember\n    x-jsonld-container: '@set'\n  processing_activities:\n    x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith\n    x-jsonld-container: '@set'\n  related_sources:\n    x-jsonld-id: http://purl.org/dc/terms/relation\n    x-jsonld-container: '@set'\n  links:\n    x-jsonld-id: http://schema.org/subjectOf\n    x-jsonld-container: '@set'\n  href:\n    x-jsonld-id: http://schema.org/url\n    x-jsonld-type: '@id'\n  rel: http://purl.org/dc/terms/relation\n  type: '@type'\n  LogRecordCollection: http://www.w3.org/ns/prov#Bundle\nx-jsonld-prefixes:\n  prov: http://www.w3.org/ns/prov#\n  dct: http://purl.org/dc/terms/\n  schema: http://schema.org/\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection"
+}

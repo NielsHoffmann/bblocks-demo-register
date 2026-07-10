@@ -1,0 +1,47 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id",
+  "name": "Logboek Extensie Lezen Data Subject ID Query",
+  "abstract": "Query parameter building block for retrieving log records related to a data subject.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "parameter",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "title": "Logboek Extensie Lezen - query by dataSubjectId",
+      "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-07-09",
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/schema.yaml",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/",
+  "examples": [
+    {
+      "title": "Query parameter example",
+      "content": "Query parameter example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/examples/valid.json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/example_1_1.json",
+          "sizeBytes": 57,
+          "code": "\n{\n  \"data_subject_id\": \"urn:example:person:123456789\"\n}\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "type: object\ndescription: Query parameters for retrieving log records related to a data subject.\nrequired:\n- data_subject_id\nproperties:\n  data_subject_id:\n    type: string\n    minLength: 1\n    description: Identifier of the data subject for which log records are requested.\nadditionalProperties: false\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id"
+}

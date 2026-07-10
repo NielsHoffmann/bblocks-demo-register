@@ -1,0 +1,5 @@
+path	@id	schema
+/href	http://schema.org/url	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.yaml
+/organisation	http://www.w3.org/ns/prov#wasAttributedTo	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.yaml
+/relation	http://purl.org/dc/terms/relation	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.yaml
+/trace_id	http://www.w3.org/ns/prov#wasGeneratedBy	/github/workspace/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.yaml

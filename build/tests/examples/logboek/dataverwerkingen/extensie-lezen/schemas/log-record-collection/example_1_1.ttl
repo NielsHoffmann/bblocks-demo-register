@@ -1,0 +1,10 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema1: <http://schema.org/> .
+
+[] a prov:Bundle ;
+    schema1:subjectOf [ a <file:///github/workspace/application/json> ;
+            dct:relation "self" ;
+            schema1:url <https://example.org/logs?trace_id=4bf92f3577b34da6a3ce929d0e0e4736> ] ;
+    prov:hadMember [ a <file:///github/workspace/LogRecord> ] .
+

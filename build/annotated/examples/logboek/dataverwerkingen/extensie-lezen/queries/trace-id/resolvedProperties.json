@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["trace_id"],"description":"Identifier used to retrieve log records related to one trace.","required":true,"schema_type":"string","sources":["bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id"]}]}

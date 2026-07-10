@@ -8,7 +8,7 @@
   "dateTimeAddition": "2026-06-17T00:00:00Z",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-30",
+  "dateOfLastChange": "2026-07-10",
   "scope": "unstable",
   "isProfileOf": [
     "ogc.geo.features.feature"
@@ -26,8 +26,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "geonovum.examples.bag.schema"
+    "geonovum.examples.bag.schema",
+    "ogc.geo.features.feature"
   ],
   "schema": {
     "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml",
@@ -50,17 +50,20 @@
           "language": "json",
           "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/ogcapi/examples/pand.json",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/bag/ogcapi/example_1_1.json",
+          "sizeBytes": 1094,
           "code": "{\n    \"type\": \"Feature\",\n    \"id\": \"c3de65af-ca00-5971-87cd-04d4bdd456f4\",\n    \"properties\": {\n        \"\\\"verblijfsobject\\\"\": \"verblijfsobject\",\n        \"aantal_verblijfsobjecten\": 1,\n        \"bouwjaar\": 2024,\n        \"documentdatum\": \"2024-12-06\",\n        \"documentnummer\": \"28041487 OD\",\n        \"gebruiksdoel\": \"industriefunctie\",\n        \"geconstateerd\": \"N\",\n        \"identificatie\": \"0394100003049202\",\n        \"rdf_seealso\": \"http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202\",\n        \"status\": \"Bouwvergunning verleend\",\n        \"verblijfsobject.href\": [\n          \"https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed\"\n        ]\n      },\n      \"geometry\": {\n        \"type\": \"Polygon\",\n        \"coordinates\": [\n          [\n            [4.69778280718237, 52.3169768690814],\n            [4.69818701155428, 52.3167762314658],\n            [4.69826126055391, 52.3168324071802],\n            [4.69785707066875, 52.3170330451325],\n            [4.69778280718237, 52.3169768690814]\n          ]\n        ]\n      }\n    }"
         },
         {
           "language": "jsonld",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/bag/ogcapi/example_1_1.jsonld",
+          "sizeBytes": 1252,
           "code": "{\n  \"@context\": \"https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"c3de65af-ca00-5971-87cd-04d4bdd456f4\",\n  \"properties\": {\n    \"\\\"verblijfsobject\\\"\": \"verblijfsobject\",\n    \"aantal_verblijfsobjecten\": 1,\n    \"bouwjaar\": 2024,\n    \"documentdatum\": \"2024-12-06\",\n    \"documentnummer\": \"28041487 OD\",\n    \"gebruiksdoel\": \"industriefunctie\",\n    \"geconstateerd\": \"N\",\n    \"identificatie\": \"0394100003049202\",\n    \"rdf_seealso\": \"http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202\",\n    \"status\": \"Bouwvergunning verleend\",\n    \"verblijfsobject.href\": [\n      \"https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [\n          4.69778280718237,\n          52.3169768690814\n        ],\n        [\n          4.69818701155428,\n          52.3167762314658\n        ],\n        [\n          4.69826126055391,\n          52.3168324071802\n        ],\n        [\n          4.69785707066875,\n          52.3170330451325\n        ],\n        [\n          4.69778280718237,\n          52.3169768690814\n        ]\n      ]\n    ]\n  }\n}"
         },
         {
           "language": "ttl",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/bag/ogcapi/example_1_1.ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://catalogus.kadaster.nl/bag/nl/page/> .\n@prefix ns2: <https://data.crow.nl/imbor/term/> .\n@prefix ns3: <https://www.w3.org/1999/xhtml/vocab#> .\n@prefix ns4: <https://www.w3.org/2000/01/rdf-schema#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4> a geojson:Feature ;\n    ns1:Documentdatum \"2024-12-06\" ;\n    ns1:Documentnummer \"28041487 OD\" ;\n    ns1:Gebruiksdoel \"industriefunctie\" ;\n    ns1:Geconstateerd \"N\" ;\n    ns1:Identificatie \"0394100003049202\" ;\n    ns1:Status \"Bouwvergunning verleend\" ;\n    ns2:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 4.697783e+00 5.231698e+01 ) ( 4.698187e+00 5.231678e+01 ) ( 4.698261e+00 5.231683e+01 ) ( 4.697857e+00 5.231703e+01 ) ( 4.697783e+00 5.231698e+01 ) ) ) ] ;\n    ns3:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;\n    ns4:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .\n\n"
+          "sizeBytes": 1210,
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://catalogus.kadaster.nl/bag/nl/page/> .\n@prefix ns2: <https://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns3: <https://www.w3.org/1999/xhtml/vocab#> .\n@prefix ns4: <https://data.crow.nl/imbor/term/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4> a geojson:Feature ;\n    ns1:Documentdatum \"2024-12-06\" ;\n    ns1:Documentnummer \"28041487 OD\" ;\n    ns1:Gebruiksdoel \"industriefunctie\" ;\n    ns1:Geconstateerd \"N\" ;\n    ns1:Identificatie \"0394100003049202\" ;\n    ns1:Status \"Bouwvergunning verleend\" ;\n    ns4:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 4.697783e+00 5.231698e+01 ) ( 4.698187e+00 5.231678e+01 ) ( 4.698261e+00 5.231683e+01 ) ( 4.697857e+00 5.231703e+01 ) ( 4.697783e+00 5.231698e+01 ) ) ) ] ;\n    ns3:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;\n    ns2:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .\n\n"
         }
       ]
     }

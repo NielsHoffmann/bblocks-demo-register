@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["data_subject_id"],"description":"Identifier of the data subject for which log records are requested.","required":true,"schema_type":"string","sources":["bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id"]}]}

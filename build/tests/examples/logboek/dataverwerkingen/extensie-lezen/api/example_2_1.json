@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "id": "urn:uuid:11111111-2222-3333-4444-555555555555",
+      "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+      "processing_activity_id": "urn:uuid:018f4c7c-6e67-7d34-b1b8-42e49c9d1a12",
+      "data_subject_id": "urn:example:person:123456789",
+      "recorded_at": "2026-05-26T12:15:00Z",
+      "actor": "urn:example:organisation:gemeente-amersfoort",
+      "purpose": "Vergunningverlening",
+      "action": "read",
+      "source": "https://api.example.org/logboek"
+    },
+    {
+      "id": "urn:uuid:aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+      "processing_activity_id": "urn:uuid:018f4c7c-6e67-7d34-b1b8-42e49c9d1a12",
+      "recorded_at": "2026-05-26T12:16:05Z",
+      "actor": "urn:example:organisation:omgevingsdienst",
+      "purpose": "Vergunningverlening",
+      "action": "share",
+      "source": "https://api.omgevingsdienst.example/logboek"
+    }
+  ],
+  "processing_activities": [
+    {
+      "id": "urn:uuid:018f4c7c-6e67-7d34-b1b8-42e49c9d1a12",
+      "name": "Behandeling vergunningaanvraag",
+      "controller": "Gemeente Amersfoort",
+      "purpose": "Uitvoering wettelijke taak",
+      "legal_basis": "Omgevingswet"
+    }
+  ],
+  "related_sources": [
+    {
+      "href": "https://api.omgevingsdienst.example/logboek?trace_id=4bf92f3577b34da6a3ce929d0e0e4736",
+      "organisation": "Omgevingsdienst",
+      "relation": "downstream-processing",
+      "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736"
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://api.example.org/logboek?trace_id=4bf92f3577b34da6a3ce929d0e0e4736",
+      "type": "application/json"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Logboek Dataverwerkingen Extensie Lezen API",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/logs": {
+      "get": {
+        "summary": "Read logged data processing records",
+        "parameters": [
+          {
+            "$ref": "../../queries/trace-id/schema.yaml"
+          },
+          {
+            "$ref": "../../queries/processing-activity-id/schema.yaml"
+          },
+          {
+            "$ref": "../../queries/data-subject-id/schema.yaml"
+          },
+          {
+            "$ref": "../../queries/time-range/schema.yaml"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -2,8 +2,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/ns/oa#> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -28,7 +28,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.ogcapi> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "BAG-Pand" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -37,26 +37,123 @@
         "basisregister",
         "pdok" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/ogcapi/schema.json> ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.geo.features.feature> ;
     bblocks:dependsOn <bblocks://geonovum.examples.bag.schema>,
         <bblocks://ogc.geo.features.feature> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Api,
+        bblocks:BBlock ;
+    rdfs:label "Logboek Dataverwerkingen Extensie Lezen API" ;
+    dct:abstract "Umbrella building block for the API used to read logged data processing records from a Logboek Dataverwerkingen implementation."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/api/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/api/index.json> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    dct:source <https://github.com/Logius-standaarden/logboek-extensie-lezen/blob/develop/media/openapi.json>,
+        <https://logius-standaarden.github.io/logboek-extensie-lezen/> ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Dataverwerkingen Extensie Lezen API" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    bblocks:dependsOn <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.processing-activity> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Logboek Processing Activity" ;
+    dct:abstract "Schema for a processing activity referenced by log records."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.processing-activity> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/index.json> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Processing Activity" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Logboek Related Log Source" ;
+    dct:abstract "Schema for referring to another source or reading API that may contain related log records."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Related Log Source" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
@@ -69,12 +166,12 @@
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/custom-api/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.custom-api> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.custom-api> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Demo OGC API processes instance - LOF" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -116,7 +213,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt-example/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "XSLT Transforms example" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -147,7 +244,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.transforms.xslt2> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "XSLT2 Transforms example" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -162,18 +259,20 @@
 
 <https://geonovum-labs.github.io/bblocks-demo-register/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Na721519932bd43109faad12ad396739f ;
+    prov:wasAttributedTo _:N12ea960a1edb4752924ec0b6ababe1da ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-06-30T07:30:37.417924"^^xsd:dateTime ;
-            prov:startedAtTime "2026-06-30T07:30:37.183734"^^xsd:dateTime ;
+            prov:endedAtTime "2026-07-10T09:50:53.243399"^^xsd:dateTime ;
+            prov:startedAtTime "2026-07-10T09:50:53.119067"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:5521d0d304dc2fa66bdcfb7b894171d945282428" ;
+                    dct:hasVersion "git:8188e9d5a560206b8b9b386a69f9e5f01c92c083" ;
                     rdfs:seeAlso <https://geonovum-labs.github.io/bblocks-demo-register/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:Na721519932bd43109faad12ad396739f ] .
+            prov:wasAssociatedWith _:N12ea960a1edb4752924ec0b6ababe1da ] .
+
+<https://github.com/Logius-standaarden/logboek-extensie-lezen/blob/develop/media/openapi.json> rdfs:label "OpenAPI source" .
 
 <bblocks://geonovum.examples.bag.schema> a skos:Concept,
         dcat:Dataset,
@@ -184,12 +283,12 @@
     dct:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/schema/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.schema> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.bag.schema> ] ;
     dct:hasVersion "0.8" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Bag eigenschappen" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -197,20 +296,238 @@
         "basisregistratie",
         "pdok",
         "schema" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/schema/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Parameter ;
+    rdfs:label "Logboek Extensie Lezen Data Subject ID Query" ;
+    dct:abstract "Query parameter building block for retrieving log records related to a data subject."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/index.json> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    dct:source <https://logius-standaarden.github.io/logboek-extensie-lezen/> ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Extensie Lezen Data Subject ID Query" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Parameter ;
+    rdfs:label "Logboek Extensie Lezen Processing Activity ID Query" ;
+    dct:abstract "Query parameter building block for retrieving log records related to a processing activity."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    dct:source <https://logius-standaarden.github.io/logboek-extensie-lezen/> ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Extensie Lezen Processing Activity ID Query" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Parameter ;
+    rdfs:label "Logboek Extensie Lezen Time Range Query" ;
+    dct:abstract "Query parameter building block for retrieving log records within a start and end time interval."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/index.json> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    dct:source <https://logius-standaarden.github.io/logboek-extensie-lezen/> ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Extensie Lezen Time Range Query" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Parameter ;
+    rdfs:label "Logboek Extensie Lezen Trace ID Query" ;
+    dct:abstract "Query parameter building block for retrieving log records by trace identifier."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/index.md> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    dct:source <https://logius-standaarden.github.io/logboek-extensie-lezen/> ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Extensie Lezen Trace ID Query" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Logboek Log Record" ;
+    dct:abstract "Core schema for a single logged data processing record returned by the Logboek Extensie Lezen API."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/index.md> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Log Record" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/context.jsonld> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/context.jsonld> ;
             prof:hasRole role:mapping ] ;
-    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/schema/context.jsonld> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/development> ;
+    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Logboek Log Record Collection" ;
+    dct:abstract "Response schema for a collection of log records returned by the Logboek Extensie Lezen API."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Log Record Collection" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record> ;
+    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Logboek Problem Response" ;
+    dct:abstract "Problem response schema for errors returned by the Logboek Extensie Lezen API."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response> ] ;
+    dct:hasVersion "0.1.0" ;
+    dct:modified "2026-07-09"^^xsd:date ;
+    skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    skos:prefLabel "Logboek Problem Response" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
@@ -223,30 +540,30 @@
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/inputDescriptions/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.inputDescriptions> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.inputDescriptions> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/inputDescriptions/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Example OGC API Processes instance input descriptions" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     dcat:keyword "examples",
         "ogc api",
         "ogc api processes" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -258,14 +575,14 @@
     rdfs:label "Localoutlier process description" ;
     dct:abstract "Process description for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Localoutlier process description" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -273,12 +590,12 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/processDescription/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
@@ -304,7 +621,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.outputDescriptions> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Example OGC API Processes instance output descriptions" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -312,17 +629,17 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/outputDescriptions/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -334,14 +651,14 @@
     rdfs:label "Localoutlier process input description" ;
     dct:abstract "Input description for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Localoutlier process input description" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -372,14 +689,14 @@
     rdfs:label "Localoutlier process input schema" ;
     dct:abstract "Input schema for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.md> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Localoutlier process input schema" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -390,14 +707,14 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputSchema/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -411,12 +728,12 @@
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Localoutlier process output description" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -424,17 +741,17 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputDescription/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema>,
         <bblocks://ogc.api.processes.v1.schemas.outputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -447,14 +764,14 @@
     rdfs:label "Localoutlier process output schema" ;
     dct:abstract "Output schema for the localoutlier process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-06-30"^^xsd:date ;
+    dct:modified "2026-07-10"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     skos:prefLabel "Localoutlier process output schema" ;
     skos:topConceptOf <https://geonovum-labs.github.io/bblocks-demo-register/> ;
@@ -472,6 +789,12 @@
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
+<https://logius-standaarden.github.io/logboek-extensie-lezen/> rdfs:label "Logboek Dataverwerkingen Extensie Lezen specification",
+        "Logboek Extensie Lezen - query by dataSubjectId",
+        "Logboek Extensie Lezen - query by processingActivityID",
+        "Logboek Extensie Lezen - query by start_time and end_time",
+        "Logboek Extensie Lezen - query by traceID" .
+
 <https://geonovum-labs.github.io/bblocks-demo-register/> a skos:ConceptScheme,
         dcat:Catalog,
         bblocks:BBlocksRegister ;
@@ -480,11 +803,21 @@
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:description """register for various examples of building blocks.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-06-30T07:30:19.756885"^^xsd:dateTime ;
+    dct:modified "2026-07-10T09:50:42.997727"^^xsd:dateTime ;
     owl:imports <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://geonovum.examples.bag.ogcapi>,
         <bblocks://geonovum.examples.bag.schema>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.processing-activity>,
+        <bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source>,
         <bblocks://geonovum.examples.ogcapi.processes.custom-api>,
         <bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions>,
         <bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription>,
@@ -496,22 +829,22 @@
         <bblocks://geonovum.examples.transforms.xslt-example>,
         <bblocks://geonovum.examples.transforms.xslt2> ;
     skos:prefLabel "Building Blocks - Demo block collection" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://geonovum-labs.github.io/bblocks-demo-register/build/bblocks.jsonld> ],
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://geonovum-labs.github.io/bblocks-demo-register/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://geonovum-labs.github.io/bblocks-demo-register/build/bblocks.ttl> ],
-        [ rdfs:label "This Building Blocks Register in JSON format" ;
-            dct:type "application/json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://geonovum-labs.github.io/bblocks-demo-register/build/register.json> ] ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://geonovum-labs.github.io/bblocks-demo-register/build/bblocks.ttl> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://geonovum-labs.github.io/bblocks-demo-register/build/bblocks.jsonld> ] ;
     foaf:homepage <https://geonovum-labs.github.io/bblocks-demo-register/> ;
     bblocks:hasValidationReport <https://geonovum-labs.github.io/bblocks-demo-register/build/tests/report.html> .
 
-_:Na721519932bd43109faad12ad396739f a prov:Agent,
+_:N12ea960a1edb4752924ec0b6ababe1da a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.31" ;

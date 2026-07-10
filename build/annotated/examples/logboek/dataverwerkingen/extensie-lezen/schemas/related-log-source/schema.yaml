@@ -1,0 +1,37 @@
+type: object
+description: Reference to another log source that may provide related records.
+required:
+- href
+properties:
+  href:
+    type: string
+    format: uri
+    description: URL of the related log reading endpoint.
+    x-jsonld-id: http://schema.org/url
+    x-jsonld-type: '@id'
+  organisation:
+    type: string
+    description: Organisation responsible for the related source.
+    x-jsonld-id: http://www.w3.org/ns/prov#wasAttributedTo
+    x-jsonld-type: '@id'
+  relation:
+    type: string
+    description: Nature of the relation to the current log response.
+    x-jsonld-id: http://purl.org/dc/terms/relation
+  trace_id:
+    type: string
+    description: Trace identifier to use when querying the related source.
+    x-jsonld-id: http://www.w3.org/ns/prov#wasGeneratedBy
+    x-jsonld-type: '@id'
+additionalProperties: true
+x-jsonld-extra-terms:
+  id: '@id'
+  type: '@type'
+  RelatedLogSource: http://www.w3.org/ns/prov#Entity
+x-jsonld-prefixes:
+  prov: http://www.w3.org/ns/prov#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  trace: http://trace.example.com/trace/
+  agent: http://trace.example.com/agent/

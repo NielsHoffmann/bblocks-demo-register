@@ -1,0 +1,55 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source",
+  "name": "Logboek Related Log Source",
+  "abstract": "Schema for referring to another source or reading API that may contain related log records.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "shaclShapes": {},
+  "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/context.jsonld",
+  "dateOfLastChange": "2026-07-09",
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/schema.yaml",
+  "sourceLdContext": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/context.jsonld",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/",
+  "examples": [
+    {
+      "title": "Logboek Related Log Source schema",
+      "content": "Logboek Related Log Source example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/examples/valid.json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/example_1_1.json",
+          "sizeBytes": 324,
+          "code": "{\n  \"id\": \"https://api.omgevingsdienst.example/logboek\",\n  \"type\": \"RelatedLogSource\",\n  \"href\": \"https://api.omgevingsdienst.example/logboek?trace_id=4bf92f3577b34da6a3ce929d0e0e4736\",\n  \"organisation\": \"agent:omgevingsdienst\",\n  \"relation\": \"downstream-processing\",\n  \"trace_id\": \"trace:4bf92f3577b34da6a3ce929d0e0e4736\"\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/example_1_1.jsonld",
+          "sizeBytes": 502,
+          "code": "{\n  \"@context\": \"https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/context.jsonld\",\n  \"id\": \"https://api.omgevingsdienst.example/logboek\",\n  \"type\": \"RelatedLogSource\",\n  \"href\": \"https://api.omgevingsdienst.example/logboek?trace_id=4bf92f3577b34da6a3ce929d0e0e4736\",\n  \"organisation\": \"agent:omgevingsdienst\",\n  \"relation\": \"downstream-processing\",\n  \"trace_id\": \"trace:4bf92f3577b34da6a3ce929d0e0e4736\"\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/example_1_1.ttl",
+          "sizeBytes": 557,
+          "code": "@prefix agent: <http://trace.example.com/agent/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix schema1: <http://schema.org/> .\n@prefix trace: <http://trace.example.com/trace/> .\n\n<https://api.omgevingsdienst.example/logboek> a prov:Entity ;\n    dct:relation \"downstream-processing\" ;\n    schema1:url <https://api.omgevingsdienst.example/logboek?trace_id=4bf92f3577b34da6a3ce929d0e0e4736> ;\n    prov:wasAttributedTo agent:omgevingsdienst ;\n    prov:wasGeneratedBy trace:4bf92f3577b34da6a3ce929d0e0e4736 .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "type: object\ndescription: Reference to another log source that may provide related records.\nrequired:\n- href\nproperties:\n  href:\n    type: string\n    format: uri\n    description: URL of the related log reading endpoint.\n    x-jsonld-id: http://schema.org/url\n    x-jsonld-type: '@id'\n  organisation:\n    type: string\n    description: Organisation responsible for the related source.\n    x-jsonld-id: http://www.w3.org/ns/prov#wasAttributedTo\n    x-jsonld-type: '@id'\n  relation:\n    type: string\n    description: Nature of the relation to the current log response.\n    x-jsonld-id: http://purl.org/dc/terms/relation\n  trace_id:\n    type: string\n    description: Trace identifier to use when querying the related source.\n    x-jsonld-id: http://www.w3.org/ns/prov#wasGeneratedBy\n    x-jsonld-type: '@id'\nadditionalProperties: true\nx-jsonld-extra-terms:\n  id: '@id'\n  type: '@type'\n  RelatedLogSource: http://www.w3.org/ns/prov#Entity\nx-jsonld-prefixes:\n  prov: http://www.w3.org/ns/prov#\n  schema: http://schema.org/\n  dct: http://purl.org/dc/terms/\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  trace: http://trace.example.com/trace/\n  agent: http://trace.example.com/agent/\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source"
+}

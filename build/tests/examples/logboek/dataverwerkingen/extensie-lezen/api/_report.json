@@ -1,0 +1,63 @@
+{
+  "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api - Logboek Dataverwerkingen Extensie Lezen API",
+  "bblockName": "Logboek Dataverwerkingen Extensie Lezen API",
+  "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api",
+  "generated": "2026-07-10T09:50:52.763805+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/examples/logboek/dataverwerkingen/extensie-lezen/api/example_1_1.json",
+        "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/api/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/openapi-example.json from examples"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/examples/logboek/dataverwerkingen/extensie-lezen/api/example_2_1.json",
+        "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/api/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/successful-query.json from examples"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0
+  }
+}

@@ -1,0 +1,25 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response",
+  "name": "Logboek Problem Response",
+  "abstract": "Problem response schema for errors returned by the Logboek Extensie Lezen API.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-07-09",
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/schema.yaml",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/",
+  "validationPassed": true,
+  "annotatedSchema": "type: object\ndescription: Error response.\nrequired:\n- title\n- status\nproperties:\n  type:\n    type: string\n    format: uri\n  title:\n    type: string\n  status:\n    type: integer\n    minimum: 100\n    maximum: 599\n  detail:\n    type: string\n  instance:\n    type: string\n    format: uri\nadditionalProperties: true\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response"
+}

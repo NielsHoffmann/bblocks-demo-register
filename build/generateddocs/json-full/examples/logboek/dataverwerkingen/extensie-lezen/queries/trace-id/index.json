@@ -1,0 +1,47 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
+  "name": "Logboek Extensie Lezen Trace ID Query",
+  "abstract": "Query parameter building block for retrieving log records by trace identifier.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "parameter",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "title": "Logboek Extensie Lezen - query by traceID",
+      "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-07-09",
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.yaml",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/",
+  "examples": [
+    {
+      "title": "Query parameter Trace ID Query",
+      "content": "Query parameter Trace ID Query example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/examples/valid.json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/example_1_1.json",
+          "sizeBytes": 54,
+          "code": "\n{\n  \"trace_id\": \"4bf92f3577b34da6a3ce929d0e0e4736\"\n}\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "type: object\ndescription: Query parameters for retrieving log records related to a trace.\nrequired:\n- trace_id\nproperties:\n  trace_id:\n    type: string\n    minLength: 1\n    description: Identifier used to retrieve log records related to one trace.\nadditionalProperties: false\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id"
+}

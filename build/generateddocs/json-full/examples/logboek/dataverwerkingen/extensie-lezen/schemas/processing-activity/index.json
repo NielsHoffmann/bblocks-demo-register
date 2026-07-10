@@ -1,0 +1,55 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.processing-activity",
+  "name": "Logboek Processing Activity",
+  "abstract": "Schema for a processing activity referenced by log records.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "shaclShapes": {},
+  "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/context.jsonld",
+  "dateOfLastChange": "2026-07-09",
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/schema.yaml",
+  "sourceLdContext": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/context.jsonld",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/",
+  "examples": [
+    {
+      "title": "Logboek Processing Activity schema",
+      "content": "Logboek Processing Activity example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/examples/valid.json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/example_1_1.json",
+          "sizeBytes": 305,
+          "code": "\n{\n  \"id\": \"agent:urn-uuid-018f4c7c-6e67-7d34-b1b8-42e49c9d1a12\",\n  \"type\": \"ProcessingActivity\",\n  \"name\": \"Behandeling vergunningaanvraag\",\n  \"comment\": \"de verwerkingsactiviteit\",\n  \"controller\": \"agent:gemeente-amersfoort\",\n  \"purpose\": \"Uitvoering wettelijke taak\",\n  \"legal_basis\": \"Omgevingswet\"\n}\n"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/example_1_1.jsonld",
+          "sizeBytes": 482,
+          "code": "{\n  \"@context\": \"https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/context.jsonld\",\n  \"id\": \"agent:urn-uuid-018f4c7c-6e67-7d34-b1b8-42e49c9d1a12\",\n  \"type\": \"ProcessingActivity\",\n  \"name\": \"Behandeling vergunningaanvraag\",\n  \"comment\": \"de verwerkingsactiviteit\",\n  \"controller\": \"agent:gemeente-amersfoort\",\n  \"purpose\": \"Uitvoering wettelijke taak\",\n  \"legal_basis\": \"Omgevingswet\"\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/example_1_1.ttl",
+          "sizeBytes": 496,
+          "code": "@prefix agent: <http://trace.example.com/agent/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\nagent:urn-uuid-018f4c7c-6e67-7d34-b1b8-42e49c9d1a12 a prov:Agent ;\n    rdfs:label \"Behandeling vergunningaanvraag\" ;\n    dct:rights \"Omgevingswet\" ;\n    rdfs:comment \"de verwerkingsactiviteit\" ;\n    prov:actedOnBehalfOf agent:gemeente-amersfoort ;\n    prov:hadPurpose \"Uitvoering wettelijke taak\" .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "type: object\ndescription: Processing activity related to one or more log records.\nrequired:\n- id\nproperties:\n  id:\n    type: string\n    description: Identifier of the processing activity.\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    description: Human-readable name of the processing activity.\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  controller:\n    type: string\n    description: Responsible organisation or controller.\n    x-jsonld-id: http://www.w3.org/ns/prov#actedOnBehalfOf\n    x-jsonld-type: '@id'\n  purpose:\n    type: string\n    description: Purpose of the processing activity.\n    x-jsonld-id: http://www.w3.org/ns/prov#hadPurpose\n  legal_basis:\n    type: string\n    description: Legal basis for the processing activity.\n    x-jsonld-id: http://purl.org/dc/terms/rights\nadditionalProperties: true\nx-jsonld-extra-terms:\n  type: '@type'\n  ProcessingActivity: http://www.w3.org/ns/prov#Agent\n  comment: http://www.w3.org/2000/01/rdf-schema#comment\nx-jsonld-prefixes:\n  prov: http://www.w3.org/ns/prov#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  dct: http://purl.org/dc/terms/\n  schema: http://schema.org/\n  agent: http://trace.example.com/agent/\n",
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity"
+}

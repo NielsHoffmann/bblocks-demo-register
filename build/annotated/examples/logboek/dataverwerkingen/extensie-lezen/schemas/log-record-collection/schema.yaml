@@ -1,0 +1,34 @@
+name: Logboek Log Record Collection
+abstract: Response schema for a collection of log records returned by the Logboek
+  Extensie Lezen API.
+status: under-development
+dateTimeAddition: '2026-07-09T00:00:00Z'
+itemClass: schema
+register: Logboek Dataverwerkingen
+version: 0.1.0
+dependsOn:
+- nl.geonovum.logboek.extensie-lezen.schemas.log-record
+x-jsonld-extra-terms:
+  records:
+    x-jsonld-id: http://www.w3.org/ns/prov#hadMember
+    x-jsonld-container: '@set'
+  processing_activities:
+    x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith
+    x-jsonld-container: '@set'
+  related_sources:
+    x-jsonld-id: http://purl.org/dc/terms/relation
+    x-jsonld-container: '@set'
+  links:
+    x-jsonld-id: http://schema.org/subjectOf
+    x-jsonld-container: '@set'
+  href:
+    x-jsonld-id: http://schema.org/url
+    x-jsonld-type: '@id'
+  rel: http://purl.org/dc/terms/relation
+  type: '@type'
+  LogRecordCollection: http://www.w3.org/ns/prov#Bundle
+x-jsonld-prefixes:
+  prov: http://www.w3.org/ns/prov#
+  dct: http://purl.org/dc/terms/
+  schema: http://schema.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#

@@ -1,0 +1,21 @@
+{
+  "type": "LogRecordCollection",
+  "records": [
+    {
+      "id": "urn:uuid:11111111-2222-3333-4444-555555555555",
+      "type": "LogRecord",
+      "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+      "recorded_at": "2026-05-26T12:15:00Z",
+      "action": "read"
+    }
+  ],
+  "processing_activities": [],
+  "related_sources": [],
+  "links": [
+    {
+      "href": "https://example.org/logs?trace_id=4bf92f3577b34da6a3ce929d0e0e4736",
+      "rel": "self",
+      "type": "application/json"
+    }
+  ]
+}

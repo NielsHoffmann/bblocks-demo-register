@@ -1,0 +1,15 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:11111111-2222-3333-4444-555555555555> a prov:Activity ;
+    rdfs:label "read" ;
+    dct:source <https://example.org/logboek> ;
+    prov:hadPurpose "besluitvorming" ;
+    prov:qualifiedAssociation <urn:example:person:123456789>,
+        <urn:uuid:018f4c7c-6e67-7d34-b1b8-42e49c9d1a12> ;
+    prov:startedAtTime "2026-05-26T12:15:00+00:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <urn:example:organisation:service-a> ;
+    prov:wasGeneratedBy <file:///github/workspace/4bf92f3577b34da6a3ce929d0e0e4736> .
+
