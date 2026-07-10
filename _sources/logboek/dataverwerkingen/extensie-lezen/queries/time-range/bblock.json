@@ -12,5 +12,6 @@
       "title": "Logboek Extensie Lezen - query by start_time and end_time",
       "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
     }
-  ]
+  ],
+  "tags": ["LDV", "parameter", "Logboek Dataverwerkingen", "Extensie Lezen"]
 }

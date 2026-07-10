@@ -23,5 +23,6 @@
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response"
-  ]
+  ],
+  "tags": ["LDV", "API", "Logboek Dataverwerkingen", "Extensie Lezen"]
 }

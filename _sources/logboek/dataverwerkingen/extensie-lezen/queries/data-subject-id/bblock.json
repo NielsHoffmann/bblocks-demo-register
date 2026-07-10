@@ -11,5 +11,6 @@
       "title": "Logboek Extensie Lezen - query by dataSubjectId",
       "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
     }
-  ]
+  ],
+  "tags": ["LDV", "parameter", "Logboek Dataverwerkingen", "Extensie Lezen"]
 }
