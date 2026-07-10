@@ -1,0 +1,27 @@
+{
+  "name": "Logboek Dataverwerkingen Extensie Lezen API",
+  "abstract": "Umbrella building block for the API used to read logged data processing records from a Logboek Dataverwerkingen implementation.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "api",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "title": "Logboek Dataverwerkingen Extensie Lezen specification",
+      "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
+    },
+    {
+      "title": "OpenAPI source",
+      "link": "https://github.com/Logius-standaarden/logboek-extensie-lezen/blob/develop/media/openapi.json"
+    }
+  ],
+  "dependsOn": [
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Logboek Related Log Source",
+  "abstract": "Schema for referring to another source or reading API that may contain related log records.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0"
+}

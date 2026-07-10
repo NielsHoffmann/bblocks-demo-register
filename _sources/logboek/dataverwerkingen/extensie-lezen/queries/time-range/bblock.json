@@ -1,0 +1,16 @@
+
+{
+  "name": "Logboek Extensie Lezen Time Range Query",
+  "abstract": "Query parameter building block for retrieving log records within a start and end time interval.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "parameter",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "title": "Logboek Extensie Lezen - query by start_time and end_time",
+      "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
+    }
+  ]
+}

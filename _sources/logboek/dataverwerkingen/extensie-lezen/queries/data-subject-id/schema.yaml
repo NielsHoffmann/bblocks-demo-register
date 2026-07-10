@@ -1,0 +1,11 @@
+
+type: object
+description: Query parameters for retrieving log records related to a data subject.
+required:
+  - data_subject_id
+properties:
+  data_subject_id:
+    type: string
+    minLength: 1
+    description: Identifier of the data subject for which log records are requested.
+additionalProperties: false

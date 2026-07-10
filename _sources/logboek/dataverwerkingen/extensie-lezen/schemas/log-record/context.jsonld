@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "@version": 1.1,
+
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+
+    "trace": "http://trace.example.com/trace/",
+    "span": "http://trace.example.com/span/",
+    "entity": "http://trace.example.com/entity/",
+    "usage": "http://trace.example.com/usage/",
+    "association": "http://trace.example.com/association/",
+    "agent": "http://trace.example.com/agent/",
+    "subject": "http://trace.example.com/subject/",
+
+    "id": "@id",
+    "type": "@type",
+
+    "LogRecord": "prov:Activity",
+
+    "recorded_at": {
+      "@id": "prov:startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+
+    "start_time": {
+      "@id": "prov:startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+
+    "end_time": {
+      "@id": "prov:endedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+
+    "name": {
+      "@id": "rdfs:label"
+    },
+
+    "action": {
+      "@id": "rdfs:label"
+    },
+
+    "trace_id": {
+      "@id": "prov:wasGeneratedBy",
+      "@type": "@id"
+    },
+
+    "processing_activity_id": {
+      "@id": "prov:qualifiedAssociation",
+      "@type": "@id"
+    },
+
+    "data_object_id": {
+      "@id": "prov:qualifiedUsage",
+      "@type": "@id"
+    },
+
+    "data_object_def": {
+      "@id": "dct:source",
+      "@type": "@id"
+    },
+
+    "data_subject_id": {
+      "@id": "prov:qualifiedAssociation",
+      "@type": "@id"
+    },
+
+    "actor": {
+      "@id": "prov:wasAssociatedWith",
+      "@type": "@id"
+    },
+
+    "purpose": {
+      "@id": "prov:hadPurpose"
+    },
+
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id"
+    }
+  }
+}

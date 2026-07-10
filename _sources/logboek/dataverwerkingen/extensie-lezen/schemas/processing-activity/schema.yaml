@@ -1,0 +1,21 @@
+type: object
+description: Processing activity related to one or more log records.
+required:
+  - id
+properties:
+  id:
+    type: string
+    description: Identifier of the processing activity.
+  name:
+    type: string
+    description: Human-readable name of the processing activity.
+  controller:
+    type: string
+    description: Responsible organisation or controller.
+  purpose:
+    type: string
+    description: Purpose of the processing activity.
+  legal_basis:
+    type: string
+    description: Legal basis for the processing activity.
+additionalProperties: true

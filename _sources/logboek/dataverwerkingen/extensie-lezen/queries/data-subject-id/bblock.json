@@ -1,0 +1,15 @@
+{
+  "name": "Logboek Extensie Lezen Data Subject ID Query",
+  "abstract": "Query parameter building block for retrieving log records related to a data subject.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-07-09T00:00:00Z",
+  "itemClass": "parameter",
+  "register": "Logboek Dataverwerkingen",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "title": "Logboek Extensie Lezen - query by dataSubjectId",
+      "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
+    }
+  ]
+}

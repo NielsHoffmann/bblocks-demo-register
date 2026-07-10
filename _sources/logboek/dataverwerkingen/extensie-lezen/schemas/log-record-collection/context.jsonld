@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@version": 1.1,
+
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+
+    "records": {
+      "@id": "prov:hadMember",
+      "@container": "@set"
+    },
+
+    "processing_activities": {
+      "@id": "prov:wasAssociatedWith",
+      "@container": "@set"
+    },
+
+    "related_sources": {
+      "@id": "dct:relation",
+      "@container": "@set"
+    },
+
+    "links": {
+      "@id": "schema:subjectOf",
+      "@container": "@set"
+    },
+
+    "href": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+
+    "rel": {
+      "@id": "dct:relation"
+    },
+
+    "type": "@type",
+
+    "LogRecordCollection": "prov:Bundle"
+  }
+}

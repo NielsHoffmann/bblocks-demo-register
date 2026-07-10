@@ -1,0 +1,36 @@
+type: object
+description: A single logged data processing record.
+required:
+  - id
+  - recorded_at
+properties:
+  id:
+    type: string
+    description: Unique identifier of the log record.
+  trace_id:
+    type: string
+    description: Identifier linking records that belong to the same trace.
+  processing_activity_id:
+    type: string
+    description: Identifier of the related processing activity.
+  data_subject_id:
+    type: string
+    description: Identifier of the data subject, if applicable and permitted.
+  recorded_at:
+    type: string
+    format: date-time
+    description: Timestamp at which the log record was recorded.
+  actor:
+    type: string
+    description: Actor responsible for or involved in the processing event.
+  purpose:
+    type: string
+    description: Purpose of the processing event.
+  action:
+    type: string
+    description: Action or operation that was logged.
+  source:
+    type: string
+    format: uri
+    description: URI of the source system or logbook.
+additionalProperties: true

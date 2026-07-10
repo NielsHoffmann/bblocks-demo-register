@@ -1,0 +1,7 @@
+examples:
+  - title: Logboek Processing Activity schema
+    content: Logboek Processing Activity example
+      
+    snippets:
+      - language: json
+        ref: examples/valid.json

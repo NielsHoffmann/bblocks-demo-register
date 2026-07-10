@@ -1,0 +1,8 @@
+{
+  "id": "https://api.omgevingsdienst.example/logboek",
+  "type": "RelatedLogSource",
+  "href": "https://api.omgevingsdienst.example/logboek?trace_id=4bf92f3577b34da6a3ce929d0e0e4736",
+  "organisation": "agent:omgevingsdienst",
+  "relation": "downstream-processing",
+  "trace_id": "trace:4bf92f3577b34da6a3ce929d0e0e4736"
+}

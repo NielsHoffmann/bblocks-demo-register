@@ -1,0 +1,7 @@
+examples:
+  - title: Query parameter Trace ID Query
+    content: Query parameter Trace ID Query example
+      
+    snippets:
+      - language: json
+        ref: examples/valid.json

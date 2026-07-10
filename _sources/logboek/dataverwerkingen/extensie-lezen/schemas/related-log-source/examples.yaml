@@ -1,0 +1,7 @@
+examples:
+  - title: Logboek Related Log Source schema
+    content: Logboek Related Log Source example
+      
+    snippets:
+      - language: json
+        ref: examples/valid.json

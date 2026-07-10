@@ -1,0 +1,7 @@
+examples:
+  - title: Logboek Log Record Collection schema
+    content: Logboek Log Record Collection example
+      
+    snippets:
+      - language: json
+        ref: examples/valid.json

@@ -1,0 +1,14 @@
+examples:
+  - title: Logboek Dataverwerkingen Extensie Lezen API Spec
+    content: open api spec
+      
+    snippets:
+      - language: json
+        ref: examples/openapi-example.json
+
+  - title: Logboek Dataverwerkingen Extensie Lezen API Call
+    content: open api call voorbeeld
+      
+    snippets:
+      - language: json
+        ref: examples/successful-query.json

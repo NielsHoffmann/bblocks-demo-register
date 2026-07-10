@@ -1,0 +1,11 @@
+
+type: object
+description: Query parameters for retrieving log records related to a trace.
+required:
+  - trace_id
+properties:
+  trace_id:
+    type: string
+    minLength: 1
+    description: Identifier used to retrieve log records related to one trace.
+additionalProperties: false

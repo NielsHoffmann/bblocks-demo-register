@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "@version": 1.1,
+
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+
+    "agent": "http://trace.example.com/agent/",
+
+    "id": "@id",
+    "type": "@type",
+
+    "ProcessingActivity": "prov:Agent",
+
+    "name": {
+      "@id": "rdfs:label"
+    },
+
+    "comment": {
+      "@id": "rdfs:comment"
+    },
+
+    "controller": {
+      "@id": "prov:actedOnBehalfOf",
+      "@type": "@id"
+    },
+
+    "purpose": {
+      "@id": "prov:hadPurpose"
+    },
+
+    "legal_basis": {
+      "@id": "dct:rights"
+    }
+  }
+}

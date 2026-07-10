@@ -1,0 +1,7 @@
+examples:
+  - title: Query parameter Processing Activity ID Query
+    content: Query parameter Processing Activity ID Query example
+      
+    snippets:
+      - language: json
+        ref: examples/valid.json

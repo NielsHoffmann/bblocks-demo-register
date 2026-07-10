@@ -1,0 +1,19 @@
+type: object
+description: Reference to another log source that may provide related records.
+required:
+  - href
+properties:
+  href:
+    type: string
+    format: uri
+    description: URL of the related log reading endpoint.
+  organisation:
+    type: string
+    description: Organisation responsible for the related source.
+  relation:
+    type: string
+    description: Nature of the relation to the current log response.
+  trace_id:
+    type: string
+    description: Trace identifier to use when querying the related source.
+additionalProperties: true

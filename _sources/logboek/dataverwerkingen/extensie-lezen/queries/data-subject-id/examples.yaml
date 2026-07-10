@@ -1,0 +1,7 @@
+examples:
+  - title: Query parameter example
+    content: Query parameter example
+      
+    snippets:
+      - language: json
+        ref: examples/valid.json
