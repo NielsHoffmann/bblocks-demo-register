@@ -3,16 +3,22 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix schema: <http://schema.org/>.
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
 @base <http://example.com/ns#>.
 
-#Trace object
+
+#################################################################
+# Trace object
+#################################################################
+
 <#TraceMapping> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "../examples/trace.json";
+    rml:source "./trace.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[0]"
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
   ];
 
   rr:subjectMap [
@@ -31,13 +37,15 @@
     rr:predicate rdfs:comment;
     rr:objectMap [
       rr:constant "Trace"
-      # rml:reference "name"
     ]
-  ];
-  .
+  ].
 
-#span object (indivduele acties binnen een trace)
-# wasgeneratedby -> trace
+
+#################################################################
+# Span object
+# Individuele acties binnen een trace
+#################################################################
+
 <#SpanMapping> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./trace.json";
@@ -50,11 +58,11 @@
     rr:class prov:Activity
   ];
 
-   rr:predicateObjectMap [
+  rr:predicateObjectMap [
     rr:predicate prov:startedAtTime;
     rr:objectMap [
       rml:reference "startTimeUnixNano";
-      rml:datatype xsd:dateTime
+      rr:datatype xsd:string
     ]
   ];
 
@@ -62,102 +70,97 @@
     rr:predicate prov:endedAtTime;
     rr:objectMap [
       rml:reference "endTimeUnixNano";
-      rml:datatype xsd:dateTime
+      rr:datatype xsd:string
     ]
   ];
 
   rr:predicateObjectMap [
-    # rr:predicate schema:name;
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "name";
-      rml:datatype xsd:string
+      rr:datatype xsd:string
     ]
   ];
 
   rr:predicateObjectMap [
     rr:predicate prov:wasGeneratedBy;
     rr:objectMap [
-       rr:parentTriplesMap <#TraceMapping>;
-       rr:joinCondition [
-           rr:child "traceId";
-           rr:parent "traceId"
-        ]
+      rr:template "http://trace.example.com/trace/{traceId}";
+      rr:termType rr:IRI
     ]
   ];
 
-    rr:predicateObjectMap [
+  rr:predicateObjectMap [
     rr:predicate prov:qualifiedUsage;
     rr:objectMap [
-       rr:parentTriplesMap <#ObjectUsageMapping>;
-       rr:joinCondition [
-           rr:child "http://trace.example.com/entity/{attributes[2].value.stringValue}";
-           rr:parent "http://trace.example.com/usage/{value.stringValue}"
-        ]
+      rr:template "http://trace.example.com/usage/{attributes[2].value.intValue}";
+      rr:termType rr:IRI
     ]
   ];
 
   rr:predicateObjectMap [
     rr:predicate prov:qualifiedAssociation;
     rr:objectMap [
-       rr:parentTriplesMap <#AgentAssociationMapping>;
-       rr:joinCondition [
-           rr:child "http://trace.example.com/entity/{attributes[1].value.stringValue}";
-           rr:parent "http://trace.example.com/association/{value.stringValue}"
-        ]
+      rr:template "http://trace.example.com/association/{attributes[1].value.stringValue}";
+      rr:termType rr:IRI
     ]
-  ];
-
-  .
+  ].
 
 
+#################################################################
+# Definitie object
+# attributes[3] = dpl.objects.data_object_def
+#################################################################
 
-#definitie object
 <#DefinitionMapping> a rr:TriplesMap;
-    rml:logicalSource [
+  rml:logicalSource [
     rml:source "./trace.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_def')]"
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
   ];
 
   rr:subjectMap [
-    rr:template "http://trace.example.com/entity/{value.stringValue}";
+    rr:template "http://trace.example.com/entity/{attributes[3].value.stringValue}";
     rr:class prov:Entity
   ];
 
   rr:predicateObjectMap [
     rr:predicate dct:source;
     rr:objectMap [
-      rml:reference "value.stringValue"
+      rml:reference "attributes[3].value.stringValue";
+      rr:termType rr:IRI
     ]
   ];
 
-    rr:predicateObjectMap [
+  rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rr:constant "definitie van het object"
     ]
-  ];
-.
+  ].
 
-#relatie tussen activiteit en object
+
+#################################################################
+# Relatie tussen activiteit en object
+# attributes[2] = dpl.objects.data_object_id
+#################################################################
+
 <#ObjectUsageMapping> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./trace.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_id')]"
-    # rml:iterator "$.resourceSpans[*].resource[0].attributes[0]"
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
   ];
 
-    rr:subjectMap [
-    rr:template "http://trace.example.com/usage/{value.intValue}";
+  rr:subjectMap [
+    rr:template "http://trace.example.com/usage/{attributes[2].value.intValue}";
     rr:class prov:Usage
   ];
 
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "value.intValue"
+      rml:reference "attributes[2].value.intValue"
     ]
   ];
 
@@ -171,37 +174,34 @@
   rr:predicateObjectMap [
     rr:predicate prov:entity;
     rr:objectMap [
-       rr:parentTriplesMap <#DefinitionMapping>;
-       rr:joinCondition [
-           rr:child "{value.intValue}";
-           rr:parent "http://trace.example.com/entity/{value.stringValue}"
-        ]
-    ];
-  ];
-
-   rr:predicateObjectMap [
-    rr:predicate prov:qualifiedAssociation;
-    rr:objectMap [
-       rr:parentTriplesMap <#SubjectAgentAssociationMapping>;
-       rr:joinCondition [
-           rr:child "http://trace.example.com/entity/{attributes[1].value.stringValue}";
-           rr:parent "http://trace.example.com/association/{value.stringValue}"
-        ]
+      rr:template "http://trace.example.com/entity/{attributes[3].value.stringValue}";
+      rr:termType rr:IRI
     ]
   ];
 
-.
+  rr:predicateObjectMap [
+    rr:predicate prov:qualifiedAssociation;
+    rr:objectMap [
+      rr:template "http://trace.example.com/association/{attributes[4].value.stringValue}";
+      rr:termType rr:IRI
+    ]
+  ].
 
-#register verwerkingsactiviteit
+
+#################################################################
+# Register verwerkingsactiviteit
+# attributes[1] = dpl.core.processing_activity_id
+#################################################################
+
 <#AgentMapping> a rr:TriplesMap;
-    rml:logicalSource [
+  rml:logicalSource [
     rml:source "./trace.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]"
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
   ];
 
   rr:subjectMap [
-    rr:template "http://trace.example.com/agent/{value.stringValue}";
+    rr:template "http://trace.example.com/agent/{attributes[1].value.stringValue}";
     rr:class prov:Agent
   ];
 
@@ -215,21 +215,25 @@
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "value.stringValue"
+      rml:reference "attributes[1].value.stringValue"
     ]
-  ];
-.
+  ].
 
-#relatie tussen activiteit en verwerkingsregister
+
+#################################################################
+# Relatie tussen activiteit en verwerkingsregister
+# attributes[1] = dpl.core.processing_activity_id
+#################################################################
+
 <#AgentAssociationMapping> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./trace.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]"
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
   ];
 
-    rr:subjectMap [
-    rr:template "http://trace.example.com/association/{value.stringValue}";
+  rr:subjectMap [
+    rr:template "http://trace.example.com/association/{attributes[1].value.stringValue}";
     rr:class prov:Association
   ];
 
@@ -243,26 +247,26 @@
   rr:predicateObjectMap [
     rr:predicate prov:agent;
     rr:objectMap [
-       rr:parentTriplesMap <#AgentMapping>;
-       rr:joinCondition [
-           rr:child "{value.stringValue}";
-           rr:parent "http://trace.example.com/agent/{value.stringValue}"
-        ]
+      rr:template "http://trace.example.com/agent/{attributes[1].value.stringValue}";
+      rr:termType rr:IRI
     ]
-  ];
+  ].
 
-.
 
-#register verwerkingsactiviteit
+#################################################################
+# Data subject
+# attributes[4] = dpl.core.data_subject_id
+#################################################################
+
 <#SubjectAgentMapping> a rr:TriplesMap;
-    rml:logicalSource [
+  rml:logicalSource [
     rml:source "./trace.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]"
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
   ];
 
   rr:subjectMap [
-    rr:template "http://trace.example.com/subject/{value.stringValue}";
+    rr:template "http://trace.example.com/subject/{attributes[4].value.stringValue}";
     rr:class prov:Agent
   ];
 
@@ -276,21 +280,25 @@
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "value.stringValue"
+      rml:reference "attributes[4].value.stringValue"
     ]
-  ];
-.
+  ].
 
-#relatie tussen activiteit en verwerkingsregister
+
+#################################################################
+# Relatie tussen usage en subject
+# attributes[4] = dpl.core.data_subject_id
+#################################################################
+
 <#SubjectAgentAssociationMapping> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./trace.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]"
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
   ];
 
-    rr:subjectMap [
-    rr:template "http://trace.example.com/association/{value.stringValue}";
+  rr:subjectMap [
+    rr:template "http://trace.example.com/association/{attributes[4].value.stringValue}";
     rr:class prov:Association
   ];
 
@@ -304,12 +312,7 @@
   rr:predicateObjectMap [
     rr:predicate prov:agent;
     rr:objectMap [
-       rr:parentTriplesMap <#SubjectAgentMapping>;
-       rr:joinCondition [
-           rr:child "{value.stringValue}";
-           rr:parent "http://trace.example.com/subject/{value.stringValue}"
-        ]
+      rr:template "http://trace.example.com/subject/{attributes[4].value.stringValue}";
+      rr:termType rr:IRI
     ]
-  ];
-
-.
+  ].
