@@ -9,6 +9,12 @@
   "itemClass": "schema",
   "register": "Logboek Dataverwerkingen",
   "version": "0.1.0",
+  "tags": [
+    "LDV",
+    "schema",
+    "Logboek Dataverwerkingen",
+    "Extensie Lezen"
+  ],
   "shaclShapes": {},
   "dateOfLastChange": "2026-07-09",
   "schema": {

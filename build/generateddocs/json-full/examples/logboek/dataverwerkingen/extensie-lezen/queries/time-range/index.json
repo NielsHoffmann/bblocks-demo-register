@@ -15,6 +15,12 @@
       "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
     }
   ],
+  "tags": [
+    "LDV",
+    "parameter",
+    "Logboek Dataverwerkingen",
+    "Extensie Lezen"
+  ],
   "shaclShapes": {},
   "dateOfLastChange": "2026-07-09",
   "schema": {

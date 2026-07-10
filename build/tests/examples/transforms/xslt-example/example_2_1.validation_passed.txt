@@ -1,5 +1,5 @@
 Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example
-Generated 2026-07-10T09:50:52.329261+00:00
+Generated 2026-07-10T11:28:53.469860+00:00
 === Plugin ===
 
 --- Plugin: bbplugin_rdfxml_validator.RdfXmlValidator ---

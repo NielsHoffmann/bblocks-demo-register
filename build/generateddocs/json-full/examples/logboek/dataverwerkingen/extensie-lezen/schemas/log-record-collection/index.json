@@ -12,6 +12,12 @@
   "dependsOn": [
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record"
   ],
+  "tags": [
+    "LDV",
+    "schema",
+    "Logboek Dataverwerkingen",
+    "Extensie Lezen"
+  ],
   "shaclShapes": {},
   "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/context.jsonld",
   "dateOfLastChange": "2026-07-09",
