@@ -20,11 +20,11 @@
     }
   ],
   "dependsOn": [
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response",
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id"
   ],
   "tags": [

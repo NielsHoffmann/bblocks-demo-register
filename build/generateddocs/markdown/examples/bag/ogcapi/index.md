@@ -119,8 +119,8 @@ Een voorbeeld van een BAG Pand als GeoJSON Feature. Door de semantic uplift word
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <https://catalogus.kadaster.nl/bag/nl/page/> .
-@prefix ns2: <https://www.w3.org/1999/xhtml/vocab#> .
-@prefix ns3: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns3: <https://www.w3.org/1999/xhtml/vocab#> .
 @prefix ns4: <https://data.crow.nl/imbor/term/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -135,8 +135,8 @@ Een voorbeeld van een BAG Pand als GeoJSON Feature. Door de semantic uplift word
     ns4:88878766-6d5a-4382-8f91-2275b0db94e7 2024 ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 4.697783e+00 5.231698e+01 ) ( 4.698187e+00 5.231678e+01 ) ( 4.698261e+00 5.231683e+01 ) ( 4.697857e+00 5.231703e+01 ) ( 4.697783e+00 5.231698e+01 ) ) ) ] ;
-    ns2:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;
-    ns3:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .
+    ns3:href <https://api.pdok.nl/kadaster/bag/ogc/v2/collections/verblijfsobject/items/75d7d0cc-5dc8-5ab1-a959-09dc2b8194ed> ;
+    ns2:seeAlso <http://bag.basisregistraties.overheid.nl/bag/id/pand/0394100003049202> .
 
 
 ```

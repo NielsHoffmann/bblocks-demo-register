@@ -26,17 +26,17 @@ Query parameter building block for retrieving log records within a start and end
 
 Problem response schema for errors returned by the Logboek Extensie Lezen API.
 
-### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id` — Logboek Extensie Lezen Data Subject ID Query
-
-**Type:** parameter
-
-Query parameter building block for retrieving log records related to a data subject.
-
 ### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id` — Logboek Extensie Lezen Processing Activity ID Query
 
 **Type:** parameter
 
 Query parameter building block for retrieving log records related to a processing activity.
+
+### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id` — Logboek Extensie Lezen Data Subject ID Query
+
+**Type:** parameter
+
+Query parameter building block for retrieving log records related to a data subject.
 
 ### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id` — Logboek Extensie Lezen Trace ID Query
 
@@ -62,17 +62,17 @@ Schema for a processing activity referenced by log records.
 
 Schema for referring to another source or reading API that may contain related log records.
 
-### `geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema` — Localoutlier process output schema
-
-**Type:** schema
-
-Output schema for the localoutlier process
-
 ### `geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema` — Localoutlier process input schema
 
 **Type:** schema
 
 Input schema for the localoutlier process
+
+### `geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema` — Localoutlier process output schema
+
+**Type:** schema
+
+Output schema for the localoutlier process
 
 ### `geonovum.examples.transforms.xslt-example` — XSLT Transforms example
 
