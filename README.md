@@ -4,15 +4,15 @@ This repository shows a number of OGC Building Block demonstrations in the conte
 
 For more info on the OGC Building Block framework see [the OGC Documentation](https://ogcincubator.github.io/bblocks-docs/).
 
-This repoistory is based on the that can be found here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
+This repoistory is based on the template repository that can be found here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
 
 
 # Demo's
 
-## Semnatic annotation of a BAG Pand
+## Semantic annotation of a BAG Pand
 
 These building blocks show a JSON-LD context that connects the JSON schema of a BAG Pand to the relevant terms in a vocabulary.
-The context is than connected to a OGC Feature to show how this link can help make definitions explicit in a User Interface.
+The context is then connected to an OGC Feature to show how this link can help make definitions explicit in a User Interface.
 
 ## OGC API Processes
 
