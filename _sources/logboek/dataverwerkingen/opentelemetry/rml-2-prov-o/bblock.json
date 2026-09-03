@@ -1,0 +1,24 @@
+{
+  "name": "LDV RML Mapper",
+  "abstract": "OpenTelemetry OTLP JSON transformed to PROV-O RDF using an RML transform plugin.",
+  "status": "under-development",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "dateTimeAddition": "2026-08-28T00:00:00Z",
+  "version": "0.1",
+  "maturity": "development",
+  "tags": ["opentelemetry", "prov-o", "rml", "provenance"],
+  "dependsOn": [
+    "geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace",
+    "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv"
+  ],
+  "description": "The transform uses the RML transformer plugin to convert OTLP resourceSpans into PROV-O RDF. Span and trace records become PROV activities and array-valued data object identifiers become qualified usage references.",
+  "resources": [
+    {
+      "title": "RML mapping",
+      "role": "mapping",
+      "ref": "examples/ldv-prov.rml.ttl",
+      "format": "text/turtle"
+    }
+  ]
+}

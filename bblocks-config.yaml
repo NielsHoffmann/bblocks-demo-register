@@ -51,6 +51,9 @@ plugins:
     - pip: git+https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin.git@main
       modules:
         - bbplugin_xslt2
+    - pip: git+https://github.com/Geonovum-labs/bblocks-rml-transform-plugin.git@main
+      modules:
+        - bbplugin_rml
   validators:
     - pip: git+https://github.com/Geonovum-labs/bblocks-rdfxml-validator-plugin.git
       modules:

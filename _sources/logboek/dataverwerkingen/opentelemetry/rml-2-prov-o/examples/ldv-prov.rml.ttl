@@ -1,0 +1,290 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <http://schema.org/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@base <http://example.com/ns#>.
+
+#Trace object
+<#TraceMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[0]"
+  ];
+
+  rr:subjectMap [
+    rr:template "http://trace.example.com/trace/{traceId}";
+    rr:class prov:Activity
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "traceId"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:comment;
+    rr:objectMap [
+      rr:constant "Trace"
+      # rml:reference "name"
+    ]
+  ];
+  .
+
+#span object (indivduele acties binnen een trace)
+# wasgeneratedby -> trace
+<#SpanMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*]"
+  ];
+
+  rr:subjectMap [
+    rr:template "http://trace.example.com/span/{spanId}";
+    rr:class prov:Activity
+  ];
+
+   rr:predicateObjectMap [
+    rr:predicate prov:startedAtTime;
+    rr:objectMap [
+      rml:reference "startTimeUnixNano";
+      rml:datatype xsd:dateTime
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate prov:endedAtTime;
+    rr:objectMap [
+      rml:reference "endTimeUnixNano";
+      rml:datatype xsd:dateTime
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    # rr:predicate schema:name;
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "name";
+      rml:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate prov:wasGeneratedBy;
+    rr:objectMap [
+       rr:parentTriplesMap <#TraceMapping>;
+       rr:joinCondition [
+           rr:child "traceId";
+           rr:parent "traceId"
+        ]
+    ]
+  ];
+
+    rr:predicateObjectMap [
+    rr:predicate prov:qualifiedAssociation;
+    rr:objectMap [
+       rr:parentTriplesMap <#AgentAssociationMapping>;
+       rr:joinCondition [
+           rr:child "http://trace.example.com/entity/{attributes[1].value.stringValue}";
+           rr:parent "http://trace.example.com/association/{value.stringValue}"
+        ]
+    ]
+  ];
+
+  .
+
+
+
+#definitie object
+<#DefinitionMapping> a rr:TriplesMap;
+    rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_def')]"
+  ];
+
+  rr:subjectMap [
+    rr:template "http://trace.example.com/entity/{value.stringValue}";
+    rr:class prov:Entity
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dct:source;
+    rr:objectMap [
+      rml:reference "value.stringValue"
+    ]
+  ];
+
+    rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rr:constant "definitie van het object"
+    ]
+  ];
+.
+
+#relatie tussen activiteit en object
+<#ObjectUsageMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_id')].value.arrayValue.values[*]"
+  ];
+
+  rr:subjectMap [
+    rr:template "http://trace.example.com/usage/{intValue}";
+    rr:class prov:Usage
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "intValue"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:comment;
+    rr:objectMap [
+      rr:constant "de qualified usage relatie naar het object"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate prov:entity;
+    rr:objectMap [
+      rr:parentTriplesMap <#DefinitionMapping>;
+      rr:joinCondition [
+        rr:child "intValue";
+        rr:parent "value.stringValue"
+      ]
+    ]
+  ].
+
+#register verwerkingsactiviteit
+<#AgentMapping> a rr:TriplesMap;
+    rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]"
+  ];
+
+  rr:subjectMap [
+    rr:template "http://trace.example.com/agent/{value.stringValue}";
+    rr:class prov:Agent
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:comment;
+    rr:objectMap [
+      rr:constant "de verwerkingsactiviteit"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "value.stringValue"
+    ]
+  ];
+.
+
+#relatie tussen activiteit en verwerkingsregister
+<#AgentAssociationMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]"
+  ];
+
+    rr:subjectMap [
+    rr:template "http://trace.example.com/association/{value.stringValue}";
+    rr:class prov:Association
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:comment;
+    rr:objectMap [
+      rr:constant "de qualified association relatie naar het register"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate prov:agent;
+    rr:objectMap [
+       rr:parentTriplesMap <#AgentMapping>;
+       rr:joinCondition [
+           rr:child "{value.stringValue}";
+           rr:parent "http://trace.example.com/agent/{value.stringValue}"
+        ]
+    ]
+  ];
+
+.
+
+#register verwerkingsactiviteit
+<#SubjectAgentMapping> a rr:TriplesMap;
+    rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]"
+  ];
+
+  rr:subjectMap [
+    rr:template "http://trace.example.com/subject/{value.stringValue}";
+    rr:class prov:Agent
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:comment;
+    rr:objectMap [
+      rr:constant "het subject"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "value.stringValue"
+    ]
+  ];
+.
+
+#relatie tussen activiteit en verwerkingsregister
+<#SubjectAgentAssociationMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../../../opentelemetry/trace/examples/trace.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]"
+  ];
+
+    rr:subjectMap [
+    rr:template "http://trace.example.com/association/{value.stringValue}";
+    rr:class prov:Association
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:comment;
+    rr:objectMap [
+      rr:constant "de qualified association relatie naar het subject"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate prov:agent;
+    rr:objectMap [
+       rr:parentTriplesMap <#SubjectAgentMapping>;
+       rr:joinCondition [
+           rr:child "{value.stringValue}";
+           rr:parent "http://trace.example.com/subject/{value.stringValue}"
+        ]
+    ]
+  ];
+
+.
