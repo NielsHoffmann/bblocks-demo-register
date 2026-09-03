@@ -1,0 +1,98 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o",
+  "name": "LDV RML Mapper",
+  "abstract": "OpenTelemetry OTLP JSON transformed to PROV-O RDF using an RML transform plugin.",
+  "status": "under-development",
+  "itemClass": "schema",
+  "register": "Logboek Dataverwerkingen",
+  "dateTimeAddition": "2026-08-28T00:00:00Z",
+  "version": "0.1",
+  "maturity": "development",
+  "tags": [
+    "opentelemetry",
+    "prov-o",
+    "rml",
+    "provenance"
+  ],
+  "dependsOn": [
+    "geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace",
+    "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv"
+  ],
+  "description": "The transform uses the RML transformer plugin to convert OTLP resourceSpans into PROV-O RDF. Span and trace records become PROV activities and array-valued data object identifiers become qualified usage references.",
+  "resources": [
+    {
+      "title": "RML mapping",
+      "role": "mapping",
+      "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/examples/ldv-prov.rml.ttl",
+      "format": "text/turtle"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-08-28",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/",
+  "transforms": [
+    {
+      "id": "ldv-to-prov-o-rml",
+      "description": "Convert an OpenTelemetry OTLP JSON trace into PROV-O RDF using the RML transform plugin.",
+      "type": "rml",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "text/turtle",
+            "label": "RDF/Turtle",
+            "defaultExtension": "ttl"
+          }
+        ],
+        "profiles": [
+          "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv"
+        ]
+      },
+      "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/examples/ldv-prov.rml.ttl",
+      "code": "@prefix rr: <http://www.w3.org/ns/r2rml#>.\n@prefix rml: <http://semweb.mmlab.be/ns/rml#>.\n@prefix ql: <http://semweb.mmlab.be/ns/ql#>.\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix schema: <http://schema.org/>.\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@base <http://example.com/ns#>.\n\n#Trace object\n<#TraceMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[0]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/trace/{traceId}\";\n    rr:class prov:Activity\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"traceId\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"Trace\"\n      # rml:reference \"name\"\n    ]\n  ];\n  .\n\n#span object (indivduele acties binnen een trace)\n# wasgeneratedby -> trace\n<#SpanMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/span/{spanId}\";\n    rr:class prov:Activity\n  ];\n\n   rr:predicateObjectMap [\n    rr:predicate prov:startedAtTime;\n    rr:objectMap [\n      rml:reference \"startTimeUnixNano\";\n      rml:datatype xsd:dateTime\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:endedAtTime;\n    rr:objectMap [\n      rml:reference \"endTimeUnixNano\";\n      rml:datatype xsd:dateTime\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    # rr:predicate schema:name;\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"name\";\n      rml:datatype xsd:string\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:wasGeneratedBy;\n    rr:objectMap [\n       rr:parentTriplesMap <#TraceMapping>;\n       rr:joinCondition [\n           rr:child \"traceId\";\n           rr:parent \"traceId\"\n        ]\n    ]\n  ];\n\n    rr:predicateObjectMap [\n    rr:predicate prov:qualifiedAssociation;\n    rr:objectMap [\n       rr:parentTriplesMap <#AgentAssociationMapping>;\n       rr:joinCondition [\n           rr:child \"http://trace.example.com/entity/{attributes[1].value.stringValue}\";\n           rr:parent \"http://trace.example.com/association/{value.stringValue}\"\n        ]\n    ]\n  ];\n\n  .\n\n\n\n#definitie object\n<#DefinitionMapping> a rr:TriplesMap;\n    rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_def')]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/entity/{value.stringValue}\";\n    rr:class prov:Entity\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate dct:source;\n    rr:objectMap [\n      rml:reference \"value.stringValue\"\n    ]\n  ];\n\n    rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rr:constant \"definitie van het object\"\n    ]\n  ];\n.\n\n#relatie tussen activiteit en object\n<#ObjectUsageMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_id')].value.arrayValue.values[*]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/usage/{intValue}\";\n    rr:class prov:Usage\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"intValue\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de qualified usage relatie naar het object\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:entity;\n    rr:objectMap [\n      rr:parentTriplesMap <#DefinitionMapping>;\n      rr:joinCondition [\n        rr:child \"intValue\";\n        rr:parent \"value.stringValue\"\n      ]\n    ]\n  ].\n\n#register verwerkingsactiviteit\n<#AgentMapping> a rr:TriplesMap;\n    rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/agent/{value.stringValue}\";\n    rr:class prov:Agent\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de verwerkingsactiviteit\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"value.stringValue\"\n    ]\n  ];\n.\n\n#relatie tussen activiteit en verwerkingsregister\n<#AgentAssociationMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]\"\n  ];\n\n    rr:subjectMap [\n    rr:template \"http://trace.example.com/association/{value.stringValue}\";\n    rr:class prov:Association\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de qualified association relatie naar het register\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:agent;\n    rr:objectMap [\n       rr:parentTriplesMap <#AgentMapping>;\n       rr:joinCondition [\n           rr:child \"{value.stringValue}\";\n           rr:parent \"http://trace.example.com/agent/{value.stringValue}\"\n        ]\n    ]\n  ];\n\n.\n\n#register verwerkingsactiviteit\n<#SubjectAgentMapping> a rr:TriplesMap;\n    rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/subject/{value.stringValue}\";\n    rr:class prov:Agent\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"het subject\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"value.stringValue\"\n    ]\n  ];\n.\n\n#relatie tussen activiteit en verwerkingsregister\n<#SubjectAgentAssociationMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]\"\n  ];\n\n    rr:subjectMap [\n    rr:template \"http://trace.example.com/association/{value.stringValue}\";\n    rr:class prov:Association\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de qualified association relatie naar het subject\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:agent;\n    rr:objectMap [\n       rr:parentTriplesMap <#SubjectAgentMapping>;\n       rr:joinCondition [\n           rr:child \"{value.stringValue}\";\n           rr:parent \"http://trace.example.com/subject/{value.stringValue}\"\n        ]\n    ]\n  ];\n\n."
+    }
+  ],
+  "examples": [
+    {
+      "title": "OTLP to PROV-O RML transform input",
+      "content": "An OTLP trace transformed into PROV-O RDF using the RML plugin.",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/trace/examples/trace.json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/example_1_1.json",
+          "transformResults": {
+            "ldv-to-prov-o-rml": {
+              "success": true,
+              "sizeBytes": 1286,
+              "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/transforms/example_1_1.ldv-to-prov-o-rml.ttl",
+              "profilesValidation": {
+                "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv": {
+                  "result": true,
+                  "report": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/transforms/geonovum.examples.logboek.dataverwerkingen.prov-o.ldv/_report.json"
+                }
+              }
+            }
+          },
+          "sizeBytes": 2841,
+          "code": "{\n    \"resourceSpans\": [\n        {\n            \"resource\": {\n                \"attributes\": [\n                    {\n                        \"key\": \"service.name\",\n                        \"value\": {\n                            \"stringValue\": \"http://aanvraag\"\n                        }\n                    }\n                ]\n            },\n            \"scopeSpans\": [\n                {\n                    \"scope\": {\n                        \"name\": \"aanvraag.tracer\"\n                    },\n                    \"spans\": [\n                        {\n                            \"traceId\": \"98bdcae79e7fa7d4ccbc981e0653e8fd\",\n                            \"spanId\": \"dff0fb279813ee0d\",\n                            \"parentSpanId\": \"\",\n                            \"flags\": 256,\n                            \"name\": \"Aanvraag_span\",\n                            \"kind\": 1,\n                            \"startTimeUnixNano\": \"1739370701786437325\",\n                            \"endTimeUnixNano\": \"1739370702000265566\",\n                            \"attributes\": [\n                                {\n                                    \"key\": \"dpl.objects.processing_association_id\",\n                                    \"value\": {\n                                        \"stringValue\": \"http://aanvraag\"\n                                    }\n                                },\n                                {\n                                    \"key\": \"dpl.core.processing_activity_id\",\n                                    \"value\": {\n                                        \"stringValue\": \"RVA_Aanvraag_Kapvergunning\"\n                                    }\n                                },\n                                {\n                                    \"key\": \"dpl.objects.data_object_id\",\n                                    \"value\": {\n                                        \"intValue\": \"2069296\"\n                                    }\n                                },\n                                {\n                                    \"key\": \"dpl.objects.data_object_def\",\n                                    \"value\": {\n                                        \"stringValue\": \"http://brt.basisregistraties.overheid.nl/id/concept/Boom\"\n                                    }\n                                },\n                                {\n                                    \"key\": \"dpl.core.data_subject_id\",\n                                    \"value\": {\n                                        \"stringValue\": \"Meneer_van_Eik\"\n                                    }\n                                }\n                            ],\n                            \"status\": {\n                                \"code\": 1\n                            }\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o"
+}

@@ -1,0 +1,6 @@
+Validation report for geonovum.examples.logboek.dataverwerkingen.prov-o.ldv - LDV target schema
+Generated 2026-09-03T13:40:48.066806+00:00
+=== Files ===
+Using example_1_1.ldv-to-prov-o-rml.ttl from transform outputs
+=== End Files ===
+

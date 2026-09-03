@@ -194,12 +194,12 @@
   "name": "Building Blocks - Demo block collection",
   "abstract": "Demo register \n",
   "description": "register for various examples of building blocks.\n",
-  "modified": "2026-08-05T11:05:25.815273",
+  "modified": "2026-09-03T13:40:18.243856",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"f9abb8c209d98a9868e50eabafe4915396673a37",
-      "shortCommitId": "\"f9abb8",
-      "date": "2026-08-05T09:14:53+00:00\""
+      "commitId": "\"b9092dd001978102ed9608ad3cfda4864c630bc6",
+      "shortCommitId": "\"b9092d",
+      "date": "2026-09-03T07:46:57+00:00\""
     }
   },
   "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
@@ -236,6 +236,31 @@
       "pip": "git+https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin.git@main",
       "urls": [
         "https://github.com/Geonovum-labs/bblocks-xslt2-transform-plugin"
+      ]
+    },
+    {
+      "modules": [
+        {
+          "module": "bbplugin_rml",
+          "transformers": [
+            {
+              "class": "RmlTransformer",
+              "types": [
+                "rml"
+              ],
+              "defaultInputs": [
+                "application/json"
+              ],
+              "defaultOutputs": [
+                "text/turtle"
+              ]
+            }
+          ]
+        }
+      ],
+      "pip": "git+https://github.com/Geonovum-labs/bblocks-rml-transform-plugin.git@main",
+      "urls": [
+        "https://github.com/Geonovum-labs/bblocks-rml-transform-plugin"
       ]
     }
   ],
@@ -301,7 +326,7 @@
       "itemClass": "schema",
       "register": "bblocks-demo-register",
       "version": "0.8",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "scope": "development",
       "tags": [
@@ -338,13 +363,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/bag/schema/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/schema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/schema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -369,9 +394,9 @@
       }
     },
     {
-      "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
-      "name": "Logboek Extensie Lezen Time Range Query",
-      "abstract": "Query parameter building block for retrieving log records within a start and end time interval.",
+      "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
+      "name": "Logboek Extensie Lezen Trace ID Query",
+      "abstract": "Query parameter building block for retrieving log records by trace identifier.",
       "status": "under-development",
       "dateTimeAddition": "2026-07-09T00:00:00Z",
       "itemClass": "parameter",
@@ -379,7 +404,7 @@
       "version": "0.1.0",
       "sources": [
         {
-          "title": "Logboek Extensie Lezen - query by start_time and end_time",
+          "title": "Logboek Extensie Lezen - query by traceID",
           "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
         }
       ],
@@ -393,45 +418,45 @@
       "dateOfLastChange": "2026-07-09",
       "schema": [
         {
-          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.yaml",
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.json",
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.yaml",
-      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/resolvedProperties.json",
-      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/time-range/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.yaml",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/",
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id"
         }
       },
-      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
       "@type": [
         "bblocks:Parameter",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "Logboek Extensie Lezen Time Range Query",
+      "skos:prefLabel": "Logboek Extensie Lezen Trace ID Query",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -478,13 +503,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/problem-response/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -552,13 +577,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/processing-activity-id/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -626,13 +651,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -658,9 +683,9 @@
       }
     },
     {
-      "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
-      "name": "Logboek Extensie Lezen Trace ID Query",
-      "abstract": "Query parameter building block for retrieving log records by trace identifier.",
+      "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
+      "name": "Logboek Extensie Lezen Time Range Query",
+      "abstract": "Query parameter building block for retrieving log records within a start and end time interval.",
       "status": "under-development",
       "dateTimeAddition": "2026-07-09T00:00:00Z",
       "itemClass": "parameter",
@@ -668,7 +693,7 @@
       "version": "0.1.0",
       "sources": [
         {
-          "title": "Logboek Extensie Lezen - query by traceID",
+          "title": "Logboek Extensie Lezen - query by start_time and end_time",
           "link": "https://logius-standaarden.github.io/logboek-extensie-lezen/"
         }
       ],
@@ -682,45 +707,45 @@
       "dateOfLastChange": "2026-07-09",
       "schema": [
         {
-          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.yaml",
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.json",
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/schema.yaml",
-      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/resolvedProperties.json",
-      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/",
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/time-range/schema.yaml",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/queries/time-range/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/",
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/index.md"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id"
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range"
         }
       },
-      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
       "@type": [
         "bblocks:Parameter",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "Logboek Extensie Lezen Trace ID Query",
+      "skos:prefLabel": "Logboek Extensie Lezen Time Range Query",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -775,13 +800,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -849,13 +874,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/processing-activity/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -923,13 +948,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/related-log-source/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -954,6 +979,203 @@
       }
     },
     {
+      "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace",
+      "name": "OpenTelemetry trace with DTaaS provenance attributes",
+      "abstract": "OTLP JSON trace shape used to record OGC API Processes provenance.",
+      "status": "under-development",
+      "itemClass": "schema",
+      "register": "Logboek Dataverwerkingen",
+      "dateTimeAddition": "2026-08-26T00:00:00Z",
+      "version": "0.1",
+      "maturity": "development",
+      "tags": [
+        "opentelemetry",
+        "otlp",
+        "provenance",
+        "ogc api processes"
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-08-26",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/opentelemetry/trace/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/opentelemetry/trace/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/trace/schema.yaml",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/opentelemetry/trace/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/trace/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/opentelemetry/trace/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/opentelemetry/trace/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/opentelemetry/trace/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace"
+        }
+      },
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "OpenTelemetry trace with DTaaS provenance attributes",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geonovum-labs.github.io/bblocks-demo-register/"
+      }
+    },
+    {
+      "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv",
+      "name": "LDV target schema",
+      "abstract": "target Prov-o schema for LDV",
+      "status": "under-development",
+      "itemClass": "model",
+      "register": "Logboek Dataverwerkingen",
+      "dateTimeAddition": "2026-09-01T00:00:00Z",
+      "version": "0.1",
+      "maturity": "development",
+      "tags": [
+        "opentelemetry",
+        "ldv",
+        "provenance"
+      ],
+      "resources": [
+        {
+          "title": "Example LDV Prov-O log",
+          "role": "example",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/prov-o/ldv/examples/ldv.ttl",
+          "format": "text/turtle"
+        }
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-09-01",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/prov-o/ldv/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/prov-o/ldv/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/prov-o/ldv/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/prov-o/ldv/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.prov-o.ldv"
+        }
+      },
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.prov-o.ldv",
+      "@type": [
+        "bblocks:Model",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "LDV target schema",
+      "ldContext": null,
+      "schema": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geonovum-labs.github.io/bblocks-demo-register/"
+      }
+    },
+    {
+      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "name": "Localoutlier process output schema",
+      "abstract": "Output schema for the localoutlier process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-09-03",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
+      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+        }
+      },
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Localoutlier process output schema",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geonovum-labs.github.io/bblocks-demo-register/"
+      }
+    },
+    {
       "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
       "name": "Localoutlier process input schema",
       "abstract": "Input schema for the localoutlier process",
@@ -962,7 +1184,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "tags": [
         "examples",
@@ -996,13 +1218,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputSchema/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputSchema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1027,73 +1249,6 @@
       }
     },
     {
-      "itemIdentifier": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "name": "Localoutlier process output schema",
-      "abstract": "Output schema for the localoutlier process",
-      "status": "under-development",
-      "dateTimeAddition": "2025-12-17T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
-      "maturity": "development",
-      "tags": [
-        "examples",
-        "ogc api",
-        "ogc api processes"
-      ],
-      "shaclShapes": null,
-      "schema": [
-        {
-          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/schema.yaml",
-      "resolvedSchemaProperties": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/outputSchema/resolvedProperties.json",
-      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputSchema/",
-      "validationPassed": true,
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputSchema/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
-        }
-      },
-      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Localoutlier process output schema",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "dependsOn": null,
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://geonovum-labs.github.io/bblocks-demo-register/"
-      }
-    },
-    {
       "itemIdentifier": "geonovum.examples.transforms.xslt-example",
       "name": "XSLT Transforms example",
       "highlighted": false,
@@ -1102,7 +1257,7 @@
       "dateTimeAddition": "2026-05-08T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "tags": [
         "transform",
         "xml"
@@ -1212,13 +1367,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt-example/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt-example/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt-example/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1251,7 +1406,7 @@
       "dateTimeAddition": "2026-05-11T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "highlighted": true,
       "tags": [
         "transform",
@@ -1322,13 +1477,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt2/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/transforms/xslt2/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/transforms/xslt2/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1400,13 +1555,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/schemas/log-record-collection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1430,6 +1585,102 @@
       }
     },
     {
+      "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o",
+      "name": "LDV RML Mapper",
+      "abstract": "OpenTelemetry OTLP JSON transformed to PROV-O RDF using an RML transform plugin.",
+      "status": "under-development",
+      "itemClass": "schema",
+      "register": "Logboek Dataverwerkingen",
+      "dateTimeAddition": "2026-08-28T00:00:00Z",
+      "version": "0.1",
+      "maturity": "development",
+      "tags": [
+        "opentelemetry",
+        "prov-o",
+        "rml",
+        "provenance"
+      ],
+      "dependsOn": [
+        "bblocks://geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace",
+        "bblocks://geonovum.examples.logboek.dataverwerkingen.prov-o.ldv"
+      ],
+      "description": "The transform uses the RML transformer plugin to convert OTLP resourceSpans into PROV-O RDF. Span and trace records become PROV activities and array-valued data object identifiers become qualified usage references.",
+      "resources": [
+        {
+          "title": "RML mapping",
+          "role": "mapping",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/examples/ldv-prov.rml.ttl",
+          "format": "text/turtle"
+        }
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-08-28",
+      "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/",
+      "transforms": [
+        {
+          "id": "ldv-to-prov-o-rml",
+          "description": "Convert an OpenTelemetry OTLP JSON trace into PROV-O RDF using the RML transform plugin.",
+          "type": "rml",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "text/turtle",
+                "label": "RDF/Turtle",
+                "defaultExtension": "ttl"
+              }
+            ],
+            "profiles": [
+              "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv"
+            ]
+          },
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/examples/ldv-prov.rml.ttl",
+          "code": "@prefix rr: <http://www.w3.org/ns/r2rml#>.\n@prefix rml: <http://semweb.mmlab.be/ns/rml#>.\n@prefix ql: <http://semweb.mmlab.be/ns/ql#>.\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix schema: <http://schema.org/>.\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@base <http://example.com/ns#>.\n\n#Trace object\n<#TraceMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[0]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/trace/{traceId}\";\n    rr:class prov:Activity\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"traceId\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"Trace\"\n      # rml:reference \"name\"\n    ]\n  ];\n  .\n\n#span object (indivduele acties binnen een trace)\n# wasgeneratedby -> trace\n<#SpanMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/span/{spanId}\";\n    rr:class prov:Activity\n  ];\n\n   rr:predicateObjectMap [\n    rr:predicate prov:startedAtTime;\n    rr:objectMap [\n      rml:reference \"startTimeUnixNano\";\n      rml:datatype xsd:dateTime\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:endedAtTime;\n    rr:objectMap [\n      rml:reference \"endTimeUnixNano\";\n      rml:datatype xsd:dateTime\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    # rr:predicate schema:name;\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"name\";\n      rml:datatype xsd:string\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:wasGeneratedBy;\n    rr:objectMap [\n       rr:parentTriplesMap <#TraceMapping>;\n       rr:joinCondition [\n           rr:child \"traceId\";\n           rr:parent \"traceId\"\n        ]\n    ]\n  ];\n\n    rr:predicateObjectMap [\n    rr:predicate prov:qualifiedAssociation;\n    rr:objectMap [\n       rr:parentTriplesMap <#AgentAssociationMapping>;\n       rr:joinCondition [\n           rr:child \"http://trace.example.com/entity/{attributes[1].value.stringValue}\";\n           rr:parent \"http://trace.example.com/association/{value.stringValue}\"\n        ]\n    ]\n  ];\n\n  .\n\n\n\n#definitie object\n<#DefinitionMapping> a rr:TriplesMap;\n    rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_def')]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/entity/{value.stringValue}\";\n    rr:class prov:Entity\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate dct:source;\n    rr:objectMap [\n      rml:reference \"value.stringValue\"\n    ]\n  ];\n\n    rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rr:constant \"definitie van het object\"\n    ]\n  ];\n.\n\n#relatie tussen activiteit en object\n<#ObjectUsageMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.objects.data_object_id')].value.arrayValue.values[*]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/usage/{intValue}\";\n    rr:class prov:Usage\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"intValue\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de qualified usage relatie naar het object\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:entity;\n    rr:objectMap [\n      rr:parentTriplesMap <#DefinitionMapping>;\n      rr:joinCondition [\n        rr:child \"intValue\";\n        rr:parent \"value.stringValue\"\n      ]\n    ]\n  ].\n\n#register verwerkingsactiviteit\n<#AgentMapping> a rr:TriplesMap;\n    rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/agent/{value.stringValue}\";\n    rr:class prov:Agent\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de verwerkingsactiviteit\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"value.stringValue\"\n    ]\n  ];\n.\n\n#relatie tussen activiteit en verwerkingsregister\n<#AgentAssociationMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.processing_activity_id')]\"\n  ];\n\n    rr:subjectMap [\n    rr:template \"http://trace.example.com/association/{value.stringValue}\";\n    rr:class prov:Association\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de qualified association relatie naar het register\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:agent;\n    rr:objectMap [\n       rr:parentTriplesMap <#AgentMapping>;\n       rr:joinCondition [\n           rr:child \"{value.stringValue}\";\n           rr:parent \"http://trace.example.com/agent/{value.stringValue}\"\n        ]\n    ]\n  ];\n\n.\n\n#register verwerkingsactiviteit\n<#SubjectAgentMapping> a rr:TriplesMap;\n    rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]\"\n  ];\n\n  rr:subjectMap [\n    rr:template \"http://trace.example.com/subject/{value.stringValue}\";\n    rr:class prov:Agent\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"het subject\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:label;\n    rr:objectMap [\n      rml:reference \"value.stringValue\"\n    ]\n  ];\n.\n\n#relatie tussen activiteit en verwerkingsregister\n<#SubjectAgentAssociationMapping> a rr:TriplesMap;\n  rml:logicalSource [\n    rml:source \"../../../opentelemetry/trace/examples/trace.json\";\n    rml:referenceFormulation ql:JSONPath;\n    rml:iterator \"$.resourceSpans[*].scopeSpans[*].spans[*].attributes[?(@.key=='dpl.core.data_subject_id')]\"\n  ];\n\n    rr:subjectMap [\n    rr:template \"http://trace.example.com/association/{value.stringValue}\";\n    rr:class prov:Association\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate rdfs:comment;\n    rr:objectMap [\n      rr:constant \"de qualified association relatie naar het subject\"\n    ]\n  ];\n\n  rr:predicateObjectMap [\n    rr:predicate prov:agent;\n    rr:objectMap [\n       rr:parentTriplesMap <#SubjectAgentMapping>;\n       rr:joinCondition [\n           rr:child \"{value.stringValue}\";\n           rr:parent \"http://trace.example.com/subject/{value.stringValue}\"\n        ]\n    ]\n  ];\n\n."
+        }
+      ],
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/bblock/geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o"
+        }
+      },
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "LDV RML Mapper",
+      "ldContext": null,
+      "schema": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geonovum-labs.github.io/bblocks-demo-register/"
+      }
+    },
+    {
       "itemIdentifier": "geonovum.examples.bag.ogcapi",
       "name": "BAG-Pand",
       "abstract": "A GeoJSON Feature beschrijving van een BAG Pand.",
@@ -1437,7 +1688,7 @@
       "dateTimeAddition": "2026-06-17T00:00:00Z",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "scope": "unstable",
       "isProfileOf": [
         "bblocks://ogc.geo.features.feature"
@@ -1461,8 +1712,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://geonovum.examples.bag.schema",
-        "bblocks://ogc.geo.features.feature"
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://geonovum.examples.bag.schema"
       ],
       "schema": [
         {
@@ -1490,13 +1741,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/bag/ogcapi/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/ogcapi/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/bag/ogcapi/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/bag/ogcapi/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1538,12 +1789,12 @@
         }
       ],
       "dependsOn": [
-        "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
-        "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
+        "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
         "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response",
         "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id",
         "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id",
-        "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id"
+        "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
+        "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection"
       ],
       "tags": [
         "LDV",
@@ -1557,13 +1808,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/api/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/api/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/logboek/dataverwerkingen/extensie-lezen/api/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/logboek/dataverwerkingen/extensie-lezen/api/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1597,7 +1848,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1634,13 +1885,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/inputDescription/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/inputDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1672,7 +1923,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1681,8 +1932,8 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription"
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
       ],
       "schema": [
         {
@@ -1709,13 +1960,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/outputDescription/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/outputDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1747,7 +1998,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1783,13 +2034,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/inputDescriptions/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/inputDescriptions/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/inputDescriptions/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1821,7 +2072,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1830,9 +2081,9 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.process",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
-        "bblocks://ogc.api.processes.v1.schemas.process"
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription"
       ],
       "schema": [
         {
@@ -1859,13 +2110,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/localoutlier/processDescription/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/localoutlier/processDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1897,7 +2148,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1933,13 +2184,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/schemas/outputDescriptions/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/outputDescriptions/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/schemas/outputDescriptions/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/schemas/outputDescriptions/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1971,7 +2222,7 @@
       "itemClass": "api",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-08-05",
+      "dateOfLastChange": "2026-09-03",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1990,23 +2241,23 @@
       },
       "shaclShapes": null,
       "dependsOn": [
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://ogc.api.processes.v1.parameters.jobId",
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://ogc.api.processes.v1.responses.NotFound",
         "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
         "bblocks://ogc.api.processes.v1.schemas.outputDescription",
         "bblocks://ogc.api.processes.v1.paths.Conformance",
-        "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-        "bblocks://ogc.api.processes.v1.responses.NotFound",
-        "bblocks://ogc.api.processes.v1.parameters.jobId",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
         "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-        "bblocks://ogc.api.processes.v1.schemas.execute",
-        "bblocks://ogc.api.processes.v1.paths.JobList",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
         "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
+        "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+        "bblocks://ogc.api.processes.v1.paths.JobList",
         "bblocks://ogc.api.processes.v1.paths.ProcessList",
-        "bblocks://geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
-        "bblocks://ogc.api.processes.v1.api",
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync"
+        "bblocks://ogc.api.processes.v1.responses.ServerError"
       ],
       "sourceOpenAPIDocument": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": {
@@ -2018,13 +2269,13 @@
       "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/ogcapi/processes/custom-api/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/custom-api/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/markdown/examples/ogcapi/processes/custom-api/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/generateddocs/json-full/examples/ogcapi/processes/custom-api/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -2053,7 +2304,7 @@
       "@id": "bblocks://geonovum.examples.bag.schema"
     },
     {
-      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range"
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id"
     },
     {
       "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response"
@@ -2065,7 +2316,7 @@
       "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id"
     },
     {
-      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id"
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range"
     },
     {
       "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record"
@@ -2077,10 +2328,16 @@
       "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source"
     },
     {
-      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace"
+    },
+    {
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.prov-o.ldv"
     },
     {
       "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema"
+    },
+    {
+      "@id": "bblocks://geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
     },
     {
       "@id": "bblocks://geonovum.examples.transforms.xslt-example"
@@ -2090,6 +2347,9 @@
     },
     {
       "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection"
+    },
+    {
+      "@id": "bblocks://geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o"
     },
     {
       "@id": "bblocks://geonovum.examples.bag.ogcapi"

@@ -1,0 +1,507 @@
+
+# OpenTelemetry trace with DTaaS provenance attributes (Schema)
+
+`geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace` *v0.1*
+
+OTLP JSON trace shape used to record OGC API Processes provenance.
+
+[*Status*](http://www.opengis.net/def/status): Under development
+
+## Description
+
+# Opentelemetry Trace
+
+This BBlock contains an example trace in OpenTelemetry format.
+This is an example originating from the 'Logboek Dataverwerkingen voor Objecten' research project
+https://geonovum.github.io/logboek-dataverwerkingen-voor-objecten/
+
+This project researched the options to integrate the ['Logboek Dataverkeringen'](https://logius-standaarden.github.io/logboek-dataverwerkingen/) into OGC API Processes for Digital Twin scenarios.
+
+The LDV Standard used OpenTelemetry as a backend-logging system. The 'Logboek Dataverwerkingen voor Objecten' project also researched the mapping from OTEL to PROV-O: https://geonovum.github.io/logboek-dataverwerkingen-voor-objecten/#H4
+
+This scenario is documented in these building blocks.
+
+This building block contains the Opentelemetry Trace.
+Other Building Blocks provide the transform to PROV-O.
+## Examples
+
+### OpenTelemetry trace
+An OTLP JSON trace carrying the DTaaS processing activity, subject, and object attributes.
+#### json
+```json
+{
+    "resourceSpans": [
+        {
+            "resource": {
+                "attributes": [
+                    {
+                        "key": "service.name",
+                        "value": {
+                            "stringValue": "http://aanvraag"
+                        }
+                    }
+                ]
+            },
+            "scopeSpans": [
+                {
+                    "scope": {
+                        "name": "aanvraag.tracer"
+                    },
+                    "spans": [
+                        {
+                            "traceId": "98bdcae79e7fa7d4ccbc981e0653e8fd",
+                            "spanId": "dff0fb279813ee0d",
+                            "parentSpanId": "",
+                            "flags": 256,
+                            "name": "Aanvraag_span",
+                            "kind": 1,
+                            "startTimeUnixNano": "1739370701786437325",
+                            "endTimeUnixNano": "1739370702000265566",
+                            "attributes": [
+                                {
+                                    "key": "dpl.objects.processing_association_id",
+                                    "value": {
+                                        "stringValue": "http://aanvraag"
+                                    }
+                                },
+                                {
+                                    "key": "dpl.core.processing_activity_id",
+                                    "value": {
+                                        "stringValue": "RVA_Aanvraag_Kapvergunning"
+                                    }
+                                },
+                                {
+                                    "key": "dpl.objects.data_object_id",
+                                    "value": {
+                                        "intValue": "2069296"
+                                    }
+                                },
+                                {
+                                    "key": "dpl.objects.data_object_def",
+                                    "value": {
+                                        "stringValue": "http://brt.basisregistraties.overheid.nl/id/concept/Boom"
+                                    }
+                                },
+                                {
+                                    "key": "dpl.core.data_subject_id",
+                                    "value": {
+                                        "stringValue": "Meneer_van_Eik"
+                                    }
+                                }
+                            ],
+                            "status": {
+                                "code": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+### Localoutlier OpenTelemetry trace
+An OTLP JSON trace carrying the DTaaS processing activity, subject, and object attributes for the Local Outlier algorithm.
+#### json
+```json
+{
+    "resourceSpans": [
+        {
+            "resource": {
+                "attributes": [
+                    {
+                        "key": "service.name",
+                        "value": {
+                            "stringValue": "http://localhost:5000/processes/localoutlier_simple"
+                        }
+                    }
+                ]
+            },
+            "scopeSpans": [
+                {
+                    "scope": {
+                        "name": "localoutlier_simple.tracer"
+                    },
+                    "spans": [
+                        {
+                            "traceId": "14e2af11847bde8d76f65f7c6e8d86e0",
+                            "spanId": "f2773d02c278c008",
+                            "parentSpanId": "",
+                            "flags": 256,
+                            "name": "LocalOutlierFactor",
+                            "kind": 1,
+                            "startTimeUnixNano": "1787910165430949248",
+                            "endTimeUnixNano": "1787910165607410083",
+                            "attributes": [
+                                {
+                                    "key": "dpl.objects.processing_activity_id",
+                                    "value": {
+                                        "stringValue": "https://algoritmes.overheid.nl/nl/algoritme/maaidata-provincie-noordholland/68294175"
+                                    }
+                                },
+                                {
+                                    "key": "dpl.objects.dataproduct_id",
+                                    "value": {
+                                        "stringValue": "http://localhost:5000/collections/catalog/items/pygeoapi.process.localoutlier.LOFProcessor"
+                                    }
+                                },
+                                {
+                                    "key": "dpl.objects.data_object_id",
+                                    "value": {
+                                        "arrayValue": {
+                                            "values": [
+                                                {
+                                                    "intValue": "2011"
+                                                },
+                                                {
+                                                    "intValue": "203"
+                                                },
+                                                {
+                                                    "intValue": "204"
+                                                },
+                                                {
+                                                    "intValue": "205"
+                                                },
+                                                {
+                                                    "intValue": "206"
+                                                },
+                                                {
+                                                    "intValue": "207"
+                                                },
+                                                {
+                                                    "intValue": "208"
+                                                },
+                                                {
+                                                    "intValue": "209"
+                                                },
+                                                {
+                                                    "intValue": "210"
+                                                },
+                                                {
+                                                    "intValue": "211"
+                                                },
+                                                {
+                                                    "intValue": "212"
+                                                },
+                                                {
+                                                    "intValue": "213"
+                                                },
+                                                {
+                                                    "intValue": "214"
+                                                },
+                                                {
+                                                    "intValue": "215"
+                                                },
+                                                {
+                                                    "intValue": "216"
+                                                },
+                                                {
+                                                    "intValue": "218"
+                                                },
+                                                {
+                                                    "intValue": "225"
+                                                },
+                                                {
+                                                    "intValue": "229"
+                                                },
+                                                {
+                                                    "intValue": "233"
+                                                },
+                                                {
+                                                    "intValue": "235"
+                                                },
+                                                {
+                                                    "intValue": "236"
+                                                },
+                                                {
+                                                    "intValue": "237"
+                                                },
+                                                {
+                                                    "intValue": "238"
+                                                },
+                                                {
+                                                    "intValue": "239"
+                                                },
+                                                {
+                                                    "intValue": "240"
+                                                },
+                                                {
+                                                    "intValue": "242"
+                                                },
+                                                {
+                                                    "intValue": "248"
+                                                },
+                                                {
+                                                    "intValue": "249"
+                                                },
+                                                {
+                                                    "intValue": "251"
+                                                },
+                                                {
+                                                    "intValue": "252"
+                                                },
+                                                {
+                                                    "intValue": "257"
+                                                },
+                                                {
+                                                    "intValue": "258"
+                                                },
+                                                {
+                                                    "intValue": "260"
+                                                },
+                                                {
+                                                    "intValue": "265"
+                                                },
+                                                {
+                                                    "intValue": "267"
+                                                },
+                                                {
+                                                    "intValue": "269"
+                                                },
+                                                {
+                                                    "intValue": "270"
+                                                },
+                                                {
+                                                    "intValue": "273"
+                                                },
+                                                {
+                                                    "intValue": "275"
+                                                },
+                                                {
+                                                    "intValue": "277"
+                                                },
+                                                {
+                                                    "intValue": "278"
+                                                },
+                                                {
+                                                    "intValue": "279"
+                                                },
+                                                {
+                                                    "intValue": "280"
+                                                },
+                                                {
+                                                    "intValue": "283"
+                                                },
+                                                {
+                                                    "intValue": "285"
+                                                },
+                                                {
+                                                    "intValue": "286"
+                                                },
+                                                {
+                                                    "intValue": "290"
+                                                },
+                                                {
+                                                    "intValue": "308"
+                                                },
+                                                {
+                                                    "intValue": "310"
+                                                },
+                                                {
+                                                    "intValue": "311"
+                                                },
+                                                {
+                                                    "intValue": "312"
+                                                },
+                                                {
+                                                    "intValue": "313"
+                                                },
+                                                {
+                                                    "intValue": "315"
+                                                },
+                                                {
+                                                    "intValue": "316"
+                                                },
+                                                {
+                                                    "intValue": "317"
+                                                },
+                                                {
+                                                    "intValue": "319"
+                                                },
+                                                {
+                                                    "intValue": "320"
+                                                },
+                                                {
+                                                    "intValue": "321"
+                                                },
+                                                {
+                                                    "intValue": "323"
+                                                },
+                                                {
+                                                    "intValue": "324"
+                                                },
+                                                {
+                                                    "intValue": "330"
+                                                },
+                                                {
+                                                    "intValue": "331"
+                                                },
+                                                {
+                                                    "intValue": "340"
+                                                },
+                                                {
+                                                    "intValue": "343"
+                                                },
+                                                {
+                                                    "intValue": "344"
+                                                },
+                                                {
+                                                    "intValue": "348"
+                                                },
+                                                {
+                                                    "intValue": "350"
+                                                },
+                                                {
+                                                    "intValue": "356"
+                                                },
+                                                {
+                                                    "intValue": "370"
+                                                },
+                                                {
+                                                    "intValue": "375"
+                                                },
+                                                {
+                                                    "intValue": "377"
+                                                },
+                                                {
+                                                    "intValue": "380"
+                                                },
+                                                {
+                                                    "intValue": "391"
+                                                },
+                                                {
+                                                    "intValue": "392"
+                                                },
+                                                {
+                                                    "intValue": "871"
+                                                },
+                                                {
+                                                    "intValue": "873"
+                                                },
+                                                {
+                                                    "intValue": "990"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "key": "dpl.objects.dataset_id",
+                                    "value": {
+                                        "stringValue": "http://localhost:5000/collections/knmi_meetstations/queryables?f=json"
+                                    }
+                                }
+                            ],
+                            "status": {
+                                "code": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+
+## Schema
+
+```yaml
+type: object
+required:
+- resourceSpans
+properties:
+  resourceSpans:
+    type: array
+    items:
+      type: object
+      required:
+      - resource
+      - scopeSpans
+      properties:
+        resource:
+          type: object
+          properties:
+            attributes:
+              type: array
+              items:
+                $ref: '#/$defs/attribute'
+        scopeSpans:
+          type: array
+          items:
+            type: object
+            required:
+            - spans
+            properties:
+              scope:
+                type: object
+              spans:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - traceId
+                  - spanId
+                  - name
+                  - startTimeUnixNano
+                  - endTimeUnixNano
+                  properties:
+                    traceId:
+                      type: string
+                    spanId:
+                      type: string
+                    parentSpanId:
+                      type: string
+                    name:
+                      type: string
+                    kind:
+                      type: integer
+                    startTimeUnixNano:
+                      type: string
+                    endTimeUnixNano:
+                      type: string
+                    attributes:
+                      type: array
+                      items:
+                        $ref: '#/$defs/attribute'
+                    status:
+                      type: object
+                      properties:
+                        code:
+                          type: integer
+$defs:
+  attribute:
+    type: object
+    required:
+    - key
+    - value
+    properties:
+      key:
+        type: string
+      value:
+        type: object
+        properties:
+          stringValue:
+            type: string
+          intValue:
+            type: string
+          boolValue:
+            type: boolean
+
+```
+
+Links to the schema:
+
+* YAML version: [schema.yaml](https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/opentelemetry/trace/schema.json)
+* JSON version: [schema.json](https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/opentelemetry/trace/schema.yaml)
+
+
+# For developers
+
+The source code for this Building Block can be found in the following repository:
+
+* URL: [https://github.com/Geonovum-labs/bblocks-demo-register](https://github.com/Geonovum-labs/bblocks-demo-register)
+* Path: `_sources/logboek/dataverwerkingen/opentelemetry/trace`
+

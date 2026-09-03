@@ -1,5 +1,5 @@
 Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api - Logboek Dataverwerkingen Extensie Lezen API
-Generated 2026-08-05T11:05:44.727091+00:00
+Generated 2026-09-03T13:40:47.618250+00:00
 === Files ===
 Using examples/successful-query.json from examples
 === End Files ===

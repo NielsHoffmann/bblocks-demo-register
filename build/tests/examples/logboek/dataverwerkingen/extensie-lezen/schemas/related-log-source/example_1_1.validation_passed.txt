@@ -1,5 +1,5 @@
 Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source - Logboek Related Log Source
-Generated 2026-08-05T11:05:44.014964+00:00
+Generated 2026-09-03T13:40:46.689136+00:00
 === Files ===
 Using examples/valid.json from examples
 JSON-LD context is present - uplifting

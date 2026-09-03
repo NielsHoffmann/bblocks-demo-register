@@ -1,0 +1,25 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://trace.example.com/agent/RVA_Aanvraag_Kapvergunning> rdfs:label "RVA_Aanvraag_Kapvergunning" ;
+    rdfs:comment "de verwerkingsactiviteit" .
+
+<http://trace.example.com/association/Meneer_van_Eik> rdfs:comment "de qualified association relatie naar het subject" .
+
+<http://trace.example.com/association/RVA_Aanvraag_Kapvergunning> rdfs:comment "de qualified association relatie naar het register" .
+
+<http://trace.example.com/entity/http://brt.basisregistraties.overheid.nl/id/concept/Boom> rdfs:label "definitie van het object" ;
+    dcterms:source <http://brt.basisregistraties.overheid.nl/id/concept/Boom> .
+
+<http://trace.example.com/span/dff0fb279813ee0d> rdfs:label "Aanvraag span" ;
+    prov:endedAtTime "1739370702000265566" ;
+    prov:startedAtTime "1739370701786437325" ;
+    prov:wasGeneratedBy <http://trace.example.com/trace/98bdcae79e7fa7d4ccbc981e0653e8fd> .
+
+<http://trace.example.com/subject/Meneer_van_Eik> rdfs:label "Meneer van Eik" ;
+    rdfs:comment "het subject" .
+
+<http://trace.example.com/trace/98bdcae79e7fa7d4ccbc981e0653e8fd> rdfs:label "98bdcae79e7fa7d4ccbc981e0653e8fd" ;
+    rdfs:comment "Trace" .
+

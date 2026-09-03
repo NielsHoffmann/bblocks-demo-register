@@ -1,0 +1,49 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv",
+  "name": "LDV target schema",
+  "abstract": "target Prov-o schema for LDV",
+  "status": "under-development",
+  "itemClass": "model",
+  "register": "Logboek Dataverwerkingen",
+  "dateTimeAddition": "2026-09-01T00:00:00Z",
+  "version": "0.1",
+  "maturity": "development",
+  "tags": [
+    "opentelemetry",
+    "ldv",
+    "provenance"
+  ],
+  "resources": [
+    {
+      "title": "Example LDV Prov-O log",
+      "role": "example",
+      "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/prov-o/ldv/examples/ldv.ttl",
+      "format": "text/turtle"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-09-01",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/prov-o/ldv/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/logboek/dataverwerkingen/prov-o/ldv/",
+  "examples": [
+    {
+      "title": "LDV PROV-O Schema",
+      "content": "LDV PROV-O schema",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/prov-o/ldv/examples/ldv.ttl",
+          "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/prov-o/ldv/example_1_1.ttl",
+          "sizeBytes": 1286,
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<http://trace.example.com/agent/RVA_Aanvraag_Kapvergunning> rdfs:label \"RVA_Aanvraag_Kapvergunning\" ;\n    rdfs:comment \"de verwerkingsactiviteit\" .\n\n<http://trace.example.com/association/Meneer_van_Eik> rdfs:comment \"de qualified association relatie naar het subject\" .\n\n<http://trace.example.com/association/RVA_Aanvraag_Kapvergunning> rdfs:comment \"de qualified association relatie naar het register\" .\n\n<http://trace.example.com/entity/http://brt.basisregistraties.overheid.nl/id/concept/Boom> rdfs:label \"definitie van het object\" ;\n    dcterms:source <http://brt.basisregistraties.overheid.nl/id/concept/Boom> .\n\n<http://trace.example.com/span/dff0fb279813ee0d> rdfs:label \"Aanvraag span\" ;\n    prov:endedAtTime \"1739370702000265566\" ;\n    prov:startedAtTime \"1739370701786437325\" ;\n    prov:wasGeneratedBy <http://trace.example.com/trace/98bdcae79e7fa7d4ccbc981e0653e8fd> .\n\n<http://trace.example.com/subject/Meneer_van_Eik> rdfs:label \"Meneer van Eik\" ;\n    rdfs:comment \"het subject\" .\n\n<http://trace.example.com/trace/98bdcae79e7fa7d4ccbc981e0653e8fd> rdfs:label \"98bdcae79e7fa7d4ccbc981e0653e8fd\" ;\n    rdfs:comment \"Trace\" .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/logboek/dataverwerkingen/prov-o/ldv"
+}

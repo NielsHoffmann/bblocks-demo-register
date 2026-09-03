@@ -1,0 +1,7 @@
+Validation report for geonovum.examples.logboek.dataverwerkingen.prov-o.ldv - LDV target schema
+Generated 2026-09-03T13:40:46.707715+00:00
+=== Files ===
+Using examples/ldv.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+

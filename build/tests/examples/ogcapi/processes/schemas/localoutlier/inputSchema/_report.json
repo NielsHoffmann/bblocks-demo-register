@@ -2,7 +2,7 @@
   "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
   "bblockName": "Localoutlier process input schema",
   "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-  "generated": "2026-08-05T11:05:44.023471+00:00",
+  "generated": "2026-09-03T13:40:46.716558+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

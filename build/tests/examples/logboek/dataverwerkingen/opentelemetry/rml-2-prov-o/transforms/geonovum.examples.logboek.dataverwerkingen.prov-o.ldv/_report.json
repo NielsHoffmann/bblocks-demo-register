@@ -1,0 +1,38 @@
+{
+  "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.prov-o.ldv - LDV target schema",
+  "bblockName": "LDV target schema",
+  "bblockId": "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv",
+  "generated": "2026-09-03T13:40:48.066984+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "TRANSFORM_OUTPUT",
+        "requireFail": false,
+        "filename": "build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/transforms/example_1_1.ldv-to-prov-o-rml.ttl",
+        "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/transforms/example_1_1.ldv-to-prov-o-rml.ttl",
+        "language": "text/turtle",
+        "transformId": "ldv-to-prov-o-rml"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ldv-to-prov-o-rml.ttl from transform outputs"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0
+  }
+}

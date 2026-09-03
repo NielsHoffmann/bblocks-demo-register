@@ -1,7 +1,7 @@
 {
   "summary": {
-    "total": 22,
-    "passed": 20,
+    "total": 25,
+    "passed": 23,
     "failed": 2,
     "result": false
   },
@@ -10,7 +10,7 @@
       "title": "Validation report for geonovum.examples.bag.schema - Bag eigenschappen",
       "bblockName": "Bag eigenschappen",
       "bblockId": "geonovum.examples.bag.schema",
-      "generated": "2026-08-05T11:05:43.938238+00:00",
+      "generated": "2026-09-03T13:40:46.635053+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -20,19 +20,19 @@
         "failed": 0
       }
     },
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range": {
-      "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range - Logboek Extensie Lezen Time Range Query",
-      "bblockName": "Logboek Extensie Lezen Time Range Query",
-      "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
-      "generated": "2026-08-05T11:05:43.946216+00:00",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id": {
+      "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id - Logboek Extensie Lezen Trace ID Query",
+      "bblockName": "Logboek Extensie Lezen Trace ID Query",
+      "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
+      "generated": "2026-09-03T13:40:46.641006+00:00",
       "result": true,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/example_1_1.json",
-            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/example_1_1.json",
+            "filename": "build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/example_1_1.json",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -75,7 +75,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response - Logboek Problem Response",
       "bblockName": "Logboek Problem Response",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response",
-      "generated": "2026-08-05T11:05:43.953736+00:00",
+      "generated": "2026-09-03T13:40:46.646507+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -89,7 +89,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id - Logboek Extensie Lezen Processing Activity ID Query",
       "bblockName": "Logboek Extensie Lezen Processing Activity ID Query",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id",
-      "generated": "2026-08-05T11:05:43.959932+00:00",
+      "generated": "2026-09-03T13:40:46.651233+00:00",
       "result": true,
       "items": [
         {
@@ -140,7 +140,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id - Logboek Extensie Lezen Data Subject ID Query",
       "bblockName": "Logboek Extensie Lezen Data Subject ID Query",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id",
-      "generated": "2026-08-05T11:05:43.966762+00:00",
+      "generated": "2026-09-03T13:40:46.656030+00:00",
       "result": true,
       "items": [
         {
@@ -187,19 +187,19 @@
         "failed": 0
       }
     },
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id": {
-      "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id - Logboek Extensie Lezen Trace ID Query",
-      "bblockName": "Logboek Extensie Lezen Trace ID Query",
-      "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
-      "generated": "2026-08-05T11:05:43.973585+00:00",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range": {
+      "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range - Logboek Extensie Lezen Time Range Query",
+      "bblockName": "Logboek Extensie Lezen Time Range Query",
+      "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
+      "generated": "2026-09-03T13:40:46.661052+00:00",
       "result": true,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/example_1_1.json",
-            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/trace-id/example_1_1.json",
+            "filename": "build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/example_1_1.json",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/extensie-lezen/queries/time-range/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -242,7 +242,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record - Logboek Log Record",
       "bblockName": "Logboek Log Record",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record",
-      "generated": "2026-08-05T11:05:43.992984+00:00",
+      "generated": "2026-09-03T13:40:46.674045+00:00",
       "result": true,
       "items": [
         {
@@ -312,7 +312,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.processing-activity - Logboek Processing Activity",
       "bblockName": "Logboek Processing Activity",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.processing-activity",
-      "generated": "2026-08-05T11:05:44.004653+00:00",
+      "generated": "2026-09-03T13:40:46.681436+00:00",
       "result": true,
       "items": [
         {
@@ -382,7 +382,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source - Logboek Related Log Source",
       "bblockName": "Logboek Related Log Source",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.related-log-source",
-      "generated": "2026-08-05T11:05:44.015016+00:00",
+      "generated": "2026-09-03T13:40:46.689173+00:00",
       "result": true,
       "items": [
         {
@@ -448,11 +448,145 @@
         "failed": 0
       }
     },
-    "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema": {
-      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
-      "bblockName": "Localoutlier process input schema",
-      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
-      "generated": "2026-08-05T11:05:44.023471+00:00",
+    "geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace": {
+      "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace - OpenTelemetry trace with DTaaS provenance attributes",
+      "bblockName": "OpenTelemetry trace with DTaaS provenance attributes",
+      "bblockId": "geonovum.examples.logboek.dataverwerkingen.opentelemetry.trace",
+      "generated": "2026-09-03T13:40:46.700630+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/logboek/dataverwerkingen/opentelemetry/trace/example_1_1.json",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/opentelemetry/trace/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/trace.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/logboek/dataverwerkingen/opentelemetry/trace/example_2_1.json",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/opentelemetry/trace/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/localoutlier-trace.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv": {
+      "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.prov-o.ldv - LDV target schema",
+      "bblockName": "LDV target schema",
+      "bblockId": "geonovum.examples.logboek.dataverwerkingen.prov-o.ldv",
+      "generated": "2026-09-03T13:40:46.707754+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/logboek/dataverwerkingen/prov-o/ldv/example_1_1.ttl",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/prov-o/ldv/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/ldv.ttl from examples"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 14,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
+      "bblockName": "Localoutlier process output schema",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
+      "generated": "2026-09-03T13:40:46.711644+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -462,11 +596,11 @@
         "failed": 0
       }
     },
-    "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema": {
-      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema - Localoutlier process output schema",
-      "bblockName": "Localoutlier process output schema",
-      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema",
-      "generated": "2026-08-05T11:05:44.028344+00:00",
+    "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema": {
+      "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema - Localoutlier process input schema",
+      "bblockName": "Localoutlier process input schema",
+      "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema",
+      "generated": "2026-09-03T13:40:46.716558+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -480,7 +614,7 @@
       "title": "Validation report for geonovum.examples.transforms.xslt-example - XSLT Transforms example",
       "bblockName": "XSLT Transforms example",
       "bblockId": "geonovum.examples.transforms.xslt-example",
-      "generated": "2026-08-05T11:05:44.265950+00:00",
+      "generated": "2026-09-03T13:40:46.905876+00:00",
       "result": false,
       "items": [
         {
@@ -545,7 +679,7 @@
       "title": "Validation report for geonovum.examples.transforms.xslt2 - XSLT2 Transforms example",
       "bblockName": "XSLT2 Transforms example",
       "bblockId": "geonovum.examples.transforms.xslt2",
-      "generated": "2026-08-05T11:05:44.515058+00:00",
+      "generated": "2026-09-03T13:40:47.100827+00:00",
       "result": false,
       "items": [
         {
@@ -610,7 +744,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection - Logboek Log Record Collection",
       "bblockName": "Logboek Log Record Collection",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
-      "generated": "2026-08-05T11:05:44.538175+00:00",
+      "generated": "2026-09-03T13:40:47.117036+00:00",
       "result": true,
       "items": [
         {
@@ -676,11 +810,50 @@
         "failed": 0
       }
     },
+    "geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o": {
+      "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o - LDV RML Mapper",
+      "bblockName": "LDV RML Mapper",
+      "bblockId": "geonovum.examples.logboek.dataverwerkingen.opentelemetry.rml-2-prov-o",
+      "generated": "2026-09-03T13:40:47.120286+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/example_1_1.json",
+            "url": "https://geonovum-labs.github.io/bblocks-demo-register/build/tests/examples/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using ../../opentelemetry/trace/examples/trace.json from examples"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
     "geonovum.examples.bag.ogcapi": {
       "title": "Validation report for geonovum.examples.bag.ogcapi - BAG-Pand",
       "bblockName": "BAG-Pand",
       "bblockId": "geonovum.examples.bag.ogcapi",
-      "generated": "2026-08-05T11:05:44.721723+00:00",
+      "generated": "2026-09-03T13:40:47.614126+00:00",
       "result": true,
       "items": [
         {
@@ -750,9 +923,6 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    },
                     "geojson:FeatureShape": {
                       "nodes": [
                         "<https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>"
@@ -766,10 +936,13 @@
                     },
                     "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: <https://example.com/pand/c3de65af-ca00-5971-87cd-04d4bdd456f4>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
                 }
               ]
             }
@@ -787,7 +960,7 @@
       "title": "Validation report for geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api - Logboek Dataverwerkingen Extensie Lezen API",
       "bblockName": "Logboek Dataverwerkingen Extensie Lezen API",
       "bblockId": "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.api",
-      "generated": "2026-08-05T11:05:44.727153+00:00",
+      "generated": "2026-09-03T13:40:47.618276+00:00",
       "result": true,
       "items": [
         {
@@ -850,7 +1023,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription - Localoutlier process input description",
       "bblockName": "Localoutlier process input description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputDescription",
-      "generated": "2026-08-05T11:05:44.739911+00:00",
+      "generated": "2026-09-03T13:40:47.627917+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -864,7 +1037,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription - Localoutlier process output description",
       "bblockName": "Localoutlier process output description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.outputDescription",
-      "generated": "2026-08-05T11:05:44.747074+00:00",
+      "generated": "2026-09-03T13:40:47.633337+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -878,7 +1051,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.inputDescriptions - Example OGC API Processes instance input descriptions",
       "bblockName": "Example OGC API Processes instance input descriptions",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.inputDescriptions",
-      "generated": "2026-08-05T11:05:44.752570+00:00",
+      "generated": "2026-09-03T13:40:47.637525+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -892,7 +1065,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription - Localoutlier process description",
       "bblockName": "Localoutlier process description",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.localoutlier.processDescription",
-      "generated": "2026-08-05T11:05:44.759314+00:00",
+      "generated": "2026-09-03T13:40:47.642380+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -906,7 +1079,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.schemas.outputDescriptions - Example OGC API Processes instance output descriptions",
       "bblockName": "Example OGC API Processes instance output descriptions",
       "bblockId": "geonovum.examples.ogcapi.processes.schemas.outputDescriptions",
-      "generated": "2026-08-05T11:05:44.764833+00:00",
+      "generated": "2026-09-03T13:40:47.646458+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -920,7 +1093,7 @@
       "title": "Validation report for geonovum.examples.ogcapi.processes.custom-api - Demo OGC API processes instance - LOF",
       "bblockName": "Demo OGC API processes instance - LOF",
       "bblockId": "geonovum.examples.ogcapi.processes.custom-api",
-      "generated": "2026-08-05T11:05:44.768593+00:00",
+      "generated": "2026-09-03T13:40:47.649339+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

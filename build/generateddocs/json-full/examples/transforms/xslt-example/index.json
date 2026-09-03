@@ -9,7 +9,7 @@
   "dateTimeAddition": "2026-05-08T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-08-05",
+  "dateOfLastChange": "2026-09-03",
   "tags": [
     "transform",
     "xml"
@@ -143,7 +143,7 @@
           "transformResults": {
             "sample-xslt": {
               "success": false,
-              "stderr": "AttributeError: 'NoneType' object has no attribute 'decode'\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 605, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 932, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/xslt.py\", line 26, in do_transform\n    return etree.tostring(result, encoding='utf-8', pretty_print=True, xml_declaration=True).decode('utf-8')\nAttributeError: 'NoneType' object has no attribute 'decode'\n"
+              "stderr": "AttributeError: 'NoneType' object has no attribute 'decode'\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 608, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 1031, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/xslt.py\", line 26, in do_transform\n    return etree.tostring(result, encoding='utf-8', pretty_print=True, xml_declaration=True).decode('utf-8')\nAttributeError: 'NoneType' object has no attribute 'decode'\n"
             },
             "dcat-title": {
               "success": true,
